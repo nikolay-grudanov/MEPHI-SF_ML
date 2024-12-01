@@ -1,0 +1,16 @@
+,anti_pattern_agent.py,cycle_agent.py,cycle_agent_v2.py,lose_pattern_agent.py,paper_agent.py,paper_random_five_agent.py,pattern_recognition_agent.py,random_agent.py,random_five_agent.py,rock_paper_agent.py,rock_scissors_agent.py,scissors_agent.py,third_step_paper_agent_other_random.py,third_step_rock_srcond_paper_agent.py,weighted_random_agent.py
+anti_pattern_agent.py,0,0,0,0,1,1,0,1,0,0,0,1,1,0,0
+cycle_agent.py,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
+cycle_agent_v2.py,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+lose_pattern_agent.py,1,1,0,0,0,0,1,0,1,1,1,0,0,1,0
+paper_agent.py,0,0,0,1,0,0,0,0,0,1,0,0,0,1,0
+paper_random_five_agent.py,0,0,0,1,0,0,0,0,0,1,0,0,0,1,0
+pattern_recognition_agent.py,0,0,0,0,1,1,0,1,0,0,0,1,0,0,1
+random_agent.py,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
+random_five_agent.py,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+rock_paper_agent.py,1,0,0,0,0,0,1,0,0,0,0,0,0,1,0
+rock_scissors_agent.py,1,0,0,0,0,0,1,0,0,1,0,1,1,1,1
+scissors_agent.py,0,0,0,1,1,1,0,1,0,0,0,0,1,0,1
+third_step_paper_agent_other_random.py,0,1,0,0,0,1,0,0,1,1,0,0,0,1,0
+third_step_rock_srcond_paper_agent.py,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+weighted_random_agent.py,0,0,0,1,1,1,0,0,0,1,0,0,1,1,0
