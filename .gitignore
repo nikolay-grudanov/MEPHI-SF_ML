@@ -248,11 +248,11 @@ tags
 
 ### VisualStudioCode ###
 .vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
-!.vscode/*.code-snippets
+# !.vscode/settings.json
+# !.vscode/tasks.json
+# !.vscode/launch.json
+# !.vscode/extensions.json
+# !.vscode/*.code-snippets
 
 # Local History for Visual Studio Code
 .history/
@@ -278,3 +278,7 @@ academic-semester-1/python_for_data_analysis/HW-2_PJ/ExchangeRates.csv
 academic-semester-1/python_for_data_analysis/HW-2_PJ/data/dst-3.0_16_1_hh_database.csv
 academic-semester-1/python_for_data_analysis/HW-2_PJ/data/ExchangeRates.csv
 academic-semester-1/python_for_data_analysis/HW-2_PJ/data/ExchangeRates.zip
+academic-semester-1/linear_algebra/HW-1/_unconv.zip
+academic-semester-1/linear_algebra/HW-1/_unconv/unconv.csv
+.gigaide/*
+.idea/*
