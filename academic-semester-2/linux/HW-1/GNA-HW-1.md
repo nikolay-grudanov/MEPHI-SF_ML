@@ -1,5 +1,9 @@
 # Домашняя работа № 1
 
+Выполнил: Груданов Николай Алексеевич
+
+---
+
 > Я использую Manjaro Linux на личном ПК, поэтому все задания будт выполнены на нем и скриншоты на нем. 
 > У меня нет личного устройсва с ОС Windows.
 
@@ -323,3 +327,128 @@ sudo m-a prepare
 
 ## Vagrant
 
+Скачиваем образ по ссылке из задания
+
+![alt text](image-54.png)
+
+Приозводим инициализацию образа ubuntu/jammy64
+
+![alt text](image-55.png)
+
+Запустить виртуальную машину
+
+![alt text](image-56.png)
+
+![alt text](image-57.png)
+
+Удаляем машину
+
+![alt text](image-58.png)
+
+C помощью текстового редактора nvim внесём изменения в VagrantFile
+
+![alt text](image-59.png)
+
+![alt text](image-60.png)
+
+Производим запуск машины
+
+![alt text](image-61.png)
+
+![alt text](image-62.png)
+
+Проверяем что машина создалась коректно с нужными параметрами
+
+![alt text](image-63.png)
+
+Видим новуж виртупльную машину с 048 МБ ОЗУ и 2 VPCU и именеи ubuntu.
+
+Произведем создание снимока виртуальной машины
+
+![alt text](image-64.png)
+
+![alt text](image-65.png)
+
+![alt text](image-66.png)
+
+Подключимся к машине по ssh
+
+![alt text](image-67.png)
+
+![alt text](image-68.png)
+
+Обновим пакеты
+
+![alt text](image-70.png)
+
+Запустился процесс обновления
+
+![alt text](image-71.png)
+
+Видим что все успешно обновилось
+
+![alt text](image-72.png)
+
+Выйдем с помошью команды `exit`
+
+![alt text](image-73.png)
+
+Остановим виртуальную машину
+
+![alt text](image-74.png)
+
+![alt text](image-75.png)
+
+Процесс упаковки виртуальной машины в образ с именем "ubuntu2204.box"
+
+![alt text](image-76.png)
+
+![alt text](image-77.png)
+
+Проверим что наш образ есть в списке доступных образов
+
+![alt text](image-78.png)
+
+Он есть, перейдем к следуюшему шагу, загрузим образ в локальный репозиторий
+
+![alt text](image-79.png)
+
+![alt text](image-80.png)
+
+![alt text](image-81.png)
+
+Инициализация и запуск новой машины, для этого создадим новую папку
+
+![alt text](image-82.png)
+
+Инициализируем Vagrantfile в новой папке с помощью команды `vagrant init ubuntu2204`
+
+![alt text](image-83.png)
+
+Запустим машину
+
+![alt text](image-84.png)
+
+![alt text](image-85.png)
+
+Создание снимка
+
+![alt text](image-86.png)
+
+Внесем изменения в ВМ
+
+![alt text](image-87.png)
+
+![alt text](image-88.png)
+
+![alt text](image-89.png)
+
+Добавили файл test_file.txt
+
+Теперь востановим машину из снепшота и проверим, что нет ранее созданого файла
+
+![alt text](image-90.png)
+
+![alt text](image-91.png)
+
+![alt text](image-92.png)
