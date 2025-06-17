@@ -1,0 +1,141 @@
+Script started on 2025-06-17 00:49:25+00:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="142" LINES="25"]
+[?2004h]0;vagrant@ubuntu: ~[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ ^[[200~cd ~~[K[1P[1P[1P[1P[1P[2P[C[C[C[C
+[?2004l[?2004h]0;vagrant@ubuntu: ~[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ [7mcat /etc/passwd | grep vagrant[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccat /etc/passwd | grep vagrant
+[?2004l[01;31m[Kvagrant[m[K:x:1000:1000:,,,:/home/[01;31m[Kvagrant[m[K:/bin/bash
+[?2004h]0;vagrant@ubuntu: ~[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ [7msudo cat /etc/shadow | grep vagrant[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csudo cat /etc/shadow | grep vagrant
+[?2004l[01;31m[Kvagrant[m[K:$y$j9T$.3e2As8vzat2D1fUXtR5N/$.WJu/nciTd97UY79vvAIhQ0siOuR/faE9pdlvdqEGL9:20231:0:99999:7:::
+[?2004h]0;vagrant@ubuntu: ~[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ ^[[200~sudo passwd -S vagrant~[K[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[2P[1P[1P[C[1P[1P[1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004lvagrant P 05/23/2025 0 99999 7 -1
+[?2004h]0;vagrant@ubuntu: ~[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ [7msudo useradd -d /home/user01 -s /bin/sh -g user01 -e 2026-12-13 -m user01[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csudo useradd -d /home/user01 -s /bin/sh -g user01 -e 2026-12-13 -m user01
+[?2004luseradd: group 'user01' does not exist
+[?2004h]0;vagrant@ubuntu: ~[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ [7msudo passwd user01[27msudo passwd user01
+[?2004lpasswd: user 'user01' does not exist
+[?2004h]0;vagrant@ubuntu: ~[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ [H[2J]0;vagrant@ubuntu: ~[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ sudo passwd user01[55@useradd -d /home/user01 -s /bin/sh -g user01 -e 2026-12-13 -m[C[C[C[C[C[C[C
+[?2004luseradd: group 'user01' does not exist
+[?2004h]0;vagrant@ubuntu: ~[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ [H[2J]0;vagrant@ubuntu: ~[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ ^[[200~sudo groupadd user01~[K[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[2P[1P[1P[C[1P[1P[1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004l[?2004h]0;vagrant@ubuntu: ~[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ [7msudo useradd -d /home/user01 -s /bin/sh -g user01 -e 2026-12-13 -m user01[27m
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csudo useradd -d /home/user01 -s /bin/sh -g user01 -e 2026-12-13 -m user01
+[?2004l[?2004h]0;vagrant@ubuntu: ~[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ ^[[200~sudo passwd user01~[K[C[1P[1P[1P[1P[1P[2P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004lNew password: 
+Retype new password: 
+passwd: password updated successfully
+[?2004h]0;vagrant@ubuntu: ~[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ [7msu user01[27msu user01
+[?2004lPassword: 
+$ whi i j oami
+user01
+$ cd ~
+$ pwd
+/home/user01
+$ ls -la
+total 20
+drwxr-x--- 2 user01 user01 4096 Jun 17 01:12 .
+drwxr-xr-x 5 root   root   4096 Jun 17 01:12 ..
+-rw-r--r-- 1 user01 user01  220 Jan  6  2022 .bash_logout
+-rw-r--r-- 1 user01 user01 3771 Jan  6  2022 .bashrc
+-rw-r--r-- 1 user01 user01  807 Jan  6  2022 .profile
+$ ^L  ^L  ^L  x clt r t r t ear
+[H[2J[3J$ chfn
+Password: 
+Changing the user information for user01
+Enter the new value, or press ENTER for the default
+	Full Name: 
+	Room Number []: fii   q 1
+	Work Phone []: 2620
+	Home Phone []: 241220
+$ ^[[A^[[A        finger user01
+sh: 7: finger: not found
+$ apu y t ib nd sya  u y i u y i tall finger user01       ^[[D    
+[1;31mE: [0mCould not open lock file /var/lib/dpkg/lock-frontend - open (13: Permission denied)[0m
+[1;31mE: [0mUnable to acquire the dpkg frontend lock (/var/lib/dpkg/lock-frontend), are you root?[0m
+$ si  ^[[A    si uf di o api u i y u y t in nsy u tall finger user01       
+[sudo] password for user01: 
+user01 is not in the sudoers file.  This incident will be reported.
+$ ^L  ^[[6~     v clt r t r eat y u t r
+[H[2J[3J$ finger user01
+Login: user01         			Name: 
+Directory: /home/user01             	Shell: /bin/sh
+Office: 1, x2620			Home Phone: 241220
+Never logged in.
+No mail.
+No Plan.
+$ exit
+[?2004h]0;vagrant@ubuntu: ~[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ [K]0;vagrant@ubuntu: ~[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ [7msudo usermod -a -G sudo user01[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csudo usermod -a -G sudo user01[H[2J]0;vagrant@ubuntu: ~[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ sudo usermod -a -G sudo user01
+[?2004l[?2004h]0;vagrant@ubuntu: ~[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ [7msu user01[27msu user01
+[?2004lPassword: 
+$ sudo whoami
+[sudo] password for user01: 
+root
+$ sudo groupadd group01
+$ sudo usermod -a -G group01 user01
+$ sudo usermod -a -G group01 vagrant
+$ sudo groupmems -g group01 -l
+user01  vagrant 
+$ exit
+[?2004h]0;vagrant@ubuntu: ~[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ [H[2J]0;vagrant@ubuntu: ~[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ ^[[200~cd ~~[K[1P[1P[1P[1P[1P[2P[C[C[C[C
+[?2004l[?2004h]0;vagrant@ubuntu: ~[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ [7mmkdir test[27mmkdir test
+[?2004l[?2004h]0;vagrant@ubuntu: ~[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ [7mcd test[27mcd test
+[?2004l[?2004h]0;vagrant@ubuntu: ~/test[01;32mvagrant@ubuntu[00m:[01;34m~/test[00m$ [7mtouch file[27mtouch file
+[?2004l[?2004h]0;vagrant@ubuntu: ~/test[01;32mvagrant@ubuntu[00m:[01;34m~/test[00m$ [7mls -l file[27mls -l file
+[?2004l-rw-rw-r-- 1 vagrant vagrant 0 Jun 17 01:27 file
+[?2004h]0;vagrant@ubuntu: ~/test[01;32mvagrant@ubuntu[00m:[01;34m~/test[00m$ [7mchmod 000 file[27mchmod 000 file
+[?2004l[?2004h]0;vagrant@ubuntu: ~/test[01;32mvagrant@ubuntu[00m:[01;34m~/test[00m$ [7mecho "тест" > file[27mecho "тест" > file
+[?2004lbash: file: Permission denied
+[?2004h]0;vagrant@ubuntu: ~/test[01;32mvagrant@ubuntu[00m:[01;34m~/test[00m$ [7mcat file[27mcat file
+[?2004lcat: file: Permission denied
+[?2004h]0;vagrant@ubuntu: ~/test[01;32mvagrant@ubuntu[00m:[01;34m~/test[00m$ ,[K[7mchmod 200 file[27mchmod 200 file
+[?2004l[?2004h]0;vagrant@ubuntu: ~/test[01;32mvagrant@ubuntu[00m:[01;34m~/test[00m$ [7mls -l file[27mls -l file
+[?2004l--w------- 1 vagrant vagrant 0 Jun 17 01:27 file
+[?2004h]0;vagrant@ubuntu: ~/test[01;32mvagrant@ubuntu[00m:[01;34m~/test[00m$ [7mecho "test" > file[27mecho "test" > file
+[?2004l[?2004h]0;vagrant@ubuntu: ~/test[01;32mvagrant@ubuntu[00m:[01;34m~/test[00m$ [7mcat file[27mcat file
+[?2004lcat: file: Permission denied
+[?2004h]0;vagrant@ubuntu: ~/test[01;32mvagrant@ubuntu[00m:[01;34m~/test[00m$ [7mchmod 240 file[27mchmod 240 file
+[?2004l[?2004h]0;vagrant@ubuntu: ~/test[01;32mvagrant@ubuntu[00m:[01;34m~/test[00m$ [7mls -l file[27mls -l file
+[?2004l--w-r----- 1 vagrant vagrant 5 Jun 17 01:31 file
+[?2004h]0;vagrant@ubuntu: ~/test[01;32mvagrant@ubuntu[00m:[01;34m~/test[00m$ ls -l file[4@chmod 240[C[C[C[C[C[6Pat[C[C[C[C[C
+[?2004lcat: file: Permission denied
+[?2004h]0;vagrant@ubuntu: ~/test[01;32mvagrant@ubuntu[00m:[01;34m~/test[00m$ [H[2J]0;vagrant@ubuntu: ~/test[01;32mvagrant@ubuntu[00m:[01;34m~/test[00m$ [7mchmod 640 file[27mchmod 640 file
+[?2004l[?2004h]0;vagrant@ubuntu: ~/test[01;32mvagrant@ubuntu[00m:[01;34m~/test[00m$ [7mcat file[27mcat file
+[?2004ltest
+[?2004h]0;vagrant@ubuntu: ~/test[01;32mvagrant@ubuntu[00m:[01;34m~/test[00m$ [7mmkdir dir[27mmkdir dir
+[?2004l[?2004h]0;vagrant@ubuntu: ~/test[01;32mvagrant@ubuntu[00m:[01;34m~/test[00m$ [7mecho "file 2" > dir/new_file[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cecho "file 2" > dir/new_file
+[?2004l[?2004h]0;vagrant@ubuntu: ~/test[01;32mvagrant@ubuntu[00m:[01;34m~/test[00m$ [7mls -l dir[27mls -l dir
+[?2004ltotal 4
+-rw-rw-r-- 1 vagrant vagrant 7 Jun 17 01:35 new_file
+[?2004h]0;vagrant@ubuntu: ~/test[01;32mvagrant@ubuntu[00m:[01;34m~/test[00m$ [7mchmod -x dir[27mchmod -x dir
+[?2004l[?2004h]0;vagrant@ubuntu: ~/test[01;32mvagrant@ubuntu[00m:[01;34m~/test[00m$ [7mcat dir/new_file[27mcat dir/new_file
+[?2004lcat: dir/new_file: Permission denied
+[?2004h]0;vagrant@ubuntu: ~/test[01;32mvagrant@ubuntu[00m:[01;34m~/test[00m$ [7mrm dir/new_file[27mrm dir/new_file
+[?2004lrm: cannot remove 'dir/new_file': Permission denied
+[?2004h]0;vagrant@ubuntu: ~/test[01;32mvagrant@ubuntu[00m:[01;34m~/test[00m$ [7mchown root file[27mchown root file
+[?2004lchown: changing ownership of 'file': Operation not permitted
+[?2004h]0;vagrant@ubuntu: ~/test[01;32mvagrant@ubuntu[00m:[01;34m~/test[00m$ [7mchgrp root file[27mchgrp root file
+[?2004lchgrp: changing group of 'file': Operation not permitted
+[?2004h]0;vagrant@ubuntu: ~/test[01;32mvagrant@ubuntu[00m:[01;34m~/test[00m$ ;[K[H[2J]0;vagrant@ubuntu: ~/test[01;32mvagrant@ubuntu[00m:[01;34m~/test[00m$ [7mumask 077[27mumask 077
+[?2004l[?2004h]0;vagrant@ubuntu: ~/test[01;32mvagrant@ubuntu[00m:[01;34m~/test[00m$ [7mtouch file1[27mtouch file1
+[?2004l[?2004h]0;vagrant@ubuntu: ~/test[01;32mvagrant@ubuntu[00m:[01;34m~/test[00m$ [7mls -l file1[27mls -l file1
+[?2004l-rw------- 1 vagrant vagrant 0 Jun 17 01:38 file1
+[?2004h]0;vagrant@ubuntu: ~/test[01;32mvagrant@ubuntu[00m:[01;34m~/test[00m$ [7mumask 000[27mumask 000
+[?2004l[?2004h]0;vagrant@ubuntu: ~/test[01;32mvagrant@ubuntu[00m:[01;34m~/test[00m$ [7mtouch file2[27mtouch file2
+[?2004l[?2004h]0;vagrant@ubuntu: ~/test[01;32mvagrant@ubuntu[00m:[01;34m~/test[00m$ [7mls -l file2[27mls -l file2
+[?2004l-rw-rw-rw- 1 vagrant vagrant 0 Jun 17 01:39 file2
+[?2004h]0;vagrant@ubuntu: ~/test[01;32mvagrant@ubuntu[00m:[01;34m~/test[00m$ [H[2J]0;vagrant@ubuntu: ~/test[01;32mvagrant@ubuntu[00m:[01;34m~/test[00m$ [7msudo su[27msudo su
+[?2004l[?2004h]0;root@ubuntu: /home/vagrant/testroot@ubuntu:/home/vagrant/test# [7mchown root file[27mchown root file
+[?2004l[?2004h]0;root@ubuntu: /home/vagrant/testroot@ubuntu:/home/vagrant/test# [7mchmod 400 file[27mchmod 400 file
+[?2004l[?2004h]0;root@ubuntu: /home/vagrant/testroot@ubuntu:/home/vagrant/test# [7mexit[27mexit
+[?2004lexit
+[?2004h]0;vagrant@ubuntu: ~/test[01;32mvagrant@ubuntu[00m:[01;34m~/test[00m$ [7mcat file[27mcat file
+[?2004lcat: file: Permission denied
+[?2004h]0;vagrant@ubuntu: ~/test[01;32mvagrant@ubuntu[00m:[01;34m~/test[00m$ [7msudo su[27msudo su
+[?2004l[?2004h]0;root@ubuntu: /home/vagrant/testroot@ubuntu:/home/vagrant/test# [7mchmod 440 file[27mchmod 440 file
+[?2004l[?2004h]0;root@ubuntu: /home/vagrant/testroot@ubuntu:/home/vagrant/test# [7mexit[27mexit
+[?2004lexit
+[?2004h]0;vagrant@ubuntu: ~/test[01;32mvagrant@ubuntu[00m:[01;34m~/test[00m$ [7mcat file[27mcat file
+[?2004ltest
+[?2004h]0;vagrant@ubuntu: ~/test[01;32mvagrant@ubuntu[00m:[01;34m~/test[00m$ [7mcat /etc/passwd >> dz3.txt[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccat /etc/passwd >> dz3.txt
+[?2004l[?2004h]0;vagrant@ubuntu: ~/test[01;32mvagrant@ubuntu[00m:[01;34m~/test[00m$ [7mcat /etc/group >> dz3.txt[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccat /etc/group >> dz3.txt
+[?2004l[?2004h]0;vagrant@ubuntu: ~/test[01;32mvagrant@ubuntu[00m:[01;34m~/test[00m$ ды[K[Kды[K[Kls
+[?2004l[0m[01;34mdir[0m  dz3.txt  file  file1  file2
+[?2004h]0;vagrant@ubuntu: ~/test[01;32mvagrant@ubuntu[00m:[01;34m~/test[00m$ [7mexit[27mexit
+[?2004lexit
+
+Script done on 2025-06-17 01:43:59+00:00 [COMMAND_EXIT_CODE="0"]
