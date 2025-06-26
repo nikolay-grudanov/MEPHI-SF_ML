@@ -301,3 +301,13 @@ academic-semester-2/linux/ubuntu-22.04-desktop-amd64.iso.torrent
 .continue/**
 academic-semester-2/linux/ubuntu2204.box
 academic-semester-2/linux/jammy-server-cloudimg-amd64-vagrant.box
+academic-semester-2/advanced_deep_learning/submission.csv
+academic-semester-2/advanced_deep_learning/dl-captcha-new/mds-misis-dl-captchan/sample_submission.csv
+academic-semester-2/classical_machine_learning/HW-4/submission.csv
+.gitignore
+academic-semester-2/classical_machine_learning/HW-4/tutors-lessons-prices-prediction/test.xlsx
+academic-semester-2/classical_machine_learning/HW-4/tutors-lessons-prices-prediction/train.xlsx
+academic-semester-2/classical_machine_learning/HW-5/clustering-physical-activity-data/Physical_Activity_Monitoring_unlabeled.csv
+academic-semester-2/classical_machine_learning/HW-4/tutors-lessons-prices-prediction/sample_submit.csv
+academic-semester-2/classical_machine_learning/HW-5/submission.csv
+academic-semester-2/classical_machine_learning/HW-5/clustering-physical-activity-data/Physical_Activity_Monitoring_unlabeled (Копия).csv
