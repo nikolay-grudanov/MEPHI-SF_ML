@@ -1,0 +1,279 @@
+Script started on 2025-07-02 19:58:09+00:00 [TERM="tmux-256color" TTY="/dev/pts/1" COLUMNS="190" LINES="31"]
+[?2004h[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ [7m$ ls -l /dev/sda{,[123]}[27m
+M[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C$ ls -l /dev/sda{,[123]}
+M
+[?2004l$: command not found
+[?2004h[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ $ ls -l /dev/sda{,[123]}[1P[1P
+[?2004lbrw-rw---- 1 root disk 8, 0 Jul  2 17:32 [0m[40;33;01m/dev/sda[0m
+brw-rw---- 1 root disk 8, 1 Jul  2 17:31 [40;33;01m/dev/sda1[0m
+[?2004h[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ [7m$ lsblk --list[27m
+M[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C$ lsblk --list[1P[1P[C[C[C[C[C[C[C[C[C[C[C[C
+[KM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004lNAME  MAJ:MIN RM  SIZE RO TYPE MOUNTPOINTS
+loop0   7:0    0 63.8M  1 loop /snap/core20/2599
+loop1   7:1    0 89.4M  1 loop /snap/lxd/31333
+loop2   7:2    0 63.8M  1 loop /snap/core20/2582
+loop3   7:3    0 50.9M  1 loop /snap/snapd/24671
+loop4   7:4    0 73.9M  1 loop /snap/core22/2010
+loop5   7:5    0 31.6M  1 loop /snap/nvim/3953
+sda     8:0    0   40G  0 disk 
+sda1    8:1    0   40G  0 part /
+sdb     8:16   0   10M  0 disk 
+[?2004h[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ [7m$ cat /proc/diskstats[27m
+M[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C$ cat /proc/diskstats[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[1P
+[KM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004l   7       0 loop0 233 0 4454 37 0 0 0 0 0 160 37 0 0 0 0 0 0
+   7       1 loop1 69 0 2232 19 0 0 0 0 0 40 19 0 0 0 0 0 0
+   7       2 loop2 43 0 692 21 0 0 0 0 0 36 21 0 0 0 0 0 0
+   7       3 loop3 1974 0 157732 107 0 0 0 0 0 3464 107 0 0 0 0 0 0
+   7       4 loop4 68 0 2688 0 0 0 0 0 0 88 0 0 0 0 0 0 0
+   7       5 loop5 160 0 5864 2 0 0 0 0 0 180 2 0 0 0 0 0 0
+   7       6 loop6 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+   7       7 loop7 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+   8       0 sda 6200 1981 496488 1462 4517 4167 309650 2575 0 5472 4038 0 0 0 0 0 0
+   8       1 sda1 6070 1981 492936 1445 4517 4167 309650 2575 0 5420 4021 0 0 0 0 0 0
+   8      16 sdb 361 0 6348 64 0 0 0 0 0 132 64 0 0 0 0 0 0
+[?2004h[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ [H[J[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ [7m# dd if=/dev/zero of=./fs.img bs=1M count=10[27m
+M[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C# dd if=/dev/zero of=./fs.img bs=1M count=10
+[?2004l[?2004h[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ [H[J[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ [7mdd if=/dev/zero of=./fs.img bs=1M count=10[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdd if=/dev/zero of=./fs.img bs=1M count=10
+[?2004l10+0 records in
+10+0 records out
+10485760 bytes (10 MB, 10 MiB) copied, 0.00283663 s, 3.7 GB/s
+[?2004h[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ [7mlosetup --find --show ./fs.img[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Closetup --find --show ./fs.img
+[?2004llosetup: ./fs.img: failed to set up loop device: Permission denied
+[?2004h[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ losetup --find --show ./fs.img[1@s[1@i[1P[1@u[1@d[1@o[1@ 
+[?2004l/dev/loop6
+[?2004h[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ si[Ku[K[Ksudo [7mlosetup --list[27mlosetup --list
+[?2004lNAME       SIZELIMIT OFFSET AUTOCLEAR RO BACK-FILE                             DIO LOG-SEC
+/dev/loop1         0      0         1  1 /var/lib/snapd/snaps/lxd_31333.snap     0     512
+/dev/loop6         0      0         0  0 /home/vagrant/fs.img                    0     512
+/dev/loop4         0      0         1  1 /var/lib/snapd/snaps/core22_2010.snap   0     512
+/dev/loop2         0      0         1  1 /var/lib/snapd/snaps/core20_2582.snap   0     512
+/dev/loop0         0      0         1  1 /var/lib/snapd/snaps/core20_2599.snap   0     512
+/dev/loop5         0      0         1  1 /var/lib/snapd/snaps/nvim_3953.snap     0     512
+/dev/loop3         0      0         1  1 /var/lib/snapd/snaps/snapd_24671.snap   0     512
+[?2004h[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ [H[J[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ [7mmkfs -t ext4 /dev/loop5[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmkfs -t ext4 /dev/loop5
+[?2004lmke2fs 1.46.5 (30-Dec-2021)
+/dev/loop5 is mounted; will not make a filesystem here!
+[?2004h[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ [7mblkid /dev/loop5[27mblkid /dev/loop5
+[?2004l[?2004h[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ [H[J[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ blkid /dev/loop5[7@mkfs -t ext4[C[C[C[C[C[C[C[C[C[C[C[1@s[1@i[1P[1@u[1@d[1@o[1@ 
+[?2004lmke2fs 1.46.5 (30-Dec-2021)
+/dev/loop5 is mounted; will not make a filesystem here!
+[?2004h[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ [H[J[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ sudo mkfs -t ext4 /dev/loop5[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[12Pblkid[C[C[C[C[C[C[C[C[C[C[C[7@mkfs -t ext4[C[C[C[C[C[C[C[C[C[C[C[K4[K5[K6
+[?2004lmke2fs 1.46.5 (30-Dec-2021)
+mkfs.ext4: Permission denied while trying to determine filesystem size
+[?2004h[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ [H[J[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ mkfs -t ext4 /dev/loop6[1@s[1@i[1P[1@u[1@d[1@o[1@ 
+[?2004lmke2fs 1.46.5 (30-Dec-2021)
+Discarding device blocks:    0/2560         done                            
+Creating filesystem with 2560 4k blocks and 2560 inodes
+
+Allocating group tables: 0/1   done                            
+Writing inode tables: 0/1   done                            
+Creating journal (1024 blocks): done
+Writing superblocks and filesystem accounting information: 0/1   done
+
+[?2004h[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ [7mblkid /dev/loop5[27mblkid /dev/loop5[K6
+[?2004l[?2004h[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ na[K[Kman [7mblkid /dev/loop5[27mblkid /dev/loop5[K[K[K[K[K[K[K[K[K[K[K
+[?2004l[?1049h[?1h=BLKID(8)                                                                          System Administration                                                                          BLKID(8)[m
+[m
+[1mNAME[0m[m
+       blkid - locate/print block device attributes[m
+[m
+[1mSYNOPSIS[0m[m
+       [1mblkid[0m [1m--label[0m [4mlabel[24m | [1m--uuid[0m [4muuid[24m[m
+[m
+       [1mblkid[0m [[1m--no-encoding[0m [1m--garbage-collect[0m [1m--list-one[0m [1m--cache-file[0m [4mfile[24m] [[1m--output[0m [4mformat[24m] [[1m--match-tag[0m [4mtag[24m] [[1m--match-token[0m [4mNAME=value[24m] [[4mdevice[24m...][m
+[m
+       [1mblkid[0m [1m--probe[0m [[1m--offset[0m [4moffset[24m] [[1m--output[0m [4mformat[24m] [[1m--size[0m [4msize[24m] [[1m--match-tag[0m [4mtag[24m] [[1m--match-types[0m [4mlist[24m] [[1m--usages[0m [4mlist[24m] [[1m--no-part-details[0m] [4mdevice[24m...[m
+[m
+       [1mblkid[0m [1m--info[0m [[1m--output[0m [1mformat[0m] [[1m--match-tag[0m [4mtag[24m] [4mdevice[24m...[m
+[m
+[1mDESCRIPTION[0m[m
+       The [1mblkid[0m program is the command-line interface to working with the [1mlibblkid[0m(3) library. It can determine the type of content (e.g., filesystem or swap) that a block device[m
+       holds, and also the attributes (tokens, NAME=value pairs) from the content metadata (e.g., LABEL or UUID fields).[m
+[m
+       [1mIt[0m [1mis[0m [1mrecommended[0m [1mto[0m [1muse[0m [1mlsblk[0m(8) [1mcommand[0m [1mto[0m [1mget[0m [1minformation[0m [1mabout[0m [1mblock[0m [1mdevices,[0m [1mor[0m [1mlsblk[0m [1m--fs[0m [1mto[0m [1mget[0m [1man[0m [1moverview[0m [1mof[0m [1mfilesystems,[0m [1mor[0m [1mfindmnt[0m(8) [1mto[0m [1msearch[0m [1min[0m [1malready[0m [1mmounted[0m[m
+       [1mfilesystems.[0m[m
+[m
+          [1mlsblk[0m(8) provides more information, better control on output formatting, easy to use in scripts and it does not require root permissions to get actual information. [1mblkid[0m[m
+          reads information directly from devices and for non-root users it returns cached unverified information. [1mblkid[0m is mostly designed for system services and to test[m
+          [1mlibblkid[0m(3) functionality.[m
+[m
+       When [4mdevice[24m is specified, tokens from only this device are displayed. It is possible to specify multiple [4mdevice[24m arguments on the command line. If none is given, all partitions or[m
+       unpartitioned devices which appear in [4m/proc/partitions[24m are shown, if they are recognized.[m
+[m
+       [1mblkid[0m has two main forms of operation: either searching for a device with a specific NAME=value pair, or displaying NAME=value pairs for one or more specified devices.[m
+[m
+[7m Manual page blkid(8) line 1 (press h for help or q to quit)[27m[K[K       For security reasons [1mblkid[0m silently ignores all devices where the probing result is ambivalent (multiple colliding filesystems are detected). The low-level probing mode ([1m-p[0m)[m
+[7m Manual page blkid(8) line 2 (press h for help or q to quit)[27m[K[K       provides more information and extra exit status in this case. It’s recommended to use [1mwipefs[0m(8) to get a detailed overview and to erase obsolete stuff (magic strings) from the[m
+[7m Manual page blkid(8) line 3 (press h for help or q to quit)[27m[K[K       device.[m
+[7m Manual page blkid(8) line 4 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page blkid(8) line 5 (press h for help or q to quit)[27m[K[K[1mOPTIONS[0m[m
+[7m Manual page blkid(8) line 6 (press h for help or q to quit)[27m[K[K       The [4msize[24m and [4moffset[24m arguments may be followed by the multiplicative suffixes like KiB (=1024), MiB (=1024*1024), and so on for GiB, TiB, PiB, EiB, ZiB and YiB (the "iB" is[m
+[7m Manual page blkid(8) line 7 (press h for help or q to quit)[27m[K[K       optional, e.g., "K" has the same meaning as "KiB"), or the suffixes KB (=1000), MB (=1000*1000), and so on for GB, TB, PB, EB, ZB and YB.[m
+[7m Manual page blkid(8) line 8 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page blkid(8) line 9 (press h for help or q to quit)[27m[K[K       [1m-c[0m, [1m--cache-file[0m [4mcachefile[24m[m
+[7m Manual page blkid(8) line 10 (press h for help or q to quit)[27m[K[K           Read from [4mcachefile[24m instead of reading from the default cache file (see the CONFIGURATION FILE section for more details). If you want to start with a clean cache (i.e., don’t[m
+[7m Manual page blkid(8) line 11 (press h for help or q to quit)[27m[K[K           report devices previously scanned but not necessarily available at this time), specify [4m/dev/null[24m.[m
+[7m Manual page blkid(8) line 12 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page blkid(8) line 13 (press h for help or q to quit)[27m[K[K       [1m-d[0m, [1m--no-encoding[0m[m
+[7m Manual page blkid(8) line 14 (press h for help or q to quit)[27m[K[K           Don’t encode non-printing characters. The non-printing characters are encoded by ^ and M- notation by default. Note that the [1m--output[0m [1mudev[0m output format uses a different[m
+[7m Manual page blkid(8) line 15 (press h for help or q to quit)[27m[K[K           encoding which cannot be disabled.[m
+[7m Manual page blkid(8) line 16 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page blkid(8) line 17 (press h for help or q to quit)[27m[K[K       [1m-D[0m, [1m--no-part-details[0m[m
+[7m Manual page blkid(8) line 18 (press h for help or q to quit)[27m[K[K           Don’t print information (PART_ENTRY_* tags) from partition table in low-level probing mode.[m
+[7m Manual page blkid(8) line 19 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page blkid(8) line 20 (press h for help or q to quit)[27m[K[K       [1m-g[0m, [1m--garbage-collect[0m[m
+[7m Manual page blkid(8) line 21 (press h for help or q to quit)[27m[K[K           Perform a garbage collection pass on the blkid cache to remove devices which no longer exist.[m
+[7m Manual page blkid(8) line 22 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page blkid(8) line 23 (press h for help or q to quit)[27m[K[K       [1m-h[0m, [1m--help[0m[m
+[7m Manual page blkid(8) line 24 (press h for help or q to quit)[27m[K[K           Display a usage message and exit.[m
+[7m Manual page blkid(8) line 25 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page blkid(8) line 26 (press h for help or q to quit)[27m[K[K       [1m-H[0m, [1m--hint[0m [4msetting[24m[m
+[7m Manual page blkid(8) line 27 (press h for help or q to quit)[27m[K[K           Set probing hint. The hints are optional way how to force probing functions to check for example another location. The currently supported is "session_offset=[4mnumber[24m" to set[m
+[7m Manual page blkid(8) line 28 (press h for help or q to quit)[27m[K[K           session offset on multi-session UDF.[m
+[7m Manual page blkid(8) line 29 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page blkid(8) line 30 (press h for help or q to quit)[27m[K[K       [1m-i[0m, [1m--info[0m[m
+[7m Manual page blkid(8) line 31 (press h for help or q to quit)[27m[K[K           Display information about I/O Limits (aka I/O topology). The 'export' output format is automatically enabled. This option can be used together with the [1m--probe[0m option.[m
+[7m Manual page blkid(8) line 32 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page blkid(8) line 33 (press h for help or q to quit)[27m[K[K       [1m-k[0m, [1m--list-filesystems[0m[m
+[7m Manual page blkid(8) line 34 (press h for help or q to quit)[27m[K[K           List all known filesystems and RAIDs and exit.[m
+[7m Manual page blkid(8) line 35 (press h for help or q to quit)[27m[K[K[7m Manual page blkid(8) line 35 (press h for help or q to quit)[27m[K[K[?1l>[?1049l[?2004h[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ man blkidblkid /dev/loop6[12@sudo mkfs -t ext4[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[12Pblkid[C[C[C[C[C[C[C[C[C[C[C-/dev/loop6i/dev/loop6 /dev/loop6
+[?2004lblkid: error: /dev/loop6: Permission denied
+[?2004h[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ [H[J[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ blkid -i /dev/loop6[10Pman blkidblkid /dev/loop6[1@s[1@i[1P[1@u[1@d[1@i[1P[1@o[1@ 
+[?2004l/dev/loop6: UUID="d22026cb-80e3-4fca-9e0a-f077884ecdae" BLOCK_SIZE="4096" TYPE="ext4"
+[?2004h[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ [H[J[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ [7mmount /dev/loop5 /mnt[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmount /dev/loop5 /mnt[1P /mnt6 /mnt
+[?2004lmount: /mnt: must be superuser to use mount.
+[?2004h[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ [H[J[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ mount /dev/loop6 /mnt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@s[1@i[1P[1@i[1P[1@y[1P[1@i[1P[1@o[1P[1@u[1@d[1@o[1@ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004l[?2004h[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ [7mmount | grep /mnt[27mmount | grep /mnt
+[?2004l/dev/loop6 on [01;31m[K/mnt[m[K type ext4 (rw,relatime)
+[?2004h[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ [H[J[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ [7mdf -h /mnt[27mdf -h /mnt
+[?2004lFilesystem      Size  Used Avail Use% Mounted on
+/dev/loop6      5.4M   24K  4.7M   1% /mnt
+[?2004h[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ [7mdf -hi /mnt[27mdf -hi /mnt
+[?2004lFilesystem     Inodes IUsed IFree IUse% Mounted on
+/dev/loop6       2.5K    11  2.5K    1% /mnt
+[?2004h[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ [H[J[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ si[Kudo [7mumount /dev/loop5[27mumount /dev/loop5[K6
+[?2004l[?2004h[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ sudo umount /dev/loop6[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[11Pdf -hi /mnt[1P /mnt[7@mount | grep[C[C[C[C[C
+[?2004l[?2004h[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ mount | grep /mntsudo umount /dev/loop6[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[11Pdf -hi /mnt[1P /mnt
+[?2004lFilesystem      Size  Used Avail Use% Mounted on
+/dev/sda1        39G  2.3G   37G   6% /
+[?2004h[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ [H[J[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ [7mtune2fs -l /dev/loop5[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ctune2fs -l /dev/loop5[K6
+[?2004ltune2fs 1.46.5 (30-Dec-2021)
+tune2fs: Permission denied while trying to open /dev/loop6
+Couldn't find valid filesystem superblock.
+[?2004h[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ tune2fs -l /dev/loop6[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@s[1@i[1P[1@y[1P[1@i[1P[1@u[1@d[1@o[1@ [H[J[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ sudo tune2fs -l /dev/loop6[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004ltune2fs 1.46.5 (30-Dec-2021)
+Filesystem volume name:   <none>
+Last mounted on:          <not available>
+Filesystem UUID:          d22026cb-80e3-4fca-9e0a-f077884ecdae
+Filesystem magic number:  0xEF53
+Filesystem revision #:    1 (dynamic)
+Filesystem features:      has_journal ext_attr resize_inode dir_index filetype extent 64bit flex_bg sparse_super large_file huge_file dir_nlink extra_isize metadata_csum
+Filesystem flags:         signed_directory_hash 
+Default mount options:    user_xattr acl
+Filesystem state:         clean
+Errors behavior:          Continue
+Filesystem OS type:       Linux
+Inode count:              2560
+Block count:              2560
+Reserved block count:     128
+Overhead clusters:        1189
+Free blocks:              1365
+Free inodes:              2549
+First block:              0
+Block size:               4096
+Fragment size:            4096
+Group descriptor size:    64
+Reserved GDT blocks:      1
+Blocks per group:         32768
+Fragments per group:      32768
+Inodes per group:         2560
+Inode blocks per group:   160
+Flex block group size:    16
+Filesystem created:       Wed Jul  2 20:05:46 2025
+Last mount time:          Wed Jul  2 20:08:11 2025
+Last write time:          Wed Jul  2 20:10:35 2025
+Mount count:              1
+Maximum mount count:      -1
+Last checked:             Wed Jul  2 20:05:46 2025
+Check interval:           0 (<none>)
+Lifetime writes:          685 kB
+Reserved blocks uid:      0 (user root)
+Reserved blocks gid:      0 (group root)
+First inode:              11
+Inode size:	          256
+Required extra isize:     32
+Desired extra isize:      32
+Journal inode:            8
+Default directory hash:   half_md4
+Directory Hash Seed:      eed3fc53-bc35-48b2-b23a-c04079d7d9d7
+Journal backup:           inode blocks
+Checksum type:            crc32c
+Checksum:                 0x4d8cd538
+[?2004h[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ [H[J[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ sudo tune2fs -l /dev/loop6
+[?2004ltune2fs 1.46.5 (30-Dec-2021)
+Filesystem volume name:   <none>
+Last mounted on:          <not available>
+Filesystem UUID:          d22026cb-80e3-4fca-9e0a-f077884ecdae
+Filesystem magic number:  0xEF53
+Filesystem revision #:    1 (dynamic)
+Filesystem features:      has_journal ext_attr resize_inode dir_index filetype extent 64bit flex_bg sparse_super large_file huge_file dir_nlink extra_isize metadata_csum
+Filesystem flags:         signed_directory_hash 
+Default mount options:    user_xattr acl
+Filesystem state:         clean
+Errors behavior:          Continue
+Filesystem OS type:       Linux
+Inode count:              2560
+Block count:              2560
+Reserved block count:     128
+Overhead clusters:        1189
+Free blocks:              1365
+Free inodes:              2549
+First block:              0
+Block size:               4096
+Fragment size:            4096
+Group descriptor size:    64
+Reserved GDT blocks:      1
+Blocks per group:         32768
+Fragments per group:      32768
+Inodes per group:         2560
+Inode blocks per group:   160
+Flex block group size:    16
+Filesystem created:       Wed Jul  2 20:05:46 2025
+Last mount time:          Wed Jul  2 20:08:11 2025
+Last write time:          Wed Jul  2 20:10:35 2025
+Mount count:              1
+Maximum mount count:      -1
+Last checked:             Wed Jul  2 20:05:46 2025
+Check interval:           0 (<none>)
+Lifetime writes:          685 kB
+Reserved blocks uid:      0 (user root)
+Reserved blocks gid:      0 (group root)
+First inode:              11
+Inode size:	          256
+Required extra isize:     32
+Desired extra isize:      32
+Journal inode:            8
+Default directory hash:   half_md4
+Directory Hash Seed:      eed3fc53-bc35-48b2-b23a-c04079d7d9d7
+Journal backup:           inode blocks
+Checksum type:            crc32c
+Checksum:                 0x4d8cd538
+[?2004h[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ [H[J[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ [7m# losetup --detach /dev/loop5[27m
+M[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C# losetup --detach /dev/loop5
+[KM[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K6[C[1P[1P[1P[1@l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004llosetup: /dev/loop6: detach failed: Permission denied
+[?2004h[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ [H[J[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ losetup --detach /dev/loop6[1@s[1@i[1P[1@u[1@d[1@o[1@ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004l[?2004h[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ so[Kudi[Ko [7mlosetup --list[27mlosetup --list
+[?2004lNAME       SIZELIMIT OFFSET AUTOCLEAR RO BACK-FILE                             DIO LOG-SEC
+/dev/loop1         0      0         1  1 /var/lib/snapd/snaps/lxd_31333.snap     0     512
+/dev/loop4         0      0         1  1 /var/lib/snapd/snaps/core22_2010.snap   0     512
+/dev/loop2         0      0         1  1 /var/lib/snapd/snaps/core20_2582.snap   0     512
+/dev/loop0         0      0         1  1 /var/lib/snapd/snaps/core20_2599.snap   0     512
+/dev/loop5         0      0         1  1 /var/lib/snapd/snaps/nvim_3953.snap     0     512
+/dev/loop3         0      0         1  1 /var/lib/snapd/snaps/snapd_24671.snap   0     512
+[?2004h[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ e[K(reverse-i-search)`': [Ke': sudo los[7me[27mtup --listx': sudo mkfs -t [7mex[27mt4 /dev/loop6i': [7mexi[27mt[K[7P[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ exit
+[?2004lexit
+
+Script done on 2025-07-02 20:17:00+00:00 [COMMAND_EXIT_CODE="0"]

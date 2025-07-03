@@ -1,0 +1,2591 @@
+Script started on 2025-07-02 17:36:00+00:00 [TERM="tmux-256color" TTY="/dev/pts/0" COLUMNS="95" LINES="32"]
+[?2004h[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ [7mps -e[27mps -e
+[?2004l    PID TTY          TIME CMD
+      1 ?        00:00:00 systemd
+      2 ?        00:00:00 kthreadd
+      3 ?        00:00:00 rcu_gp
+      4 ?        00:00:00 rcu_par_gp
+      5 ?        00:00:00 slub_flushwq
+      6 ?        00:00:00 netns
+      7 ?        00:00:00 kworker/0:0-cgroup_destroy
+      8 ?        00:00:00 kworker/0:0H-events_highpri
+     10 ?        00:00:00 mm_percpu_wq
+     11 ?        00:00:00 rcu_tasks_rude_
+     12 ?        00:00:00 rcu_tasks_trace
+     13 ?        00:00:00 ksoftirqd/0
+     14 ?        00:00:00 rcu_sched
+     15 ?        00:00:00 migration/0
+     16 ?        00:00:00 idle_inject/0
+     17 ?        00:00:00 kworker/0:1-events
+     18 ?        00:00:00 cpuhp/0
+     19 ?        00:00:00 cpuhp/1
+     20 ?        00:00:00 idle_inject/1
+     21 ?        00:00:00 migration/1
+     22 ?        00:00:00 ksoftirqd/1
+     24 ?        00:00:00 kworker/1:0H-events_highpri
+     25 ?        00:00:00 kdevtmpfs
+     26 ?        00:00:00 inet_frag_wq
+     27 ?        00:00:00 kauditd
+     28 ?        00:00:00 khungtaskd
+     29 ?        00:00:00 oom_reaper
+     30 ?        00:00:00 writeback
+     31 ?        00:00:00 kcompactd0
+     32 ?        00:00:00 ksmd
+     33 ?        00:00:00 khugepaged
+     38 ?        00:00:00 kworker/1:1-cgroup_destroy
+     80 ?        00:00:00 kintegrityd
+     81 ?        00:00:00 kblockd
+     82 ?        00:00:00 blkcg_punt_bio
+     83 ?        00:00:00 tpm_dev_wq
+     84 ?        00:00:00 ata_sff
+     85 ?        00:00:00 md
+     86 ?        00:00:00 edac-poller
+     87 ?        00:00:00 devfreq_wq
+     88 ?        00:00:00 watchdogd
+     90 ?        00:00:00 kworker/1:1H-kblockd
+     92 ?        00:00:00 kswapd0
+     93 ?        00:00:00 ecryptfs-kthrea
+     95 ?        00:00:00 kthrotld
+     96 ?        00:00:00 acpi_thermal_pm
+     97 ?        00:00:00 kworker/u4:2-events_unbound
+     98 ?        00:00:00 scsi_eh_0
+     99 ?        00:00:00 scsi_tmf_0
+    100 ?        00:00:00 scsi_eh_1
+    101 ?        00:00:00 scsi_tmf_1
+    103 ?        00:00:00 vfio-irqfd-clea
+    104 ?        00:00:00 mld
+    105 ?        00:00:00 ipv6_addrconf
+    115 ?        00:00:00 kstrp
+    118 ?        00:00:00 zswap-shrink
+    119 ?        00:00:00 kworker/u5:0
+    124 ?        00:00:00 charger_manager
+    147 ?        00:00:00 kworker/0:1H-kblockd
+    181 ?        00:00:00 mpt_poll_0
+    182 ?        00:00:00 cryptd
+    184 ?        00:00:00 mpt/0
+    218 ?        00:00:00 scsi_eh_2
+    219 ?        00:00:00 scsi_tmf_2
+    251 ?        00:00:00 raid5wq
+    298 ?        00:00:00 jbd2/sda1-8
+    299 ?        00:00:00 ext4-rsv-conver
+    374 ?        00:00:00 systemd-journal
+    399 ?        00:00:00 kaluad
+    403 ?        00:00:00 kmpath_rdacd
+    405 ?        00:00:00 kmpathd
+    406 ?        00:00:00 kmpath_handlerd
+    407 ?        00:00:00 multipathd
+    408 ?        00:00:00 systemd-udevd
+    442 ?        00:00:00 systemd-timesyn
+    485 ?        00:00:00 kworker/u4:5-events_unbound
+    489 ?        00:00:00 kworker/u4:6-writeback
+    582 ?        00:00:00 systemd-network
+    584 ?        00:00:00 systemd-resolve
+    622 ?        00:00:00 dbus-daemon
+    626 ?        00:00:00 irqbalance
+    627 ?        00:00:00 networkd-dispat
+    628 ?        00:00:00 rsyslogd
+    631 ?        00:00:01 snapd
+    635 ?        00:00:00 systemd-logind
+    647 ?        00:00:00 cron
+    656 ttyS0    00:00:00 agetty
+    658 tty1     00:00:00 agetty
+    661 ?        00:00:00 sshd
+    702 ?        00:00:00 unattended-upgr
+    716 ?        00:00:00 polkitd
+    839 ?        00:00:00 kworker/1:3-events
+    888 ?        00:00:00 systemd
+    889 ?        00:00:00 (sd-pam)
+   1199 ?        00:00:00 sshd
+   1249 ?        00:00:00 sshd
+   1250 pts/0    00:00:00 bash
+   1300 ?        00:00:00 sshd
+   1349 ?        00:00:00 sshd
+   1350 pts/1    00:00:00 bash
+   1360 pts/0    00:00:00 script
+   1361 pts/2    00:00:00 bash
+   1368 pts/1    00:00:00 script
+   1369 pts/3    00:00:00 bash
+   1383 ?        00:00:00 kworker/0:2-events
+   1384 pts/2    00:00:00 ps
+[?2004h[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ [H[J[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ [7mps -ef [27m[2Pps -e[K[K[K[K[K[7mps -ef [27mps -ef [K
+[?2004lUID          PID    PPID  C STIME TTY          TIME CMD
+root           1       0  0 17:31 ?        00:00:00 /sbin/init
+root           2       0  0 17:31 ?        00:00:00 [kthreadd]
+root           3       2  0 17:31 ?        00:00:00 [rcu_gp]
+root           4       2  0 17:31 ?        00:00:00 [rcu_par_gp]
+root           5       2  0 17:31 ?        00:00:00 [slub_flushwq]
+root           6       2  0 17:31 ?        00:00:00 [netns]
+root           7       2  0 17:31 ?        00:00:00 [kworker/0:0-cgroup_destroy]
+root           8       2  0 17:31 ?        00:00:00 [kworker/0:0H-events_highpri]
+root          10       2  0 17:31 ?        00:00:00 [mm_percpu_wq]
+root          11       2  0 17:31 ?        00:00:00 [rcu_tasks_rude_]
+root          12       2  0 17:31 ?        00:00:00 [rcu_tasks_trace]
+root          13       2  0 17:31 ?        00:00:00 [ksoftirqd/0]
+root          14       2  0 17:31 ?        00:00:00 [rcu_sched]
+root          15       2  0 17:31 ?        00:00:00 [migration/0]
+root          16       2  0 17:31 ?        00:00:00 [idle_inject/0]
+root          17       2  0 17:31 ?        00:00:00 [kworker/0:1-events]
+root          18       2  0 17:31 ?        00:00:00 [cpuhp/0]
+root          19       2  0 17:31 ?        00:00:00 [cpuhp/1]
+root          20       2  0 17:31 ?        00:00:00 [idle_inject/1]
+root          21       2  0 17:31 ?        00:00:00 [migration/1]
+root          22       2  0 17:31 ?        00:00:00 [ksoftirqd/1]
+root          24       2  0 17:31 ?        00:00:00 [kworker/1:0H-events_highpri]
+root          25       2  0 17:31 ?        00:00:00 [kdevtmpfs]
+root          26       2  0 17:31 ?        00:00:00 [inet_frag_wq]
+root          27       2  0 17:31 ?        00:00:00 [kauditd]
+root          28       2  0 17:31 ?        00:00:00 [khungtaskd]
+root          29       2  0 17:31 ?        00:00:00 [oom_reaper]
+root          30       2  0 17:31 ?        00:00:00 [writeback]
+root          31       2  0 17:31 ?        00:00:00 [kcompactd0]
+root          32       2  0 17:31 ?        00:00:00 [ksmd]
+root          33       2  0 17:31 ?        00:00:00 [khugepaged]
+root          38       2  0 17:31 ?        00:00:00 [kworker/1:1-cgroup_destroy]
+root          80       2  0 17:31 ?        00:00:00 [kintegrityd]
+root          81       2  0 17:31 ?        00:00:00 [kblockd]
+root          82       2  0 17:31 ?        00:00:00 [blkcg_punt_bio]
+root          83       2  0 17:31 ?        00:00:00 [tpm_dev_wq]
+root          84       2  0 17:31 ?        00:00:00 [ata_sff]
+root          85       2  0 17:31 ?        00:00:00 [md]
+root          86       2  0 17:31 ?        00:00:00 [edac-poller]
+root          87       2  0 17:31 ?        00:00:00 [devfreq_wq]
+root          88       2  0 17:31 ?        00:00:00 [watchdogd]
+root          90       2  0 17:31 ?        00:00:00 [kworker/1:1H-kblockd]
+root          92       2  0 17:31 ?        00:00:00 [kswapd0]
+root          93       2  0 17:31 ?        00:00:00 [ecryptfs-kthrea]
+root          95       2  0 17:31 ?        00:00:00 [kthrotld]
+root          96       2  0 17:31 ?        00:00:00 [acpi_thermal_pm]
+root          97       2  0 17:31 ?        00:00:00 [kworker/u4:2-events_unbound]
+root          98       2  0 17:31 ?        00:00:00 [scsi_eh_0]
+root          99       2  0 17:31 ?        00:00:00 [scsi_tmf_0]
+root         100       2  0 17:31 ?        00:00:00 [scsi_eh_1]
+root         101       2  0 17:31 ?        00:00:00 [scsi_tmf_1]
+root         103       2  0 17:31 ?        00:00:00 [vfio-irqfd-clea]
+root         104       2  0 17:31 ?        00:00:00 [mld]
+root         105       2  0 17:31 ?        00:00:00 [ipv6_addrconf]
+root         115       2  0 17:31 ?        00:00:00 [kstrp]
+root         118       2  0 17:31 ?        00:00:00 [zswap-shrink]
+root         119       2  0 17:31 ?        00:00:00 [kworker/u5:0]
+root         124       2  0 17:31 ?        00:00:00 [charger_manager]
+root         147       2  0 17:31 ?        00:00:00 [kworker/0:1H-kblockd]
+root         181       2  0 17:31 ?        00:00:00 [mpt_poll_0]
+root         182       2  0 17:31 ?        00:00:00 [cryptd]
+root         184       2  0 17:31 ?        00:00:00 [mpt/0]
+root         218       2  0 17:31 ?        00:00:00 [scsi_eh_2]
+root         219       2  0 17:31 ?        00:00:00 [scsi_tmf_2]
+root         251       2  0 17:31 ?        00:00:00 [raid5wq]
+root         298       2  0 17:31 ?        00:00:00 [jbd2/sda1-8]
+root         299       2  0 17:31 ?        00:00:00 [ext4-rsv-conver]
+root         374       1  0 17:31 ?        00:00:00 /lib/systemd/systemd-journald
+root         399       2  0 17:31 ?        00:00:00 [kaluad]
+root         403       2  0 17:31 ?        00:00:00 [kmpath_rdacd]
+root         405       2  0 17:31 ?        00:00:00 [kmpathd]
+root         406       2  0 17:31 ?        00:00:00 [kmpath_handlerd]
+root         407       1  0 17:31 ?        00:00:00 /sbin/multipathd -d -s
+root         408       1  0 17:31 ?        00:00:00 /lib/systemd/systemd-udevd
+systemd+     442       1  0 17:31 ?        00:00:00 /lib/systemd/systemd-timesyncd
+root         485       2  0 17:31 ?        00:00:00 [kworker/u4:5-events_unbound]
+root         489       2  0 17:31 ?        00:00:00 [kworker/u4:6-writeback]
+systemd+     582       1  0 17:31 ?        00:00:00 /lib/systemd/systemd-networkd
+systemd+     584       1  0 17:31 ?        00:00:00 /lib/systemd/systemd-resolved
+message+     622       1  0 17:31 ?        00:00:00 @dbus-daemon --system --address=systemd: --
+root         626       1  0 17:31 ?        00:00:00 /usr/sbin/irqbalance --foreground
+root         627       1  0 17:31 ?        00:00:00 /usr/bin/python3 /usr/bin/networkd-dispatch
+syslog       628       1  0 17:31 ?        00:00:00 /usr/sbin/rsyslogd -n -iNONE
+root         631       1  0 17:31 ?        00:00:01 /usr/lib/snapd/snapd
+root         635       1  0 17:31 ?        00:00:00 /lib/systemd/systemd-logind
+root         647       1  0 17:31 ?        00:00:00 /usr/sbin/cron -f -P
+root         656       1  0 17:31 ttyS0    00:00:00 /sbin/agetty -o -p -- \u --keep-baud 115200
+root         658       1  0 17:31 tty1     00:00:00 /sbin/agetty -o -p -- \u --noclear tty1 lin
+root         661       1  0 17:31 ?        00:00:00 sshd: /usr/sbin/sshd -D [listener] 0 of 10-
+root         702       1  0 17:31 ?        00:00:00 /usr/bin/python3 /usr/share/unattended-upgr
+root         716       1  0 17:31 ?        00:00:00 /usr/libexec/polkitd --no-debug
+root         839       2  0 17:31 ?        00:00:00 [kworker/1:3-events]
+vagrant      888       1  0 17:31 ?        00:00:00 /lib/systemd/systemd --user
+vagrant      889     888  0 17:31 ?        00:00:00 (sd-pam)
+root        1199     661  0 17:31 ?        00:00:00 sshd: vagrant [priv]
+vagrant     1249    1199  0 17:31 ?        00:00:00 sshd: vagrant@pts/0
+vagrant     1250    1249  0 17:31 pts/0    00:00:00 -bash
+root        1300     661  0 17:32 ?        00:00:00 sshd: vagrant [priv]
+vagrant     1349    1300  0 17:32 ?        00:00:00 sshd: vagrant@pts/1
+vagrant     1350    1349  0 17:32 pts/1    00:00:00 -bash
+vagrant     1360    1250  0 17:35 pts/0    00:00:00 script typescript1.txt
+vagrant     1361    1360  0 17:35 pts/2    00:00:00 bash -i
+vagrant     1368    1350  0 17:36 pts/1    00:00:00 script typescript2.txt
+vagrant     1369    1368  0 17:36 pts/3    00:00:00 bash -i
+root        1383       2  0 17:37 ?        00:00:00 [kworker/0:2-events]
+vagrant     1385    1361  0 17:38 pts/2    00:00:00 ps -ef
+[?2004h[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ [H[J[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ [7mps -eF[27mps -eF
+[?2004lUID          PID    PPID  C    SZ   RSS PSR STIME TTY          TIME CMD
+root           1       0  0 25174 11452   1 17:31 ?        00:00:00 /sbin/init
+root           2       0  0     0     0   0 17:31 ?        00:00:00 [kthreadd]
+root           3       2  0     0     0   0 17:31 ?        00:00:00 [rcu_gp]
+root           4       2  0     0     0   0 17:31 ?        00:00:00 [rcu_par_gp]
+root           5       2  0     0     0   0 17:31 ?        00:00:00 [slub_flushwq]
+root           6       2  0     0     0   0 17:31 ?        00:00:00 [netns]
+root           7       2  0     0     0   0 17:31 ?        00:00:00 [kworker/0:0-cgroup_destroy
+root           8       2  0     0     0   0 17:31 ?        00:00:00 [kworker/0:0H-events_highpr
+root          10       2  0     0     0   0 17:31 ?        00:00:00 [mm_percpu_wq]
+root          11       2  0     0     0   0 17:31 ?        00:00:00 [rcu_tasks_rude_]
+root          12       2  0     0     0   0 17:31 ?        00:00:00 [rcu_tasks_trace]
+root          13       2  0     0     0   0 17:31 ?        00:00:00 [ksoftirqd/0]
+root          14       2  0     0     0   0 17:31 ?        00:00:00 [rcu_sched]
+root          15       2  0     0     0   0 17:31 ?        00:00:00 [migration/0]
+root          16       2  0     0     0   0 17:31 ?        00:00:00 [idle_inject/0]
+root          17       2  0     0     0   0 17:31 ?        00:00:00 [kworker/0:1-events]
+root          18       2  0     0     0   0 17:31 ?        00:00:00 [cpuhp/0]
+root          19       2  0     0     0   1 17:31 ?        00:00:00 [cpuhp/1]
+root          20       2  0     0     0   1 17:31 ?        00:00:00 [idle_inject/1]
+root          21       2  0     0     0   1 17:31 ?        00:00:00 [migration/1]
+root          22       2  0     0     0   1 17:31 ?        00:00:00 [ksoftirqd/1]
+root          24       2  0     0     0   1 17:31 ?        00:00:00 [kworker/1:0H-events_highpr
+root          25       2  0     0     0   1 17:31 ?        00:00:00 [kdevtmpfs]
+root          26       2  0     0     0   1 17:31 ?        00:00:00 [inet_frag_wq]
+root          27       2  0     0     0   0 17:31 ?        00:00:00 [kauditd]
+root          28       2  0     0     0   0 17:31 ?        00:00:00 [khungtaskd]
+root          29       2  0     0     0   1 17:31 ?        00:00:00 [oom_reaper]
+root          30       2  0     0     0   1 17:31 ?        00:00:00 [writeback]
+root          31       2  0     0     0   0 17:31 ?        00:00:00 [kcompactd0]
+root          32       2  0     0     0   1 17:31 ?        00:00:00 [ksmd]
+root          33       2  0     0     0   1 17:31 ?        00:00:00 [khugepaged]
+root          38       2  0     0     0   1 17:31 ?        00:00:00 [kworker/1:1-cgroup_destroy
+root          80       2  0     0     0   0 17:31 ?        00:00:00 [kintegrityd]
+root          81       2  0     0     0   0 17:31 ?        00:00:00 [kblockd]
+root          82       2  0     0     0   0 17:31 ?        00:00:00 [blkcg_punt_bio]
+root          83       2  0     0     0   0 17:31 ?        00:00:00 [tpm_dev_wq]
+root          84       2  0     0     0   0 17:31 ?        00:00:00 [ata_sff]
+root          85       2  0     0     0   0 17:31 ?        00:00:00 [md]
+root          86       2  0     0     0   0 17:31 ?        00:00:00 [edac-poller]
+root          87       2  0     0     0   0 17:31 ?        00:00:00 [devfreq_wq]
+root          88       2  0     0     0   0 17:31 ?        00:00:00 [watchdogd]
+root          90       2  0     0     0   1 17:31 ?        00:00:00 [kworker/1:1H-kblockd]
+root          92       2  0     0     0   1 17:31 ?        00:00:00 [kswapd0]
+root          93       2  0     0     0   1 17:31 ?        00:00:00 [ecryptfs-kthrea]
+root          95       2  0     0     0   1 17:31 ?        00:00:00 [kthrotld]
+root          96       2  0     0     0   1 17:31 ?        00:00:00 [acpi_thermal_pm]
+root          97       2  0     0     0   1 17:31 ?        00:00:00 [kworker/u4:2-events_unboun
+root          98       2  0     0     0   0 17:31 ?        00:00:00 [scsi_eh_0]
+root          99       2  0     0     0   1 17:31 ?        00:00:00 [scsi_tmf_0]
+root         100       2  0     0     0   1 17:31 ?        00:00:00 [scsi_eh_1]
+root         101       2  0     0     0   1 17:31 ?        00:00:00 [scsi_tmf_1]
+root         103       2  0     0     0   1 17:31 ?        00:00:00 [vfio-irqfd-clea]
+root         104       2  0     0     0   1 17:31 ?        00:00:00 [mld]
+root         105       2  0     0     0   1 17:31 ?        00:00:00 [ipv6_addrconf]
+root         115       2  0     0     0   1 17:31 ?        00:00:00 [kstrp]
+root         118       2  0     0     0   0 17:31 ?        00:00:00 [zswap-shrink]
+root         119       2  0     0     0   0 17:31 ?        00:00:00 [kworker/u5:0]
+root         124       2  0     0     0   1 17:31 ?        00:00:00 [charger_manager]
+root         147       2  0     0     0   0 17:31 ?        00:00:00 [kworker/0:1H-kblockd]
+root         181       2  0     0     0   0 17:31 ?        00:00:00 [mpt_poll_0]
+root         182       2  0     0     0   0 17:31 ?        00:00:00 [cryptd]
+root         184       2  0     0     0   1 17:31 ?        00:00:00 [mpt/0]
+root         218       2  0     0     0   1 17:31 ?        00:00:00 [scsi_eh_2]
+root         219       2  0     0     0   1 17:31 ?        00:00:00 [scsi_tmf_2]
+root         251       2  0     0     0   0 17:31 ?        00:00:00 [raid5wq]
+root         298       2  0     0     0   1 17:31 ?        00:00:00 [jbd2/sda1-8]
+root         299       2  0     0     0   1 17:31 ?        00:00:00 [ext4-rsv-conver]
+root         374       1  0 11998 14372   1 17:31 ?        00:00:00 /lib/systemd/systemd-journa
+root         399       2  0     0     0   0 17:31 ?        00:00:00 [kaluad]
+root         403       2  0     0     0   1 17:31 ?        00:00:00 [kmpath_rdacd]
+root         405       2  0     0     0   1 17:31 ?        00:00:00 [kmpathd]
+root         406       2  0     0     0   1 17:31 ?        00:00:00 [kmpath_handlerd]
+root         407       1  0 88722 27100   1 17:31 ?        00:00:00 /sbin/multipathd -d -s
+root         408       1  0  5827  6604   0 17:31 ?        00:00:00 /lib/systemd/systemd-udevd
+systemd+     442       1  0 22341  6656   0 17:31 ?        00:00:00 /lib/systemd/systemd-timesy
+root         485       2  0     0     0   1 17:31 ?        00:00:00 [kworker/u4:5-events_unboun
+root         489       2  0     0     0   0 17:31 ?        00:00:00 [kworker/u4:6-writeback]
+systemd+     582       1  0  4032  8084   0 17:31 ?        00:00:00 /lib/systemd/systemd-networ
+systemd+     584       1  0  6583 13412   1 17:31 ?        00:00:00 /lib/systemd/systemd-resolv
+message+     622       1  0  2156  4708   1 17:31 ?        00:00:00 @dbus-daemon --system --add
+root         626       1  0 20675  4100   0 17:31 ?        00:00:00 /usr/sbin/irqbalance --fore
+root         627       1  0  8267 19036   0 17:31 ?        00:00:00 /usr/bin/python3 /usr/bin/n
+syslog       628       1  0 55601  5520   0 17:31 ?        00:00:00 /usr/sbin/rsyslogd -n -iNON
+root         631       1  0 462097 36464  1 17:31 ?        00:00:01 /usr/lib/snapd/snapd
+root         635       1  0  5890  7784   1 17:31 ?        00:00:00 /lib/systemd/systemd-logind
+root         647       1  0  1822  2764   0 17:31 ?        00:00:00 /usr/sbin/cron -f -P
+root         656       1  0  1555  1128   0 17:31 ttyS0    00:00:00 /sbin/agetty -o -p -- \u --
+root         658       1  0  1544  1096   1 17:31 tty1     00:00:00 /sbin/agetty -o -p -- \u --
+root         661       1  0  3860  9200   0 17:31 ?        00:00:00 sshd: /usr/sbin/sshd -D [li
+root         702       1  0 27534 21280   1 17:31 ?        00:00:00 /usr/bin/python3 /usr/share
+root         716       1  0 58869  8216   0 17:31 ?        00:00:00 /usr/libexec/polkitd --no-d
+root         839       2  0     0     0   1 17:31 ?        00:00:00 [kworker/1:3-events]
+vagrant      888       1  0  4272  9380   1 17:31 ?        00:00:00 /lib/systemd/systemd --user
+vagrant      889     888  0 25906  3680   1 17:31 ?        00:00:00 (sd-pam)
+root        1199     661  0  4231 10800   1 17:31 ?        00:00:00 sshd: vagrant [priv]
+vagrant     1249    1199  0  4367  8268   1 17:31 ?        00:00:00 sshd: vagrant@pts/0
+vagrant     1250    1249  0  2300  5300   1 17:31 pts/0    00:00:00 -bash
+root        1300     661  0  4231 10692   0 17:32 ?        00:00:00 sshd: vagrant [priv]
+vagrant     1349    1300  0  4367  8308   1 17:32 ?        00:00:00 sshd: vagrant@pts/1
+vagrant     1350    1349  0  2300  5176   0 17:32 pts/1    00:00:00 -bash
+vagrant     1360    1250  0  1552  1092   1 17:35 pts/0    00:00:00 script typescript1.txt
+vagrant     1361    1360  0  2272  5196   1 17:35 pts/2    00:00:00 bash -i
+vagrant     1368    1350  0  1552  1088   1 17:36 pts/1    00:00:00 script typescript2.txt
+vagrant     1369    1368  0  2272  5208   1 17:36 pts/3    00:00:00 bash -i
+root        1383       2  0     0     0   0 17:37 ?        00:00:00 [kworker/0:2-events]
+vagrant     1386    1361  0  2616  3272   0 17:38 pts/2    00:00:00 ps -eF
+[?2004h[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ ;[K[H[J[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ [7mps -ely[27m[1Pps -eFly[1PFfFly
+[?2004lS   UID     PID    PPID  C PRI  NI   RSS    SZ WCHAN  TTY          TIME CMD
+S     0       1       0  0  80   0 11452 25174 -      ?        00:00:00 systemd
+S     0       2       0  0  80   0     0     0 -      ?        00:00:00 kthreadd
+I     0       3       2  0  60 -20     0     0 -      ?        00:00:00 rcu_gp
+I     0       4       2  0  60 -20     0     0 -      ?        00:00:00 rcu_par_gp
+I     0       5       2  0  60 -20     0     0 -      ?        00:00:00 slub_flushwq
+I     0       6       2  0  60 -20     0     0 -      ?        00:00:00 netns
+I     0       8       2  0  60 -20     0     0 -      ?        00:00:00 kworker/0:0H-events_hig
+I     0      10       2  0  60 -20     0     0 -      ?        00:00:00 mm_percpu_wq
+S     0      11       2  0  80   0     0     0 -      ?        00:00:00 rcu_tasks_rude_
+S     0      12       2  0  80   0     0     0 -      ?        00:00:00 rcu_tasks_trace
+S     0      13       2  0  80   0     0     0 -      ?        00:00:00 ksoftirqd/0
+I     0      14       2  0  80   0     0     0 -      ?        00:00:00 rcu_sched
+S     0      15       2  0 -40   -     0     0 -      ?        00:00:00 migration/0
+S     0      16       2  0   9   -     0     0 -      ?        00:00:00 idle_inject/0
+I     0      17       2  0  80   0     0     0 -      ?        00:00:00 kworker/0:1-events
+S     0      18       2  0  80   0     0     0 -      ?        00:00:00 cpuhp/0
+S     0      19       2  0  80   0     0     0 -      ?        00:00:00 cpuhp/1
+S     0      20       2  0   9   -     0     0 -      ?        00:00:00 idle_inject/1
+S     0      21       2  0 -40   -     0     0 -      ?        00:00:00 migration/1
+S     0      22       2  0  80   0     0     0 -      ?        00:00:00 ksoftirqd/1
+I     0      24       2  0  60 -20     0     0 -      ?        00:00:00 kworker/1:0H-events_hig
+S     0      25       2  0  80   0     0     0 -      ?        00:00:00 kdevtmpfs
+I     0      26       2  0  60 -20     0     0 -      ?        00:00:00 inet_frag_wq
+S     0      27       2  0  80   0     0     0 -      ?        00:00:00 kauditd
+S     0      28       2  0  80   0     0     0 -      ?        00:00:00 khungtaskd
+S     0      29       2  0  80   0     0     0 -      ?        00:00:00 oom_reaper
+I     0      30       2  0  60 -20     0     0 -      ?        00:00:00 writeback
+S     0      31       2  0  80   0     0     0 -      ?        00:00:00 kcompactd0
+S     0      32       2  0  85   5     0     0 -      ?        00:00:00 ksmd
+S     0      33       2  0  99  19     0     0 -      ?        00:00:00 khugepaged
+I     0      38       2  0  80   0     0     0 -      ?        00:00:00 kworker/1:1-cgroup_dest
+I     0      80       2  0  60 -20     0     0 -      ?        00:00:00 kintegrityd
+I     0      81       2  0  60 -20     0     0 -      ?        00:00:00 kblockd
+I     0      82       2  0  60 -20     0     0 -      ?        00:00:00 blkcg_punt_bio
+I     0      83       2  0  60 -20     0     0 -      ?        00:00:00 tpm_dev_wq
+I     0      84       2  0  60 -20     0     0 -      ?        00:00:00 ata_sff
+I     0      85       2  0  60 -20     0     0 -      ?        00:00:00 md
+I     0      86       2  0  60 -20     0     0 -      ?        00:00:00 edac-poller
+I     0      87       2  0  60 -20     0     0 -      ?        00:00:00 devfreq_wq
+S     0      88       2  0   9   -     0     0 -      ?        00:00:00 watchdogd
+I     0      90       2  0  60 -20     0     0 -      ?        00:00:00 kworker/1:1H-kblockd
+S     0      92       2  0  80   0     0     0 -      ?        00:00:00 kswapd0
+S     0      93       2  0  80   0     0     0 -      ?        00:00:00 ecryptfs-kthrea
+I     0      95       2  0  60 -20     0     0 -      ?        00:00:00 kthrotld
+I     0      96       2  0  60 -20     0     0 -      ?        00:00:00 acpi_thermal_pm
+I     0      97       2  0  80   0     0     0 -      ?        00:00:00 kworker/u4:2-events_unb
+S     0      98       2  0  80   0     0     0 -      ?        00:00:00 scsi_eh_0
+I     0      99       2  0  60 -20     0     0 -      ?        00:00:00 scsi_tmf_0
+S     0     100       2  0  80   0     0     0 -      ?        00:00:00 scsi_eh_1
+I     0     101       2  0  60 -20     0     0 -      ?        00:00:00 scsi_tmf_1
+I     0     103       2  0  60 -20     0     0 -      ?        00:00:00 vfio-irqfd-clea
+I     0     104       2  0  60 -20     0     0 -      ?        00:00:00 mld
+I     0     105       2  0  60 -20     0     0 -      ?        00:00:00 ipv6_addrconf
+I     0     115       2  0  60 -20     0     0 -      ?        00:00:00 kstrp
+I     0     118       2  0  60 -20     0     0 -      ?        00:00:00 zswap-shrink
+I     0     119       2  0  60 -20     0     0 -      ?        00:00:00 kworker/u5:0
+I     0     124       2  0  60 -20     0     0 -      ?        00:00:00 charger_manager
+I     0     147       2  0  60 -20     0     0 -      ?        00:00:00 kworker/0:1H-kblockd
+I     0     181       2  0  60 -20     0     0 -      ?        00:00:00 mpt_poll_0
+I     0     182       2  0  60 -20     0     0 -      ?        00:00:00 cryptd
+I     0     184       2  0  60 -20     0     0 -      ?        00:00:00 mpt/0
+S     0     218       2  0  80   0     0     0 -      ?        00:00:00 scsi_eh_2
+I     0     219       2  0  60 -20     0     0 -      ?        00:00:00 scsi_tmf_2
+I     0     251       2  0  60 -20     0     0 -      ?        00:00:00 raid5wq
+S     0     298       2  0  80   0     0     0 -      ?        00:00:00 jbd2/sda1-8
+I     0     299       2  0  60 -20     0     0 -      ?        00:00:00 ext4-rsv-conver
+S     0     374       1  0  79  -1 14372 11998 -      ?        00:00:00 systemd-journal
+I     0     399       2  0  60 -20     0     0 -      ?        00:00:00 kaluad
+I     0     403       2  0  60 -20     0     0 -      ?        00:00:00 kmpath_rdacd
+I     0     405       2  0  60 -20     0     0 -      ?        00:00:00 kmpathd
+I     0     406       2  0  60 -20     0     0 -      ?        00:00:00 kmpath_handlerd
+S     0     407       1  0 -40   - 27100 88722 -      ?        00:00:00 multipathd
+S     0     408       1  0  80   0  6604  5827 -      ?        00:00:00 systemd-udevd
+S   103     442       1  0  80   0  6656 22341 -      ?        00:00:00 systemd-timesyn
+I     0     485       2  0  80   0     0     0 -      ?        00:00:00 kworker/u4:5-events_unb
+I     0     489       2  0  80   0     0     0 -      ?        00:00:00 kworker/u4:6-events_unb
+S   100     582       1  0  80   0  8084  4032 -      ?        00:00:00 systemd-network
+S   101     584       1  0  80   0 13412  6583 -      ?        00:00:00 systemd-resolve
+S   102     622       1  0  80   0  4708  2156 -      ?        00:00:00 dbus-daemon
+S     0     626       1  0  80   0  4100 20675 -      ?        00:00:00 irqbalance
+S     0     627       1  0  80   0 19036  8267 -      ?        00:00:00 networkd-dispat
+S   104     628       1  0  80   0  5520 55601 -      ?        00:00:00 rsyslogd
+S     0     631       1  0  80   0 35724 462097 -     ?        00:00:01 snapd
+S     0     635       1  0  80   0  7784  5890 -      ?        00:00:00 systemd-logind
+S     0     647       1  0  80   0  2764  1822 -      ?        00:00:00 cron
+S     0     656       1  0  80   0  1128  1555 -      ttyS0    00:00:00 agetty
+S     0     658       1  0  80   0  1096  1544 -      tty1     00:00:00 agetty
+S     0     661       1  0  80   0  9200  3860 -      ?        00:00:00 sshd
+S     0     702       1  0  80   0 21280 27534 -      ?        00:00:00 unattended-upgr
+S     0     716       1  0  80   0  8216 58869 -      ?        00:00:00 polkitd
+I     0     839       2  0  80   0     0     0 -      ?        00:00:00 kworker/1:3-mpt_poll_0
+S  1000     888       1  0  80   0  9380  4272 ep_pol ?        00:00:00 systemd
+S  1000     889     888  0  80   0  3680 25906 -      ?        00:00:00 (sd-pam)
+S     0    1199     661  0  80   0 10800  4231 -      ?        00:00:00 sshd
+R  1000    1249    1199  0  80   0  8268  4367 -      ?        00:00:00 sshd
+S  1000    1250    1249  0  80   0  5300  2300 do_wai pts/0    00:00:00 bash
+S     0    1300     661  0  80   0 10692  4231 -      ?        00:00:00 sshd
+S  1000    1349    1300  0  80   0  8308  4367 -      ?        00:00:00 sshd
+S  1000    1350    1349  0  80   0  5176  2300 do_wai pts/1    00:00:00 bash
+S  1000    1360    1250  0  80   0  1092  1552 do_pol pts/0    00:00:00 script
+S  1000    1361    1360  0  80   0  5196  2272 do_wai pts/2    00:00:00 bash
+S  1000    1368    1350  0  80   0  1088  1552 do_pol pts/1    00:00:00 script
+S  1000    1369    1368  0  80   0  5208  2272 do_sel pts/3    00:00:00 bash
+I     0    1383       2  0  80   0     0     0 -      ?        00:00:00 kworker/0:2-events
+R  1000    1388    1361  0  80   0  1592  2616 -      pts/2    00:00:00 ps
+[?2004h[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ [H[J[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ [7mps ax[27mps ax
+[?2004l    PID TTY      STAT   TIME COMMAND
+      1 ?        Ss     0:00 /sbin/init
+      2 ?        S      0:00 [kthreadd]
+      3 ?        I<     0:00 [rcu_gp]
+      4 ?        I<     0:00 [rcu_par_gp]
+      5 ?        I<     0:00 [slub_flushwq]
+      6 ?        I<     0:00 [netns]
+      8 ?        I<     0:00 [kworker/0:0H-events_highpri]
+     10 ?        I<     0:00 [mm_percpu_wq]
+     11 ?        S      0:00 [rcu_tasks_rude_]
+     12 ?        S      0:00 [rcu_tasks_trace]
+     13 ?        S      0:00 [ksoftirqd/0]
+     14 ?        I      0:00 [rcu_sched]
+     15 ?        S      0:00 [migration/0]
+     16 ?        S      0:00 [idle_inject/0]
+     17 ?        I      0:00 [kworker/0:1-events]
+     18 ?        S      0:00 [cpuhp/0]
+     19 ?        S      0:00 [cpuhp/1]
+     20 ?        S      0:00 [idle_inject/1]
+     21 ?        S      0:00 [migration/1]
+     22 ?        S      0:00 [ksoftirqd/1]
+     24 ?        I<     0:00 [kworker/1:0H-events_highpri]
+     25 ?        S      0:00 [kdevtmpfs]
+     26 ?        I<     0:00 [inet_frag_wq]
+     27 ?        S      0:00 [kauditd]
+     28 ?        S      0:00 [khungtaskd]
+     29 ?        S      0:00 [oom_reaper]
+     30 ?        I<     0:00 [writeback]
+     31 ?        S      0:00 [kcompactd0]
+     32 ?        SN     0:00 [ksmd]
+     33 ?        SN     0:00 [khugepaged]
+     38 ?        I      0:00 [kworker/1:1-cgroup_destroy]
+     80 ?        I<     0:00 [kintegrityd]
+     81 ?        I<     0:00 [kblockd]
+     82 ?        I<     0:00 [blkcg_punt_bio]
+     83 ?        I<     0:00 [tpm_dev_wq]
+     84 ?        I<     0:00 [ata_sff]
+     85 ?        I<     0:00 [md]
+     86 ?        I<     0:00 [edac-poller]
+     87 ?        I<     0:00 [devfreq_wq]
+     88 ?        S      0:00 [watchdogd]
+     90 ?        I<     0:00 [kworker/1:1H-kblockd]
+     92 ?        S      0:00 [kswapd0]
+     93 ?        S      0:00 [ecryptfs-kthrea]
+     95 ?        I<     0:00 [kthrotld]
+     96 ?        I<     0:00 [acpi_thermal_pm]
+     97 ?        I      0:00 [kworker/u4:2-events_unbound]
+     98 ?        S      0:00 [scsi_eh_0]
+     99 ?        I<     0:00 [scsi_tmf_0]
+    100 ?        S      0:00 [scsi_eh_1]
+    101 ?        I<     0:00 [scsi_tmf_1]
+    103 ?        I<     0:00 [vfio-irqfd-clea]
+    104 ?        I<     0:00 [mld]
+    105 ?        I<     0:00 [ipv6_addrconf]
+    115 ?        I<     0:00 [kstrp]
+    118 ?        I<     0:00 [zswap-shrink]
+    119 ?        I<     0:00 [kworker/u5:0]
+    124 ?        I<     0:00 [charger_manager]
+    147 ?        I<     0:00 [kworker/0:1H-kblockd]
+    181 ?        I<     0:00 [mpt_poll_0]
+    182 ?        I<     0:00 [cryptd]
+    184 ?        I<     0:00 [mpt/0]
+    218 ?        S      0:00 [scsi_eh_2]
+    219 ?        I<     0:00 [scsi_tmf_2]
+    251 ?        I<     0:00 [raid5wq]
+    298 ?        S      0:00 [jbd2/sda1-8]
+    299 ?        I<     0:00 [ext4-rsv-conver]
+    374 ?        S<s    0:00 /lib/systemd/systemd-journald
+    399 ?        I<     0:00 [kaluad]
+    403 ?        I<     0:00 [kmpath_rdacd]
+    405 ?        I<     0:00 [kmpathd]
+    406 ?        I<     0:00 [kmpath_handlerd]
+    407 ?        SLsl   0:00 /sbin/multipathd -d -s
+    408 ?        Ss     0:00 /lib/systemd/systemd-udevd
+    442 ?        Ssl    0:00 /lib/systemd/systemd-timesyncd
+    485 ?        R      0:00 [kworker/u4:5-events_unbound]
+    489 ?        I      0:00 [kworker/u4:6-events_unbound]
+    582 ?        Ss     0:00 /lib/systemd/systemd-networkd
+    584 ?        Ss     0:00 /lib/systemd/systemd-resolved
+    622 ?        Ss     0:00 @dbus-daemon --system --address=systemd: --nofork --nopidfile --sy
+    626 ?        Ssl    0:00 /usr/sbin/irqbalance --foreground
+    627 ?        Ss     0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-trigge
+    628 ?        Ssl    0:00 /usr/sbin/rsyslogd -n -iNONE
+    631 ?        Ssl    0:01 /usr/lib/snapd/snapd
+    635 ?        Ss     0:00 /lib/systemd/systemd-logind
+    647 ?        Ss     0:00 /usr/sbin/cron -f -P
+    656 ttyS0    Ss+    0:00 /sbin/agetty -o -p -- \u --keep-baud 115200,57600,38400,9600 ttyS0
+    658 tty1     Ss+    0:00 /sbin/agetty -o -p -- \u --noclear tty1 linux
+    661 ?        Ss     0:00 sshd: /usr/sbin/sshd -D [listener] 0 of 10-100 startups
+    702 ?        Ssl    0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade
+    716 ?        Ssl    0:00 /usr/libexec/polkitd --no-debug
+    839 ?        I      0:00 [kworker/1:3-mpt_poll_0]
+    888 ?        Ss     0:00 /lib/systemd/systemd --user
+    889 ?        S      0:00 (sd-pam)
+   1199 ?        Ss     0:00 sshd: vagrant [priv]
+   1249 ?        S      0:00 sshd: vagrant@pts/0
+   1250 pts/0    Ss     0:00 -bash
+   1300 ?        Ss     0:00 sshd: vagrant [priv]
+   1349 ?        S      0:00 sshd: vagrant@pts/1
+   1350 pts/1    Ss     0:00 -bash
+   1360 pts/0    S+     0:00 script typescript1.txt
+   1361 pts/2    Ss     0:00 bash -i
+   1368 pts/1    S+     0:00 script typescript2.txt
+   1369 pts/3    Ss+    0:00 bash -i
+   1383 ?        I      0:00 [kworker/0:2-events]
+   1391 pts/2    R+     0:00 ps ax
+[?2004h[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ [H[J[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ [7mps axu[27mps axu
+[?2004lUSER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.5 100696 11452 ?        Ss   17:31   0:00 /sbin/init
+root           2  0.0  0.0      0     0 ?        S    17:31   0:00 [kthreadd]
+root           3  0.0  0.0      0     0 ?        I<   17:31   0:00 [rcu_gp]
+root           4  0.0  0.0      0     0 ?        I<   17:31   0:00 [rcu_par_gp]
+root           5  0.0  0.0      0     0 ?        I<   17:31   0:00 [slub_flushwq]
+root           6  0.0  0.0      0     0 ?        I<   17:31   0:00 [netns]
+root           8  0.0  0.0      0     0 ?        I<   17:31   0:00 [kworker/0:0H-events_highpri
+root          10  0.0  0.0      0     0 ?        I<   17:31   0:00 [mm_percpu_wq]
+root          11  0.0  0.0      0     0 ?        S    17:31   0:00 [rcu_tasks_rude_]
+root          12  0.0  0.0      0     0 ?        S    17:31   0:00 [rcu_tasks_trace]
+root          13  0.0  0.0      0     0 ?        S    17:31   0:00 [ksoftirqd/0]
+root          14  0.0  0.0      0     0 ?        I    17:31   0:00 [rcu_sched]
+root          15  0.0  0.0      0     0 ?        S    17:31   0:00 [migration/0]
+root          16  0.0  0.0      0     0 ?        S    17:31   0:00 [idle_inject/0]
+root          17  0.0  0.0      0     0 ?        I    17:31   0:00 [kworker/0:1-events]
+root          18  0.0  0.0      0     0 ?        S    17:31   0:00 [cpuhp/0]
+root          19  0.0  0.0      0     0 ?        S    17:31   0:00 [cpuhp/1]
+root          20  0.0  0.0      0     0 ?        S    17:31   0:00 [idle_inject/1]
+root          21  0.0  0.0      0     0 ?        S    17:31   0:00 [migration/1]
+root          22  0.0  0.0      0     0 ?        S    17:31   0:00 [ksoftirqd/1]
+root          24  0.0  0.0      0     0 ?        I<   17:31   0:00 [kworker/1:0H-events_highpri
+root          25  0.0  0.0      0     0 ?        S    17:31   0:00 [kdevtmpfs]
+root          26  0.0  0.0      0     0 ?        I<   17:31   0:00 [inet_frag_wq]
+root          27  0.0  0.0      0     0 ?        S    17:31   0:00 [kauditd]
+root          28  0.0  0.0      0     0 ?        S    17:31   0:00 [khungtaskd]
+root          29  0.0  0.0      0     0 ?        S    17:31   0:00 [oom_reaper]
+root          30  0.0  0.0      0     0 ?        I<   17:31   0:00 [writeback]
+root          31  0.0  0.0      0     0 ?        S    17:31   0:00 [kcompactd0]
+root          32  0.0  0.0      0     0 ?        SN   17:31   0:00 [ksmd]
+root          33  0.0  0.0      0     0 ?        SN   17:31   0:00 [khugepaged]
+root          38  0.0  0.0      0     0 ?        I    17:31   0:00 [kworker/1:1-cgroup_destroy]
+root          80  0.0  0.0      0     0 ?        I<   17:31   0:00 [kintegrityd]
+root          81  0.0  0.0      0     0 ?        I<   17:31   0:00 [kblockd]
+root          82  0.0  0.0      0     0 ?        I<   17:31   0:00 [blkcg_punt_bio]
+root          83  0.0  0.0      0     0 ?        I<   17:31   0:00 [tpm_dev_wq]
+root          84  0.0  0.0      0     0 ?        I<   17:31   0:00 [ata_sff]
+root          85  0.0  0.0      0     0 ?        I<   17:31   0:00 [md]
+root          86  0.0  0.0      0     0 ?        I<   17:31   0:00 [edac-poller]
+root          87  0.0  0.0      0     0 ?        I<   17:31   0:00 [devfreq_wq]
+root          88  0.0  0.0      0     0 ?        S    17:31   0:00 [watchdogd]
+root          90  0.0  0.0      0     0 ?        I<   17:31   0:00 [kworker/1:1H-kblockd]
+root          92  0.0  0.0      0     0 ?        S    17:31   0:00 [kswapd0]
+root          93  0.0  0.0      0     0 ?        S    17:31   0:00 [ecryptfs-kthrea]
+root          95  0.0  0.0      0     0 ?        I<   17:31   0:00 [kthrotld]
+root          96  0.0  0.0      0     0 ?        I<   17:31   0:00 [acpi_thermal_pm]
+root          97  0.0  0.0      0     0 ?        I    17:31   0:00 [kworker/u4:2-events_unbound
+root          98  0.0  0.0      0     0 ?        S    17:31   0:00 [scsi_eh_0]
+root          99  0.0  0.0      0     0 ?        I<   17:31   0:00 [scsi_tmf_0]
+root         100  0.0  0.0      0     0 ?        S    17:31   0:00 [scsi_eh_1]
+root         101  0.0  0.0      0     0 ?        I<   17:31   0:00 [scsi_tmf_1]
+root         103  0.0  0.0      0     0 ?        I<   17:31   0:00 [vfio-irqfd-clea]
+root         104  0.0  0.0      0     0 ?        I<   17:31   0:00 [mld]
+root         105  0.0  0.0      0     0 ?        I<   17:31   0:00 [ipv6_addrconf]
+root         115  0.0  0.0      0     0 ?        I<   17:31   0:00 [kstrp]
+root         118  0.0  0.0      0     0 ?        I<   17:31   0:00 [zswap-shrink]
+root         119  0.0  0.0      0     0 ?        I<   17:31   0:00 [kworker/u5:0]
+root         124  0.0  0.0      0     0 ?        I<   17:31   0:00 [charger_manager]
+root         147  0.0  0.0      0     0 ?        I<   17:31   0:00 [kworker/0:1H-kblockd]
+root         181  0.0  0.0      0     0 ?        I<   17:31   0:00 [mpt_poll_0]
+root         182  0.0  0.0      0     0 ?        I<   17:31   0:00 [cryptd]
+root         184  0.0  0.0      0     0 ?        I<   17:31   0:00 [mpt/0]
+root         218  0.0  0.0      0     0 ?        S    17:31   0:00 [scsi_eh_2]
+root         219  0.0  0.0      0     0 ?        I<   17:31   0:00 [scsi_tmf_2]
+root         251  0.0  0.0      0     0 ?        I<   17:31   0:00 [raid5wq]
+root         298  0.0  0.0      0     0 ?        S    17:31   0:00 [jbd2/sda1-8]
+root         299  0.0  0.0      0     0 ?        I<   17:31   0:00 [ext4-rsv-conver]
+root         374  0.0  0.7  47992 14372 ?        S<s  17:31   0:00 /lib/systemd/systemd-journal
+root         399  0.0  0.0      0     0 ?        I<   17:31   0:00 [kaluad]
+root         403  0.0  0.0      0     0 ?        I<   17:31   0:00 [kmpath_rdacd]
+root         405  0.0  0.0      0     0 ?        I<   17:31   0:00 [kmpathd]
+root         406  0.0  0.0      0     0 ?        I<   17:31   0:00 [kmpath_handlerd]
+root         407  0.0  1.3 354888 27100 ?        SLsl 17:31   0:00 /sbin/multipathd -d -s
+root         408  0.0  0.3  23308  6604 ?        Ss   17:31   0:00 /lib/systemd/systemd-udevd
+systemd+     442  0.0  0.3  89364  6656 ?        Ssl  17:31   0:00 /lib/systemd/systemd-timesyn
+root         485  0.0  0.0      0     0 ?        I    17:31   0:00 [kworker/u4:5-events_unbound
+root         489  0.0  0.0      0     0 ?        I    17:31   0:00 [kworker/u4:6-events_unbound
+systemd+     582  0.0  0.4  16128  8084 ?        Ss   17:31   0:00 /lib/systemd/systemd-network
+systemd+     584  0.0  0.6  26332 13412 ?        Ss   17:31   0:00 /lib/systemd/systemd-resolve
+message+     622  0.0  0.2   8624  4708 ?        Ss   17:31   0:00 @dbus-daemon --system --addr
+root         626  0.0  0.2  82700  4100 ?        Ssl  17:31   0:00 /usr/sbin/irqbalance --foreg
+root         627  0.0  0.9  33068 19036 ?        Ss   17:31   0:00 /usr/bin/python3 /usr/bin/ne
+syslog       628  0.0  0.2 222404  5520 ?        Ssl  17:31   0:00 /usr/sbin/rsyslogd -n -iNONE
+root         631  0.1  1.7 1848388 35724 ?       Ssl  17:31   0:01 /usr/lib/snapd/snapd
+root         635  0.0  0.3  23560  7784 ?        Ss   17:31   0:00 /lib/systemd/systemd-logind
+root         647  0.0  0.1   7288  2764 ?        Ss   17:31   0:00 /usr/sbin/cron -f -P
+root         656  0.0  0.0   6220  1128 ttyS0    Ss+  17:31   0:00 /sbin/agetty -o -p -- \u --k
+root         658  0.0  0.0   6176  1096 tty1     Ss+  17:31   0:00 /sbin/agetty -o -p -- \u --n
+root         661  0.0  0.4  15440  9200 ?        Ss   17:31   0:00 sshd: /usr/sbin/sshd -D [lis
+root         702  0.0  1.0 110136 21280 ?        Ssl  17:31   0:00 /usr/bin/python3 /usr/share/
+root         716  0.0  0.4 235476  8216 ?        Ssl  17:31   0:00 /usr/libexec/polkitd --no-de
+root         839  0.0  0.0      0     0 ?        I    17:31   0:00 [kworker/1:3-events]
+vagrant      888  0.0  0.4  17088  9380 ?        Ss   17:31   0:00 /lib/systemd/systemd --user
+vagrant      889  0.0  0.1 103624  3680 ?        S    17:31   0:00 (sd-pam)
+root        1199  0.0  0.5  16924 10800 ?        Ss   17:31   0:00 sshd: vagrant [priv]
+vagrant     1249  0.0  0.4  17468  8268 ?        S    17:31   0:00 sshd: vagrant@pts/0
+vagrant     1250  0.0  0.2   9200  5300 pts/0    Ss   17:31   0:00 -bash
+root        1300  0.0  0.5  16924 10692 ?        Ss   17:32   0:00 sshd: vagrant [priv]
+vagrant     1349  0.0  0.4  17468  8308 ?        S    17:32   0:00 sshd: vagrant@pts/1
+vagrant     1350  0.0  0.2   9200  5176 pts/1    Ss   17:32   0:00 -bash
+vagrant     1360  0.0  0.0   6208  1092 pts/0    R+   17:35   0:00 script typescript1.txt
+vagrant     1361  0.0  0.2   9088  5320 pts/2    Ss   17:35   0:00 bash -i
+vagrant     1368  0.0  0.0   6208  1088 pts/1    S+   17:36   0:00 script typescript2.txt
+vagrant     1369  0.0  0.2   9088  5208 pts/3    Ss+  17:36   0:00 bash -i
+root        1383  0.0  0.0      0     0 ?        I    17:37   0:00 [kworker/0:2-events]
+vagrant     1392  0.0  0.1  10464  3272 pts/2    R+   17:45   0:00 ps axu
+[?2004h[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ [H[J[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ [7mps -ejH[27mps -ejH
+[?2004l    PID    PGID     SID TTY          TIME CMD
+      2       0       0 ?        00:00:00 kthreadd
+      3       0       0 ?        00:00:00   rcu_gp
+      4       0       0 ?        00:00:00   rcu_par_gp
+      5       0       0 ?        00:00:00   slub_flushwq
+      6       0       0 ?        00:00:00   netns
+      8       0       0 ?        00:00:00   kworker/0:0H-events_highpri
+     10       0       0 ?        00:00:00   mm_percpu_wq
+     11       0       0 ?        00:00:00   rcu_tasks_rude_
+     12       0       0 ?        00:00:00   rcu_tasks_trace
+     13       0       0 ?        00:00:00   ksoftirqd/0
+     14       0       0 ?        00:00:00   rcu_sched
+     15       0       0 ?        00:00:00   migration/0
+     16       0       0 ?        00:00:00   idle_inject/0
+     17       0       0 ?        00:00:00   kworker/0:1-events
+     18       0       0 ?        00:00:00   cpuhp/0
+     19       0       0 ?        00:00:00   cpuhp/1
+     20       0       0 ?        00:00:00   idle_inject/1
+     21       0       0 ?        00:00:00   migration/1
+     22       0       0 ?        00:00:00   ksoftirqd/1
+     24       0       0 ?        00:00:00   kworker/1:0H-events_highpri
+     25       0       0 ?        00:00:00   kdevtmpfs
+     26       0       0 ?        00:00:00   inet_frag_wq
+     27       0       0 ?        00:00:00   kauditd
+     28       0       0 ?        00:00:00   khungtaskd
+     29       0       0 ?        00:00:00   oom_reaper
+     30       0       0 ?        00:00:00   writeback
+     31       0       0 ?        00:00:00   kcompactd0
+     32       0       0 ?        00:00:00   ksmd
+     33       0       0 ?        00:00:00   khugepaged
+     38       0       0 ?        00:00:00   kworker/1:1-cgroup_destroy
+     80       0       0 ?        00:00:00   kintegrityd
+     81       0       0 ?        00:00:00   kblockd
+     82       0       0 ?        00:00:00   blkcg_punt_bio
+     83       0       0 ?        00:00:00   tpm_dev_wq
+     84       0       0 ?        00:00:00   ata_sff
+     85       0       0 ?        00:00:00   md
+     86       0       0 ?        00:00:00   edac-poller
+     87       0       0 ?        00:00:00   devfreq_wq
+     88       0       0 ?        00:00:00   watchdogd
+     90       0       0 ?        00:00:00   kworker/1:1H-kblockd
+     92       0       0 ?        00:00:00   kswapd0
+     93       0       0 ?        00:00:00   ecryptfs-kthrea
+     95       0       0 ?        00:00:00   kthrotld
+     96       0       0 ?        00:00:00   acpi_thermal_pm
+     97       0       0 ?        00:00:00   kworker/u4:2-events_unbound
+     98       0       0 ?        00:00:00   scsi_eh_0
+     99       0       0 ?        00:00:00   scsi_tmf_0
+    100       0       0 ?        00:00:00   scsi_eh_1
+    101       0       0 ?        00:00:00   scsi_tmf_1
+    103       0       0 ?        00:00:00   vfio-irqfd-clea
+    104       0       0 ?        00:00:00   mld
+    105       0       0 ?        00:00:00   ipv6_addrconf
+    115       0       0 ?        00:00:00   kstrp
+    118       0       0 ?        00:00:00   zswap-shrink
+    119       0       0 ?        00:00:00   kworker/u5:0
+    124       0       0 ?        00:00:00   charger_manager
+    147       0       0 ?        00:00:00   kworker/0:1H-kblockd
+    181       0       0 ?        00:00:00   mpt_poll_0
+    182       0       0 ?        00:00:00   cryptd
+    184       0       0 ?        00:00:00   mpt/0
+    218       0       0 ?        00:00:00   scsi_eh_2
+    219       0       0 ?        00:00:00   scsi_tmf_2
+    251       0       0 ?        00:00:00   raid5wq
+    298       0       0 ?        00:00:00   jbd2/sda1-8
+    299       0       0 ?        00:00:00   ext4-rsv-conver
+    399       0       0 ?        00:00:00   kaluad
+    403       0       0 ?        00:00:00   kmpath_rdacd
+    405       0       0 ?        00:00:00   kmpathd
+    406       0       0 ?        00:00:00   kmpath_handlerd
+    485       0       0 ?        00:00:00   kworker/u4:5-events_unbound
+    489       0       0 ?        00:00:00   kworker/u4:6-events_unbound
+    839       0       0 ?        00:00:00   kworker/1:3-mpt_poll_0
+   1383       0       0 ?        00:00:00   kworker/0:2-events
+      1       1       1 ?        00:00:00 systemd
+    374     374     374 ?        00:00:00   systemd-journal
+    407     407     407 ?        00:00:00   multipathd
+    408     408     408 ?        00:00:00   systemd-udevd
+    442     442     442 ?        00:00:00   systemd-timesyn
+    582     582     582 ?        00:00:00   systemd-network
+    584     584     584 ?        00:00:00   systemd-resolve
+    622     622     622 ?        00:00:00   dbus-daemon
+    626     626     626 ?        00:00:00   irqbalance
+    627     627     627 ?        00:00:00   networkd-dispat
+    628     628     628 ?        00:00:00   rsyslogd
+    631     631     631 ?        00:00:01   snapd
+    635     635     635 ?        00:00:00   systemd-logind
+    647     647     647 ?        00:00:00   cron
+    656     656     656 ttyS0    00:00:00   agetty
+    658     658     658 tty1     00:00:00   agetty
+    661     661     661 ?        00:00:00   sshd
+   1199    1199    1199 ?        00:00:00     sshd
+   1249    1199    1199 ?        00:00:00       sshd
+   1250    1250    1250 pts/0    00:00:00         bash
+   1360    1360    1250 pts/0    00:00:00           script
+   1361    1361    1361 pts/2    00:00:00             bash
+   1393    1393    1361 pts/2    00:00:00               ps
+   1300    1300    1300 ?        00:00:00     sshd
+   1349    1300    1300 ?        00:00:00       sshd
+   1350    1350    1350 pts/1    00:00:00         bash
+   1368    1368    1350 pts/1    00:00:00           script
+   1369    1369    1369 pts/3    00:00:00             bash
+    702     702     702 ?        00:00:00   unattended-upgr
+    716     716     716 ?        00:00:00   polkitd
+    888     888     888 ?        00:00:00   systemd
+    889     888     888 ?        00:00:00     (sd-pam)
+[?2004h[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ [H[J[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ [7mps axjf[27mps axjf
+[?2004l   PPID     PID    PGID     SID TTY        TPGID STAT   UID   TIME COMMAND
+      0       2       0       0 ?             -1 S        0   0:00 [kthreadd]
+      2       3       0       0 ?             -1 I<       0   0:00  \_ [rcu_gp]
+      2       4       0       0 ?             -1 I<       0   0:00  \_ [rcu_par_gp]
+      2       5       0       0 ?             -1 I<       0   0:00  \_ [slub_flushwq]
+      2       6       0       0 ?             -1 I<       0   0:00  \_ [netns]
+      2       8       0       0 ?             -1 I<       0   0:00  \_ [kworker/0:0H-events_hig
+      2      10       0       0 ?             -1 I<       0   0:00  \_ [mm_percpu_wq]
+      2      11       0       0 ?             -1 S        0   0:00  \_ [rcu_tasks_rude_]
+      2      12       0       0 ?             -1 S        0   0:00  \_ [rcu_tasks_trace]
+      2      13       0       0 ?             -1 S        0   0:00  \_ [ksoftirqd/0]
+      2      14       0       0 ?             -1 I        0   0:00  \_ [rcu_sched]
+      2      15       0       0 ?             -1 S        0   0:00  \_ [migration/0]
+      2      16       0       0 ?             -1 S        0   0:00  \_ [idle_inject/0]
+      2      17       0       0 ?             -1 I        0   0:00  \_ [kworker/0:1-events]
+      2      18       0       0 ?             -1 S        0   0:00  \_ [cpuhp/0]
+      2      19       0       0 ?             -1 S        0   0:00  \_ [cpuhp/1]
+      2      20       0       0 ?             -1 S        0   0:00  \_ [idle_inject/1]
+      2      21       0       0 ?             -1 S        0   0:00  \_ [migration/1]
+      2      22       0       0 ?             -1 S        0   0:00  \_ [ksoftirqd/1]
+      2      24       0       0 ?             -1 I<       0   0:00  \_ [kworker/1:0H-events_hig
+      2      25       0       0 ?             -1 S        0   0:00  \_ [kdevtmpfs]
+      2      26       0       0 ?             -1 I<       0   0:00  \_ [inet_frag_wq]
+      2      27       0       0 ?             -1 S        0   0:00  \_ [kauditd]
+      2      28       0       0 ?             -1 S        0   0:00  \_ [khungtaskd]
+      2      29       0       0 ?             -1 S        0   0:00  \_ [oom_reaper]
+      2      30       0       0 ?             -1 I<       0   0:00  \_ [writeback]
+      2      31       0       0 ?             -1 S        0   0:00  \_ [kcompactd0]
+      2      32       0       0 ?             -1 SN       0   0:00  \_ [ksmd]
+      2      33       0       0 ?             -1 SN       0   0:00  \_ [khugepaged]
+      2      38       0       0 ?             -1 I        0   0:00  \_ [kworker/1:1-cgroup_dest
+      2      80       0       0 ?             -1 I<       0   0:00  \_ [kintegrityd]
+      2      81       0       0 ?             -1 I<       0   0:00  \_ [kblockd]
+      2      82       0       0 ?             -1 I<       0   0:00  \_ [blkcg_punt_bio]
+      2      83       0       0 ?             -1 I<       0   0:00  \_ [tpm_dev_wq]
+      2      84       0       0 ?             -1 I<       0   0:00  \_ [ata_sff]
+      2      85       0       0 ?             -1 I<       0   0:00  \_ [md]
+      2      86       0       0 ?             -1 I<       0   0:00  \_ [edac-poller]
+      2      87       0       0 ?             -1 I<       0   0:00  \_ [devfreq_wq]
+      2      88       0       0 ?             -1 S        0   0:00  \_ [watchdogd]
+      2      90       0       0 ?             -1 I<       0   0:00  \_ [kworker/1:1H-kblockd]
+      2      92       0       0 ?             -1 S        0   0:00  \_ [kswapd0]
+      2      93       0       0 ?             -1 S        0   0:00  \_ [ecryptfs-kthrea]
+      2      95       0       0 ?             -1 I<       0   0:00  \_ [kthrotld]
+      2      96       0       0 ?             -1 I<       0   0:00  \_ [acpi_thermal_pm]
+      2      97       0       0 ?             -1 I        0   0:00  \_ [kworker/u4:2-events_pow
+      2      98       0       0 ?             -1 S        0   0:00  \_ [scsi_eh_0]
+      2      99       0       0 ?             -1 I<       0   0:00  \_ [scsi_tmf_0]
+      2     100       0       0 ?             -1 S        0   0:00  \_ [scsi_eh_1]
+      2     101       0       0 ?             -1 I<       0   0:00  \_ [scsi_tmf_1]
+      2     103       0       0 ?             -1 I<       0   0:00  \_ [vfio-irqfd-clea]
+      2     104       0       0 ?             -1 I<       0   0:00  \_ [mld]
+      2     105       0       0 ?             -1 I<       0   0:00  \_ [ipv6_addrconf]
+      2     115       0       0 ?             -1 I<       0   0:00  \_ [kstrp]
+      2     118       0       0 ?             -1 I<       0   0:00  \_ [zswap-shrink]
+      2     119       0       0 ?             -1 I<       0   0:00  \_ [kworker/u5:0]
+      2     124       0       0 ?             -1 I<       0   0:00  \_ [charger_manager]
+      2     147       0       0 ?             -1 I<       0   0:00  \_ [kworker/0:1H-kblockd]
+      2     181       0       0 ?             -1 I<       0   0:00  \_ [mpt_poll_0]
+      2     182       0       0 ?             -1 I<       0   0:00  \_ [cryptd]
+      2     184       0       0 ?             -1 I<       0   0:00  \_ [mpt/0]
+      2     218       0       0 ?             -1 S        0   0:00  \_ [scsi_eh_2]
+      2     219       0       0 ?             -1 I<       0   0:00  \_ [scsi_tmf_2]
+      2     251       0       0 ?             -1 I<       0   0:00  \_ [raid5wq]
+      2     298       0       0 ?             -1 S        0   0:00  \_ [jbd2/sda1-8]
+      2     299       0       0 ?             -1 I<       0   0:00  \_ [ext4-rsv-conver]
+      2     399       0       0 ?             -1 I<       0   0:00  \_ [kaluad]
+      2     403       0       0 ?             -1 I<       0   0:00  \_ [kmpath_rdacd]
+      2     405       0       0 ?             -1 I<       0   0:00  \_ [kmpathd]
+      2     406       0       0 ?             -1 I<       0   0:00  \_ [kmpath_handlerd]
+      2     485       0       0 ?             -1 I        0   0:00  \_ [kworker/u4:5-events_unb
+      2     489       0       0 ?             -1 I        0   0:00  \_ [kworker/u4:6-events_unb
+      2     839       0       0 ?             -1 I        0   0:00  \_ [kworker/1:3-mpt_poll_0]
+      2    1383       0       0 ?             -1 I        0   0:00  \_ [kworker/0:2-events]
+      2    1395       0       0 ?             -1 I        0   0:00  \_ [kworker/1:0-events]
+      0       1       1       1 ?             -1 Ss       0   0:00 /sbin/init
+      1     374     374     374 ?             -1 S<s      0   0:00 /lib/systemd/systemd-journal
+      1     407     407     407 ?             -1 SLsl     0   0:00 /sbin/multipathd -d -s
+      1     408     408     408 ?             -1 Ss       0   0:00 /lib/systemd/systemd-udevd
+      1     442     442     442 ?             -1 Ssl    103   0:00 /lib/systemd/systemd-timesyn
+      1     582     582     582 ?             -1 Ss     100   0:00 /lib/systemd/systemd-network
+      1     584     584     584 ?             -1 Ss     101   0:00 /lib/systemd/systemd-resolve
+      1     622     622     622 ?             -1 Ss     102   0:00 @dbus-daemon --system --addr
+      1     626     626     626 ?             -1 Ssl      0   0:00 /usr/sbin/irqbalance --foreg
+      1     627     627     627 ?             -1 Ss       0   0:00 /usr/bin/python3 /usr/bin/ne
+      1     628     628     628 ?             -1 Ssl    104   0:00 /usr/sbin/rsyslogd -n -iNONE
+      1     631     631     631 ?             -1 Ssl      0   0:01 /usr/lib/snapd/snapd
+      1     635     635     635 ?             -1 Ss       0   0:00 /lib/systemd/systemd-logind
+      1     647     647     647 ?             -1 Ss       0   0:00 /usr/sbin/cron -f -P
+      1     656     656     656 ttyS0        656 Ss+      0   0:00 /sbin/agetty -o -p -- \u --k
+      1     658     658     658 tty1         658 Ss+      0   0:00 /sbin/agetty -o -p -- \u --n
+      1     661     661     661 ?             -1 Ss       0   0:00 sshd: /usr/sbin/sshd -D [lis
+    661    1199    1199    1199 ?             -1 Ss       0   0:00  \_ sshd: vagrant [priv]
+   1199    1249    1199    1199 ?             -1 S     1000   0:00  |   \_ sshd: vagrant@pts/0
+   1249    1250    1250    1250 pts/0       1360 Ss    1000   0:00  |       \_ -bash
+   1250    1360    1360    1250 pts/0       1360 S+    1000   0:00  |           \_ script types
+   1360    1361    1361    1361 pts/2       1396 Ss    1000   0:00  |               \_ bash -i
+   1361    1396    1396    1361 pts/2       1396 R+    1000   0:00  |                   \_ ps a
+    661    1300    1300    1300 ?             -1 Ss       0   0:00  \_ sshd: vagrant [priv]
+   1300    1349    1300    1300 ?             -1 S     1000   0:00      \_ sshd: vagrant@pts/1
+   1349    1350    1350    1350 pts/1       1368 Ss    1000   0:00          \_ -bash
+   1350    1368    1368    1350 pts/1       1368 S+    1000   0:00              \_ script types
+   1368    1369    1369    1369 pts/3       1369 Ss+   1000   0:00                  \_ bash -i
+      1     702     702     702 ?             -1 Ssl      0   0:00 /usr/bin/python3 /usr/share/
+      1     716     716     716 ?             -1 Ssl      0   0:00 /usr/libexec/polkitd --no-de
+      1     888     888     888 ?             -1 Ss    1000   0:00 /lib/systemd/systemd --user
+    888     889     888     888 ?             -1 S     1000   0:00  \_ (sd-pam)
+[?2004h[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ clt[Kr[Keat[Kr
+[?2004l[H[J[3J[?2004h[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ clearps axjf
+[?2004l   PPID     PID    PGID     SID TTY        TPGID STAT   UID   TIME COMMAND
+      0       2       0       0 ?             -1 S        0   0:00 [kthreadd]
+      2       3       0       0 ?             -1 I<       0   0:00  \_ [rcu_gp]
+      2       4       0       0 ?             -1 I<       0   0:00  \_ [rcu_par_gp]
+      2       5       0       0 ?             -1 I<       0   0:00  \_ [slub_flushwq]
+      2       6       0       0 ?             -1 I<       0   0:00  \_ [netns]
+      2       8       0       0 ?             -1 I<       0   0:00  \_ [kworker/0:0H-events_hig
+      2      10       0       0 ?             -1 I<       0   0:00  \_ [mm_percpu_wq]
+      2      11       0       0 ?             -1 S        0   0:00  \_ [rcu_tasks_rude_]
+      2      12       0       0 ?             -1 S        0   0:00  \_ [rcu_tasks_trace]
+      2      13       0       0 ?             -1 S        0   0:00  \_ [ksoftirqd/0]
+      2      14       0       0 ?             -1 I        0   0:00  \_ [rcu_sched]
+      2      15       0       0 ?             -1 S        0   0:00  \_ [migration/0]
+      2      16       0       0 ?             -1 S        0   0:00  \_ [idle_inject/0]
+      2      17       0       0 ?             -1 I        0   0:00  \_ [kworker/0:1-events]
+      2      18       0       0 ?             -1 S        0   0:00  \_ [cpuhp/0]
+      2      19       0       0 ?             -1 S        0   0:00  \_ [cpuhp/1]
+      2      20       0       0 ?             -1 S        0   0:00  \_ [idle_inject/1]
+      2      21       0       0 ?             -1 S        0   0:00  \_ [migration/1]
+      2      22       0       0 ?             -1 S        0   0:00  \_ [ksoftirqd/1]
+      2      24       0       0 ?             -1 I<       0   0:00  \_ [kworker/1:0H-events_hig
+      2      25       0       0 ?             -1 S        0   0:00  \_ [kdevtmpfs]
+      2      26       0       0 ?             -1 I<       0   0:00  \_ [inet_frag_wq]
+      2      27       0       0 ?             -1 S        0   0:00  \_ [kauditd]
+      2      28       0       0 ?             -1 S        0   0:00  \_ [khungtaskd]
+      2      29       0       0 ?             -1 S        0   0:00  \_ [oom_reaper]
+      2      30       0       0 ?             -1 I<       0   0:00  \_ [writeback]
+      2      31       0       0 ?             -1 S        0   0:00  \_ [kcompactd0]
+      2      32       0       0 ?             -1 SN       0   0:00  \_ [ksmd]
+      2      33       0       0 ?             -1 SN       0   0:00  \_ [khugepaged]
+      2      38       0       0 ?             -1 I        0   0:00  \_ [kworker/1:1-cgroup_dest
+      2      80       0       0 ?             -1 I<       0   0:00  \_ [kintegrityd]
+      2      81       0       0 ?             -1 I<       0   0:00  \_ [kblockd]
+      2      82       0       0 ?             -1 I<       0   0:00  \_ [blkcg_punt_bio]
+      2      83       0       0 ?             -1 I<       0   0:00  \_ [tpm_dev_wq]
+      2      84       0       0 ?             -1 I<       0   0:00  \_ [ata_sff]
+      2      85       0       0 ?             -1 I<       0   0:00  \_ [md]
+      2      86       0       0 ?             -1 I<       0   0:00  \_ [edac-poller]
+      2      87       0       0 ?             -1 I<       0   0:00  \_ [devfreq_wq]
+      2      88       0       0 ?             -1 S        0   0:00  \_ [watchdogd]
+      2      90       0       0 ?             -1 I<       0   0:00  \_ [kworker/1:1H-kblockd]
+      2      92       0       0 ?             -1 S        0   0:00  \_ [kswapd0]
+      2      93       0       0 ?             -1 S        0   0:00  \_ [ecryptfs-kthrea]
+      2      95       0       0 ?             -1 I<       0   0:00  \_ [kthrotld]
+      2      96       0       0 ?             -1 I<       0   0:00  \_ [acpi_thermal_pm]
+      2      97       0       0 ?             -1 I        0   0:00  \_ [kworker/u4:2-events_unb
+      2      98       0       0 ?             -1 S        0   0:00  \_ [scsi_eh_0]
+      2      99       0       0 ?             -1 I<       0   0:00  \_ [scsi_tmf_0]
+      2     100       0       0 ?             -1 S        0   0:00  \_ [scsi_eh_1]
+      2     101       0       0 ?             -1 I<       0   0:00  \_ [scsi_tmf_1]
+      2     103       0       0 ?             -1 I<       0   0:00  \_ [vfio-irqfd-clea]
+      2     104       0       0 ?             -1 I<       0   0:00  \_ [mld]
+      2     105       0       0 ?             -1 I<       0   0:00  \_ [ipv6_addrconf]
+      2     115       0       0 ?             -1 I<       0   0:00  \_ [kstrp]
+      2     118       0       0 ?             -1 I<       0   0:00  \_ [zswap-shrink]
+      2     119       0       0 ?             -1 I<       0   0:00  \_ [kworker/u5:0]
+      2     124       0       0 ?             -1 I<       0   0:00  \_ [charger_manager]
+      2     147       0       0 ?             -1 I<       0   0:00  \_ [kworker/0:1H-kblockd]
+      2     181       0       0 ?             -1 I<       0   0:00  \_ [mpt_poll_0]
+      2     182       0       0 ?             -1 I<       0   0:00  \_ [cryptd]
+      2     184       0       0 ?             -1 I<       0   0:00  \_ [mpt/0]
+      2     218       0       0 ?             -1 S        0   0:00  \_ [scsi_eh_2]
+      2     219       0       0 ?             -1 I<       0   0:00  \_ [scsi_tmf_2]
+      2     251       0       0 ?             -1 I<       0   0:00  \_ [raid5wq]
+      2     298       0       0 ?             -1 S        0   0:00  \_ [jbd2/sda1-8]
+      2     299       0       0 ?             -1 I<       0   0:00  \_ [ext4-rsv-conver]
+      2     399       0       0 ?             -1 I<       0   0:00  \_ [kaluad]
+      2     403       0       0 ?             -1 I<       0   0:00  \_ [kmpath_rdacd]
+      2     405       0       0 ?             -1 I<       0   0:00  \_ [kmpathd]
+      2     406       0       0 ?             -1 I<       0   0:00  \_ [kmpath_handlerd]
+      2     485       0       0 ?             -1 I        0   0:00  \_ [kworker/u4:5-events_unb
+      2     489       0       0 ?             -1 I        0   0:00  \_ [kworker/u4:6-events_unb
+      2     839       0       0 ?             -1 I        0   0:00  \_ [kworker/1:3-events]
+      2    1383       0       0 ?             -1 I        0   0:00  \_ [kworker/0:2-events]
+      2    1395       0       0 ?             -1 I        0   0:00  \_ [kworker/1:0-events]
+      0       1       1       1 ?             -1 Ss       0   0:00 /sbin/init
+      1     374     374     374 ?             -1 S<s      0   0:00 /lib/systemd/systemd-journal
+      1     407     407     407 ?             -1 SLsl     0   0:00 /sbin/multipathd -d -s
+      1     408     408     408 ?             -1 Ss       0   0:00 /lib/systemd/systemd-udevd
+      1     442     442     442 ?             -1 Ssl    103   0:00 /lib/systemd/systemd-timesyn
+      1     582     582     582 ?             -1 Ss     100   0:00 /lib/systemd/systemd-network
+      1     584     584     584 ?             -1 Ss     101   0:00 /lib/systemd/systemd-resolve
+      1     622     622     622 ?             -1 Ss     102   0:00 @dbus-daemon --system --addr
+      1     626     626     626 ?             -1 Ssl      0   0:00 /usr/sbin/irqbalance --foreg
+      1     627     627     627 ?             -1 Ss       0   0:00 /usr/bin/python3 /usr/bin/ne
+      1     628     628     628 ?             -1 Ssl    104   0:00 /usr/sbin/rsyslogd -n -iNONE
+      1     631     631     631 ?             -1 Ssl      0   0:01 /usr/lib/snapd/snapd
+      1     635     635     635 ?             -1 Ss       0   0:00 /lib/systemd/systemd-logind
+      1     647     647     647 ?             -1 Ss       0   0:00 /usr/sbin/cron -f -P
+      1     656     656     656 ttyS0        656 Ss+      0   0:00 /sbin/agetty -o -p -- \u --k
+      1     658     658     658 tty1         658 Ss+      0   0:00 /sbin/agetty -o -p -- \u --n
+      1     661     661     661 ?             -1 Ss       0   0:00 sshd: /usr/sbin/sshd -D [lis
+    661    1199    1199    1199 ?             -1 Ss       0   0:00  \_ sshd: vagrant [priv]
+   1199    1249    1199    1199 ?             -1 S     1000   0:00  |   \_ sshd: vagrant@pts/0
+   1249    1250    1250    1250 pts/0       1360 Ss    1000   0:00  |       \_ -bash
+   1250    1360    1360    1250 pts/0       1360 S+    1000   0:00  |           \_ script types
+   1360    1361    1361    1361 pts/2       1398 Ss    1000   0:00  |               \_ bash -i
+   1361    1398    1398    1361 pts/2       1398 R+    1000   0:00  |                   \_ ps a
+    661    1300    1300    1300 ?             -1 Ss       0   0:00  \_ sshd: vagrant [priv]
+   1300    1349    1300    1300 ?             -1 S     1000   0:00      \_ sshd: vagrant@pts/1
+   1349    1350    1350    1350 pts/1       1368 Ss    1000   0:00          \_ -bash
+   1350    1368    1368    1350 pts/1       1368 S+    1000   0:00              \_ script types
+   1368    1369    1369    1369 pts/3       1369 Ss+   1000   0:00                  \_ bash -i
+      1     702     702     702 ?             -1 Ssl      0   0:00 /usr/bin/python3 /usr/share/
+      1     716     716     716 ?             -1 Ssl      0   0:00 /usr/libexec/polkitd --no-de
+      1     888     888     888 ?             -1 Ss    1000   0:00 /lib/systemd/systemd --user
+    888     889     888     888 ?             -1 S     1000   0:00  \_ (sd-pam)
+[?2004h[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ ps axjf[2Pclear
+[?2004l[H[J[3J[?2004h[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ [7mps -eLf [27mps -eLf 
+[?2004lUID          PID    PPID     LWP  C NLWP STIME TTY          TIME CMD
+root           1       0       1  0    1 17:31 ?        00:00:00 /sbin/init
+root           2       0       2  0    1 17:31 ?        00:00:00 [kthreadd]
+root           3       2       3  0    1 17:31 ?        00:00:00 [rcu_gp]
+root           4       2       4  0    1 17:31 ?        00:00:00 [rcu_par_gp]
+root           5       2       5  0    1 17:31 ?        00:00:00 [slub_flushwq]
+root           6       2       6  0    1 17:31 ?        00:00:00 [netns]
+root           8       2       8  0    1 17:31 ?        00:00:00 [kworker/0:0H-events_highpri]
+root          10       2      10  0    1 17:31 ?        00:00:00 [mm_percpu_wq]
+root          11       2      11  0    1 17:31 ?        00:00:00 [rcu_tasks_rude_]
+root          12       2      12  0    1 17:31 ?        00:00:00 [rcu_tasks_trace]
+root          13       2      13  0    1 17:31 ?        00:00:00 [ksoftirqd/0]
+root          14       2      14  0    1 17:31 ?        00:00:00 [rcu_sched]
+root          15       2      15  0    1 17:31 ?        00:00:00 [migration/0]
+root          16       2      16  0    1 17:31 ?        00:00:00 [idle_inject/0]
+root          17       2      17  0    1 17:31 ?        00:00:00 [kworker/0:1-events]
+root          18       2      18  0    1 17:31 ?        00:00:00 [cpuhp/0]
+root          19       2      19  0    1 17:31 ?        00:00:00 [cpuhp/1]
+root          20       2      20  0    1 17:31 ?        00:00:00 [idle_inject/1]
+root          21       2      21  0    1 17:31 ?        00:00:00 [migration/1]
+root          22       2      22  0    1 17:31 ?        00:00:00 [ksoftirqd/1]
+root          24       2      24  0    1 17:31 ?        00:00:00 [kworker/1:0H-events_highpri]
+root          25       2      25  0    1 17:31 ?        00:00:00 [kdevtmpfs]
+root          26       2      26  0    1 17:31 ?        00:00:00 [inet_frag_wq]
+root          27       2      27  0    1 17:31 ?        00:00:00 [kauditd]
+root          28       2      28  0    1 17:31 ?        00:00:00 [khungtaskd]
+root          29       2      29  0    1 17:31 ?        00:00:00 [oom_reaper]
+root          30       2      30  0    1 17:31 ?        00:00:00 [writeback]
+root          31       2      31  0    1 17:31 ?        00:00:00 [kcompactd0]
+root          32       2      32  0    1 17:31 ?        00:00:00 [ksmd]
+root          33       2      33  0    1 17:31 ?        00:00:00 [khugepaged]
+root          38       2      38  0    1 17:31 ?        00:00:00 [kworker/1:1-cgroup_destroy]
+root          80       2      80  0    1 17:31 ?        00:00:00 [kintegrityd]
+root          81       2      81  0    1 17:31 ?        00:00:00 [kblockd]
+root          82       2      82  0    1 17:31 ?        00:00:00 [blkcg_punt_bio]
+root          83       2      83  0    1 17:31 ?        00:00:00 [tpm_dev_wq]
+root          84       2      84  0    1 17:31 ?        00:00:00 [ata_sff]
+root          85       2      85  0    1 17:31 ?        00:00:00 [md]
+root          86       2      86  0    1 17:31 ?        00:00:00 [edac-poller]
+root          87       2      87  0    1 17:31 ?        00:00:00 [devfreq_wq]
+root          88       2      88  0    1 17:31 ?        00:00:00 [watchdogd]
+root          90       2      90  0    1 17:31 ?        00:00:00 [kworker/1:1H-kblockd]
+root          92       2      92  0    1 17:31 ?        00:00:00 [kswapd0]
+root          93       2      93  0    1 17:31 ?        00:00:00 [ecryptfs-kthrea]
+root          95       2      95  0    1 17:31 ?        00:00:00 [kthrotld]
+root          96       2      96  0    1 17:31 ?        00:00:00 [acpi_thermal_pm]
+root          97       2      97  0    1 17:31 ?        00:00:00 [kworker/u4:2-events_unbound]
+root          98       2      98  0    1 17:31 ?        00:00:00 [scsi_eh_0]
+root          99       2      99  0    1 17:31 ?        00:00:00 [scsi_tmf_0]
+root         100       2     100  0    1 17:31 ?        00:00:00 [scsi_eh_1]
+root         101       2     101  0    1 17:31 ?        00:00:00 [scsi_tmf_1]
+root         103       2     103  0    1 17:31 ?        00:00:00 [vfio-irqfd-clea]
+root         104       2     104  0    1 17:31 ?        00:00:00 [mld]
+root         105       2     105  0    1 17:31 ?        00:00:00 [ipv6_addrconf]
+root         115       2     115  0    1 17:31 ?        00:00:00 [kstrp]
+root         118       2     118  0    1 17:31 ?        00:00:00 [zswap-shrink]
+root         119       2     119  0    1 17:31 ?        00:00:00 [kworker/u5:0]
+root         124       2     124  0    1 17:31 ?        00:00:00 [charger_manager]
+root         147       2     147  0    1 17:31 ?        00:00:00 [kworker/0:1H-kblockd]
+root         181       2     181  0    1 17:31 ?        00:00:00 [mpt_poll_0]
+root         182       2     182  0    1 17:31 ?        00:00:00 [cryptd]
+root         184       2     184  0    1 17:31 ?        00:00:00 [mpt/0]
+root         218       2     218  0    1 17:31 ?        00:00:00 [scsi_eh_2]
+root         219       2     219  0    1 17:31 ?        00:00:00 [scsi_tmf_2]
+root         251       2     251  0    1 17:31 ?        00:00:00 [raid5wq]
+root         298       2     298  0    1 17:31 ?        00:00:00 [jbd2/sda1-8]
+root         299       2     299  0    1 17:31 ?        00:00:00 [ext4-rsv-conver]
+root         374       1     374  0    1 17:31 ?        00:00:00 /lib/systemd/systemd-journald
+root         399       2     399  0    1 17:31 ?        00:00:00 [kaluad]
+root         403       2     403  0    1 17:31 ?        00:00:00 [kmpath_rdacd]
+root         405       2     405  0    1 17:31 ?        00:00:00 [kmpathd]
+root         406       2     406  0    1 17:31 ?        00:00:00 [kmpath_handlerd]
+root         407       1     407  0    7 17:31 ?        00:00:00 /sbin/multipathd -d -s
+root         407       1     411  0    7 17:31 ?        00:00:00 /sbin/multipathd -d -s
+root         407       1     412  0    7 17:31 ?        00:00:00 /sbin/multipathd -d -s
+root         407       1     413  0    7 17:31 ?        00:00:00 /sbin/multipathd -d -s
+root         407       1     414  0    7 17:31 ?        00:00:00 /sbin/multipathd -d -s
+root         407       1     415  0    7 17:31 ?        00:00:00 /sbin/multipathd -d -s
+root         407       1     416  0    7 17:31 ?        00:00:00 /sbin/multipathd -d -s
+root         408       1     408  0    1 17:31 ?        00:00:00 /lib/systemd/systemd-udevd
+systemd+     442       1     442  0    2 17:31 ?        00:00:00 /lib/systemd/systemd-timesyncd
+systemd+     442       1     463  0    2 17:31 ?        00:00:00 /lib/systemd/systemd-timesyncd
+root         485       2     485  0    1 17:31 ?        00:00:00 [kworker/u4:5-events_unbound]
+root         489       2     489  0    1 17:31 ?        00:00:00 [kworker/u4:6-events_unbound]
+systemd+     582       1     582  0    1 17:31 ?        00:00:00 /lib/systemd/systemd-networkd
+systemd+     584       1     584  0    1 17:31 ?        00:00:00 /lib/systemd/systemd-resolved
+message+     622       1     622  0    1 17:31 ?        00:00:00 @dbus-daemon --system --addres
+root         626       1     626  0    2 17:31 ?        00:00:00 /usr/sbin/irqbalance --foregro
+root         626       1     640  0    2 17:31 ?        00:00:00 /usr/sbin/irqbalance --foregro
+root         627       1     627  0    1 17:31 ?        00:00:00 /usr/bin/python3 /usr/bin/netw
+syslog       628       1     628  0    4 17:31 ?        00:00:00 /usr/sbin/rsyslogd -n -iNONE
+syslog       628       1     665  0    4 17:31 ?        00:00:00 /usr/sbin/rsyslogd -n -iNONE
+syslog       628       1     666  0    4 17:31 ?        00:00:00 /usr/sbin/rsyslogd -n -iNONE
+syslog       628       1     667  0    4 17:31 ?        00:00:00 /usr/sbin/rsyslogd -n -iNONE
+root         631       1     631  0    9 17:31 ?        00:00:01 /usr/lib/snapd/snapd
+root         631       1     732  0    9 17:31 ?        00:00:00 /usr/lib/snapd/snapd
+root         631       1     733  0    9 17:31 ?        00:00:00 /usr/lib/snapd/snapd
+root         631       1     734  0    9 17:31 ?        00:00:00 /usr/lib/snapd/snapd
+root         631       1     735  0    9 17:31 ?        00:00:00 /usr/lib/snapd/snapd
+root         631       1     763  0    9 17:31 ?        00:00:00 /usr/lib/snapd/snapd
+root         631       1     766  0    9 17:31 ?        00:00:00 /usr/lib/snapd/snapd
+root         631       1     834  0    9 17:31 ?        00:00:00 /usr/lib/snapd/snapd
+root         631       1     845  0    9 17:31 ?        00:00:00 /usr/lib/snapd/snapd
+root         635       1     635  0    1 17:31 ?        00:00:00 /lib/systemd/systemd-logind
+root         647       1     647  0    1 17:31 ?        00:00:00 /usr/sbin/cron -f -P
+root         656       1     656  0    1 17:31 ttyS0    00:00:00 /sbin/agetty -o -p -- \u --kee
+root         658       1     658  0    1 17:31 tty1     00:00:00 /sbin/agetty -o -p -- \u --noc
+root         661       1     661  0    1 17:31 ?        00:00:00 sshd: /usr/sbin/sshd -D [liste
+root         702       1     702  0    2 17:31 ?        00:00:00 /usr/bin/python3 /usr/share/un
+root         702       1     721  0    2 17:31 ?        00:00:00 /usr/bin/python3 /usr/share/un
+root         716       1     716  0    3 17:31 ?        00:00:00 /usr/libexec/polkitd --no-debu
+root         716       1     717  0    3 17:31 ?        00:00:00 /usr/libexec/polkitd --no-debu
+root         716       1     719  0    3 17:31 ?        00:00:00 /usr/libexec/polkitd --no-debu
+root         839       2     839  0    1 17:31 ?        00:00:00 [kworker/1:3-events]
+vagrant      888       1     888  0    1 17:31 ?        00:00:00 /lib/systemd/systemd --user
+vagrant      889     888     889  0    1 17:31 ?        00:00:00 (sd-pam)
+root        1199     661    1199  0    1 17:31 ?        00:00:00 sshd: vagrant [priv]
+vagrant     1249    1199    1249  0    1 17:31 ?        00:00:00 sshd: vagrant@pts/0
+vagrant     1250    1249    1250  0    1 17:31 pts/0    00:00:00 -bash
+root        1300     661    1300  0    1 17:32 ?        00:00:00 sshd: vagrant [priv]
+vagrant     1349    1300    1349  0    1 17:32 ?        00:00:00 sshd: vagrant@pts/1
+vagrant     1350    1349    1350  0    1 17:32 pts/1    00:00:00 -bash
+vagrant     1360    1250    1360  0    1 17:35 pts/0    00:00:00 script typescript1.txt
+vagrant     1361    1360    1361  0    1 17:35 pts/2    00:00:00 bash -i
+vagrant     1368    1350    1368  0    1 17:36 pts/1    00:00:00 script typescript2.txt
+vagrant     1369    1368    1369  0    1 17:36 pts/3    00:00:00 bash -i
+root        1383       2    1383  0    1 17:37 ?        00:00:00 [kworker/0:2-events]
+root        1395       2    1395  0    1 17:46 ?        00:00:00 [kworker/1:0-events]
+vagrant     1400    1361    1400  0    1 17:48 pts/2    00:00:00 ps -eLf
+[?2004h[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ [7mps axms[27mps axms[H[J[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ ps axms
+[?2004l  UID     PID   PENDING   BLOCKED   IGNORED    CAUGHT STAT TTY        TIME COMMAND
+    0       1  00000000         -         -         - -    ?          0:00 /sbin/init
+    0       -  00000000 <28014a03  00001000 <000004ec Ss   -          0:00 -
+    0       2  00000000         -         -         - -    ?          0:00 [kthreadd]
+    0       -  00000000  00000000 <ffffffff  00000000 S    -          0:00 -
+    0       3  00000000         -         -         - -    ?          0:00 [rcu_gp]
+    0       -  00000000  00000000 <ffffffff  00000000 I<   -          0:00 -
+    0       4  00000000         -         -         - -    ?          0:00 [rcu_par_gp]
+    0       -  00000000  00000000 <ffffffff  00000000 I<   -          0:00 -
+    0       5  00000000         -         -         - -    ?          0:00 [slub_flushwq]
+    0       -  00000000  00000000 <ffffffff  00000000 I<   -          0:00 -
+    0       6  00000000         -         -         - -    ?          0:00 [netns]
+    0       -  00000000  00000000 <ffffffff  00000000 I<   -          0:00 -
+    0       8  00000000         -         -         - -    ?          0:00 [kworker/0:0H-events
+    0       -  00000000  00000000 <ffffffff  00000000 I<   -          0:00 -
+    0      10  00000000         -         -         - -    ?          0:00 [mm_percpu_wq]
+    0       -  00000000  00000000 <ffffffff  00000000 I<   -          0:00 -
+    0      11  00000000         -         -         - -    ?          0:00 [rcu_tasks_rude_]
+    0       -  00000000  00000000 <ffffffff  00000000 S    -          0:00 -
+    0      12  00000000         -         -         - -    ?          0:00 [rcu_tasks_trace]
+    0       -  00000000  00000000 <ffffffff  00000000 S    -          0:00 -
+    0      13  00000000         -         -         - -    ?          0:00 [ksoftirqd/0]
+    0       -  00000000  00000000 <ffffffff  00000000 S    -          0:00 -
+    0      14  00000000         -         -         - -    ?          0:00 [rcu_sched]
+    0       -  00000000  00000000 <ffffffff  00000000 I    -          0:00 -
+    0      15  00000000         -         -         - -    ?          0:00 [migration/0]
+    0       -  00000000  00000000 <ffffffff  00000000 S    -          0:00 -
+    0      16  00000000         -         -         - -    ?          0:00 [idle_inject/0]
+    0       -  00000000  00000000 <ffffffff  00000000 S    -          0:00 -
+    0      17  00000000         -         -         - -    ?          0:00 [kworker/0:1-events]
+    0       -  00000000  00000000 <ffffffff  00000000 I    -          0:00 -
+    0      18  00000000         -         -         - -    ?          0:00 [cpuhp/0]
+    0       -  00000000  00000000 <ffffffff  00000000 S    -          0:00 -
+    0      19  00000000         -         -         - -    ?          0:00 [cpuhp/1]
+    0       -  00000000  00000000 <ffffffff  00000000 S    -          0:00 -
+    0      20  00000000         -         -         - -    ?          0:00 [idle_inject/1]
+    0       -  00000000  00000000 <ffffffff  00000000 S    -          0:00 -
+    0      21  00000000         -         -         - -    ?          0:00 [migration/1]
+    0       -  00000000  00000000 <ffffffff  00000000 S    -          0:00 -
+    0      22  00000000         -         -         - -    ?          0:00 [ksoftirqd/1]
+    0       -  00000000  00000000 <ffffffff  00000000 S    -          0:00 -
+    0      24  00000000         -         -         - -    ?          0:00 [kworker/1:0H-events
+    0       -  00000000  00000000 <ffffffff  00000000 I<   -          0:00 -
+    0      25  00000000         -         -         - -    ?          0:00 [kdevtmpfs]
+    0       -  00000000  00000000 <ffffffff  00000000 S    -          0:00 -
+    0      26  00000000         -         -         - -    ?          0:00 [inet_frag_wq]
+    0       -  00000000  00000000 <ffffffff  00000000 I<   -          0:00 -
+    0      27  00000000         -         -         - -    ?          0:00 [kauditd]
+    0       -  00000000  00000000 <ffffffff  00000000 S    -          0:00 -
+    0      28  00000000         -         -         - -    ?          0:00 [khungtaskd]
+    0       -  00000000  00000000 <ffffffff  00000000 S    -          0:00 -
+    0      29  00000000         -         -         - -    ?          0:00 [oom_reaper]
+    0       -  00000000  00000000 <ffffffff  00000000 S    -          0:00 -
+    0      30  00000000         -         -         - -    ?          0:00 [writeback]
+    0       -  00000000  00000000 <ffffffff  00000000 I<   -          0:00 -
+    0      31  00000000         -         -         - -    ?          0:00 [kcompactd0]
+    0       -  00000000  00000000 <ffffffff  00000000 S    -          0:00 -
+    0      32  00000000         -         -         - -    ?          0:00 [ksmd]
+    0       -  00000000  00000000 <ffffffff  00000000 SN   -          0:00 -
+    0      33  00000000         -         -         - -    ?          0:00 [khugepaged]
+    0       -  00000000  00000000 <ffffffff  00000000 SN   -          0:00 -
+    0      38  00000000         -         -         - -    ?          0:00 [kworker/1:1-cgroup_
+    0       -  00000000  00000000 <ffffffff  00000000 I    -          0:00 -
+    0      80  00000000         -         -         - -    ?          0:00 [kintegrityd]
+    0       -  00000000  00000000 <ffffffff  00000000 I<   -          0:00 -
+    0      81  00000000         -         -         - -    ?          0:00 [kblockd]
+    0       -  00000000  00000000 <ffffffff  00000000 I<   -          0:00 -
+    0      82  00000000         -         -         - -    ?          0:00 [blkcg_punt_bio]
+    0       -  00000000  00000000 <ffffffff  00000000 I<   -          0:00 -
+    0      83  00000000         -         -         - -    ?          0:00 [tpm_dev_wq]
+    0       -  00000000  00000000 <ffffffff  00000000 I<   -          0:00 -
+    0      84  00000000         -         -         - -    ?          0:00 [ata_sff]
+    0       -  00000000  00000000 <ffffffff  00000000 I<   -          0:00 -
+    0      85  00000000         -         -         - -    ?          0:00 [md]
+    0       -  00000000  00000000 <ffffffff  00000000 I<   -          0:00 -
+    0      86  00000000         -         -         - -    ?          0:00 [edac-poller]
+    0       -  00000000  00000000 <ffffffff  00000000 I<   -          0:00 -
+    0      87  00000000         -         -         - -    ?          0:00 [devfreq_wq]
+    0       -  00000000  00000000 <ffffffff  00000000 I<   -          0:00 -
+    0      88  00000000         -         -         - -    ?          0:00 [watchdogd]
+    0       -  00000000  00000000 <ffffffff  00000000 S    -          0:00 -
+    0      90  00000000         -         -         - -    ?          0:00 [kworker/1:1H-kblock
+    0       -  00000000  00000000 <ffffffff  00000000 I<   -          0:00 -
+    0      92  00000000         -         -         - -    ?          0:00 [kswapd0]
+    0       -  00000000  00000000 <ffffffff  00000000 S    -          0:00 -
+    0      93  00000000         -         -         - -    ?          0:00 [ecryptfs-kthrea]
+    0       -  00000000  00000000 <ffffffff  00000000 S    -          0:00 -
+    0      95  00000000         -         -         - -    ?          0:00 [kthrotld]
+    0       -  00000000  00000000 <ffffffff  00000000 I<   -          0:00 -
+    0      96  00000000         -         -         - -    ?          0:00 [acpi_thermal_pm]
+    0       -  00000000  00000000 <ffffffff  00000000 I<   -          0:00 -
+    0      97  00000000         -         -         - -    ?          0:00 [kworker/u4:2-events
+    0       -  00000000  00000000 <ffffffff  00000000 I    -          0:00 -
+    0      98  00000000         -         -         - -    ?          0:00 [scsi_eh_0]
+    0       -  00000000  00000000 <ffffffff  00000000 S    -          0:00 -
+    0      99  00000000         -         -         - -    ?          0:00 [scsi_tmf_0]
+    0       -  00000000  00000000 <ffffffff  00000000 I<   -          0:00 -
+    0     100  00000000         -         -         - -    ?          0:00 [scsi_eh_1]
+    0       -  00000000  00000000 <ffffffff  00000000 S    -          0:00 -
+    0     101  00000000         -         -         - -    ?          0:00 [scsi_tmf_1]
+    0       -  00000000  00000000 <ffffffff  00000000 I<   -          0:00 -
+    0     103  00000000         -         -         - -    ?          0:00 [vfio-irqfd-clea]
+    0       -  00000000  00000000 <ffffffff  00000000 I<   -          0:00 -
+    0     104  00000000         -         -         - -    ?          0:00 [mld]
+    0       -  00000000  00000000 <ffffffff  00000000 I<   -          0:00 -
+    0     105  00000000         -         -         - -    ?          0:00 [ipv6_addrconf]
+    0       -  00000000  00000000 <ffffffff  00000000 I<   -          0:00 -
+    0     115  00000000         -         -         - -    ?          0:00 [kstrp]
+    0       -  00000000  00000000 <ffffffff  00000000 I<   -          0:00 -
+    0     118  00000000         -         -         - -    ?          0:00 [zswap-shrink]
+    0       -  00000000  00000000 <ffffffff  00000000 I<   -          0:00 -
+    0     119  00000000         -         -         - -    ?          0:00 [kworker/u5:0]
+    0       -  00000000  00000000 <ffffffff  00000000 I<   -          0:00 -
+    0     124  00000000         -         -         - -    ?          0:00 [charger_manager]
+    0       -  00000000  00000000 <ffffffff  00000000 I<   -          0:00 -
+    0     147  00000000         -         -         - -    ?          0:00 [kworker/0:1H-kblock
+    0       -  00000000  00000000 <ffffffff  00000000 I<   -          0:00 -
+    0     181  00000000         -         -         - -    ?          0:00 [mpt_poll_0]
+    0       -  00000000  00000000 <ffffffff  00000000 I<   -          0:00 -
+    0     182  00000000         -         -         - -    ?          0:00 [cryptd]
+    0       -  00000000  00000000 <ffffffff  00000000 I<   -          0:00 -
+    0     184  00000000         -         -         - -    ?          0:00 [mpt/0]
+    0       -  00000000  00000000 <ffffffff  00000000 I<   -          0:00 -
+    0     218  00000000         -         -         - -    ?          0:00 [scsi_eh_2]
+    0       -  00000000  00000000 <ffffffff  00000000 S    -          0:00 -
+    0     219  00000000         -         -         - -    ?          0:00 [scsi_tmf_2]
+    0       -  00000000  00000000 <ffffffff  00000000 I<   -          0:00 -
+    0     251  00000000         -         -         - -    ?          0:00 [raid5wq]
+    0       -  00000000  00000000 <ffffffff  00000000 I<   -          0:00 -
+    0     298  00000000         -         -         - -    ?          0:00 [jbd2/sda1-8]
+    0       -  00000000  00000000 <ffffffff  00000000 S    -          0:00 -
+    0     299  00000000         -         -         - -    ?          0:00 [ext4-rsv-conver]
+    0       -  00000000  00000000 <ffffffff  00000000 I<   -          0:00 -
+    0     374  00000000         -         -         - -    ?          0:00 /lib/systemd/systemd
+    0       -  00000000 <00004a02  00001000 <00000040 S<s  -          0:00 -
+    0     399  00000000         -         -         - -    ?          0:00 [kaluad]
+    0       -  00000000  00000000 <ffffffff  00000000 I<   -          0:00 -
+    0     403  00000000         -         -         - -    ?          0:00 [kmpath_rdacd]
+    0       -  00000000  00000000 <ffffffff  00000000 I<   -          0:00 -
+    0     405  00000000         -         -         - -    ?          0:00 [kmpathd]
+    0       -  00000000  00000000 <ffffffff  00000000 I<   -          0:00 -
+    0     406  00000000         -         -         - -    ?          0:00 [kmpath_handlerd]
+    0       -  00000000  00000000 <ffffffff  00000000 I<   -          0:00 -
+    0     407  00000000         -         -         - -    ?          0:00 /sbin/multipathd -d 
+    0       -  00000000 <7ffbeeff  00000000 <80005a03 SLsl -          0:00 -
+    0       -  00000000 <7ffbeeff  00000000 <80005a03 SLsl -          0:00 -
+    0       -  00000000 <7ffbbcfc  00000000 <80005a03 SLsl -          0:00 -
+    0       -  00000000 <7ffbeeff  00000000 <80005a03 SLsl -          0:00 -
+    0       -  00000000 <7ffbeeff  00000000 <80005a03 SLsl -          0:00 -
+    0       -  00000000 <7ffbeeff  00000000 <80005a03 SLsl -          0:00 -
+    0       -  00000000 <7ffbeeff  00000000 <80005a03 SLsl -          0:00 -
+    0     408  00000000         -         -         - -    ?          0:00 /lib/systemd/systemd
+    0       -  00000000  00014003  00001000  00000000 Ss   -          0:00 -
+  103     442  00000000         -         -         - -    ?          0:00 /lib/systemd/systemd
+  103       -  00000000  00004002  00001000 <00000000 Ssl  -          0:00 -
+  103       -  00000000 <7ffbfeff  00001000 <00000000 Ssl  -          0:00 -
+    0     485  00000000         -         -         - -    ?          0:00 [kworker/u4:5-events
+    0       -  00000000  00000000 <ffffffff  00000000 I    -          0:00 -
+    0     489  00000000         -         -         - -    ?          0:00 [kworker/u4:6-events
+    0       -  00000000  00000000 <ffffffff  00000000 I    -          0:00 -
+  100     582  00000000         -         -         - -    ?          0:00 /lib/systemd/systemd
+  100       -  00000000  00004802  00001000  00000000 Ss   -          0:00 -
+  101     584  00000000         -         -         - -    ?          0:00 /lib/systemd/systemd
+  101       -  00000000 <00004a02  00001000  00000000 Ss   -          0:00 -
+  102     622  00000000         -         -         - -    ?          0:00 @dbus-daemon --syste
+  102       -  00000000  00000000  00001000  00004001 Ss   -          0:00 -
+    0     626  00000000         -         -         - -    ?          0:00 /usr/sbin/irqbalance
+    0       -  00000000  00000000  00001000 <00004a03 Ssl  -          0:00 -
+    0       -  00000000 <7ffbfeff  00001000 <00004a03 Ssl  -          0:00 -
+    0     627  00000000         -         -         - -    ?          0:00 /usr/bin/python3 /us
+    0       -  00000000  00000000  01001000  00000002 Ss   -          0:00 -
+  104     628  00000000         -         -         - -    ?          0:00 /usr/sbin/rsyslogd -
+  104       -  00000000  00000000  01001206 <00314001 Ssl  -          0:00 -
+  104       -  00000000 <7febfaff  01001206 <00314001 Ssl  -          0:00 -
+  104       -  00000000 <7febfaff  01001206 <00314001 Ssl  -          0:00 -
+  104       -  00000000 <7febfaff  01001206 <00314001 Ssl  -          0:00 -
+    0     631  00000000         -         -         - -    ?          0:01 /usr/lib/snapd/snapd
+    0       -  00000000 <3bba3a00  00000000 <7fc1feff Ssl  -          0:01 -
+    0       -  00000000  00000000  00000000 <7fc1feff Ssl  -          0:00 -
+    0       -  00000000  00000000  00000000 <7fc1feff Ssl  -          0:00 -
+    0       -  00000000  00000000  00000000 <7fc1feff Ssl  -          0:00 -
+    0       -  00000000  00000000  00000000 <7fc1feff Ssl  -          0:00 -
+    0       -  00000000  00000000  00000000 <7fc1feff Ssl  -          0:00 -
+    0       -  00000000  00000000  00000000 <7fc1feff Ssl  -          0:00 -
+    0       -  00000000  00000000  00000000 <7fc1feff Ssl  -          0:00 -
+    0       -  00000000  00000000  00000000 <7fc1feff Ssl  -          0:00 -
+    0     635  00000000         -         -         - -    ?          0:00 /lib/systemd/systemd
+    0       -  00000000 <00014003 <00001000 <00000000 Ss   -          0:00 -
+    0     647  00000000         -         -         - -    ?          0:00 /usr/sbin/cron -f -P
+    0       -  00000000  00000000  00000000  00010001 Ss   -          0:00 -
+    0     656  00000000         -         -         - -    ttyS0      0:00 /sbin/agetty -o -p -
+    0       -  00000000  00000000  00000006  00000000 Ss+  -          0:00 -
+    0     658  00000000         -         -         - -    tty1       0:00 /sbin/agetty -o -p -
+    0       -  00000000  00000000  00000006  00000000 Ss+  -          0:00 -
+    0     661  00000000         -         -         - -    ?          0:00 sshd: /usr/sbin/sshd
+    0       -  00000000  00000000  00001000  00014005 Ss   -          0:00 -
+    0     702  00000000         -         -         - -    ?          0:00 /usr/bin/python3 /us
+    0       -  00000000  00000000  01001000 <00004003 Ssl  -          0:00 -
+    0       -  00000000 <7ffbfeff  01001000 <00004003 Ssl  -          0:00 -
+    0     716  00000000         -         -         - -    ?          0:00 /usr/libexec/polkitd
+    0       -  00000000  00000002  00001000 <00000000 Ssl  -          0:00 -
+    0       -  00000000 <7ffbfeff  00001000 <00000000 Ssl  -          0:00 -
+    0       -  00000000  00000002  00001000 <00000000 Ssl  -          0:00 -
+    0     839  00000000         -         -         - -    ?          0:00 [kworker/1:3-events]
+    0       -  00000000  00000000 <ffffffff  00000000 I    -          0:00 -
+ 1000     888  00000000         -         -         - -    ?          0:00 /lib/systemd/systemd
+ 1000       -  00000000 <28014a03  00001000  00000000 Ss   -          0:00 -
+ 1000     889  00000000         -         -         - -    ?          0:00 (sd-pam)
+ 1000       -  00000000  00000000  00001000 <00000000 S    -          0:00 -
+    0    1199  00000000         -         -         - -    ?          0:00 sshd: vagrant [priv]
+    0       -  00000000  00000000  01001000  00004003 Ss   -          0:00 -
+ 1000    1249  00000000         -         -         - -    ?          0:00 sshd: vagrant@pts/0
+ 1000       -  00000000  00000000  00001000  00010000 R    -          0:00 -
+ 1000    1250  00000000         -         -         - -    pts/0      0:00 -bash
+ 1000       -  00000000  00010000  00384004  4b813efb Ss   -          0:00 -
+    0    1300  00000000         -         -         - -    ?          0:00 sshd: vagrant [priv]
+    0       -  00000000  00000000  01001000  00004003 Ss   -          0:00 -
+ 1000    1349  00000000         -         -         - -    ?          0:00 sshd: vagrant@pts/1
+ 1000       -  00000000  00000000  00001000  00010000 S    -          0:00 -
+ 1000    1350  00000000         -         -         - -    pts/1      0:00 -bash
+ 1000       -  00000000  00010000  00384004  4b813efb Ss   -          0:00 -
+ 1000    1360  00000000         -         -         - -    pts/0      0:00 script typescript1.t
+ 1000       -  00000000 <7ffbfeff  00000000  00000000 S+   -          0:00 -
+ 1000    1361  00000000         -         -         - -    pts/2      0:00 bash -i
+ 1000       -  00000000  00010000  00384004  4b813efb Ss   -          0:00 -
+ 1000    1368  00000000         -         -         - -    pts/1      0:00 script typescript2.t
+ 1000       -  00000000 <7ffbfeff  00000000  00000000 S+   -          0:00 -
+ 1000    1369  00000000         -         -         - -    pts/3      0:00 bash -i
+ 1000       -  00000000  00000000  00384004  4b813efb Ss+  -          0:00 -
+    0    1383  00000000         -         -         - -    ?          0:00 [kworker/0:2-events]
+    0       -  00000000  00000000 <ffffffff  00000000 I    -          0:00 -
+    0    1395  00000000         -         -         - -    ?          0:00 [kworker/1:0-events]
+    0       -  00000000  00000000 <ffffffff  00000000 I    -          0:00 -
+ 1000    1401  00000000         -         -         - -    pts/2      0:00 ps axms
+ 1000       -  00000000  00000000  00000000  73d1fef9 R+   -          0:00 -
+[?2004h[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ [H[J[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ ps axms[Kps axms
+[?2004l  UID     PID   PENDING   BLOCKED   IGNORED    CAUGHT STAT TTY        TIME COMMAND
+    0       1  00000000         -         -         - -    ?          0:00 /sbin/init
+    0       -  00000000 <28014a03  00001000 <000004ec Ss   -          0:00 -
+    0       2  00000000         -         -         - -    ?          0:00 [kthreadd]
+    0       -  00000000  00000000 <ffffffff  00000000 S    -          0:00 -
+    0       3  00000000         -         -         - -    ?          0:00 [rcu_gp]
+    0       -  00000000  00000000 <ffffffff  00000000 I<   -          0:00 -
+    0       4  00000000         -         -         - -    ?          0:00 [rcu_par_gp]
+    0       -  00000000  00000000 <ffffffff  00000000 I<   -          0:00 -
+    0       5  00000000         -         -         - -    ?          0:00 [slub_flushwq]
+    0       -  00000000  00000000 <ffffffff  00000000 I<   -          0:00 -
+    0       6  00000000         -         -         - -    ?          0:00 [netns]
+    0       -  00000000  00000000 <ffffffff  00000000 I<   -          0:00 -
+    0       8  00000000         -         -         - -    ?          0:00 [kworker/0:0H-events
+    0       -  00000000  00000000 <ffffffff  00000000 I<   -          0:00 -
+    0      10  00000000         -         -         - -    ?          0:00 [mm_percpu_wq]
+    0       -  00000000  00000000 <ffffffff  00000000 I<   -          0:00 -
+    0      11  00000000         -         -         - -    ?          0:00 [rcu_tasks_rude_]
+    0       -  00000000  00000000 <ffffffff  00000000 S    -          0:00 -
+    0      12  00000000         -         -         - -    ?          0:00 [rcu_tasks_trace]
+    0       -  00000000  00000000 <ffffffff  00000000 S    -          0:00 -
+    0      13  00000000         -         -         - -    ?          0:00 [ksoftirqd/0]
+    0       -  00000000  00000000 <ffffffff  00000000 S    -          0:00 -
+    0      14  00000000         -         -         - -    ?          0:00 [rcu_sched]
+    0       -  00000000  00000000 <ffffffff  00000000 I    -          0:00 -
+    0      15  00000000         -         -         - -    ?          0:00 [migration/0]
+    0       -  00000000  00000000 <ffffffff  00000000 S    -          0:00 -
+    0      16  00000000         -         -         - -    ?          0:00 [idle_inject/0]
+    0       -  00000000  00000000 <ffffffff  00000000 S    -          0:00 -
+    0      17  00000000         -         -         - -    ?          0:00 [kworker/0:1-events]
+    0       -  00000000  00000000 <ffffffff  00000000 I    -          0:00 -
+    0      18  00000000         -         -         - -    ?          0:00 [cpuhp/0]
+    0       -  00000000  00000000 <ffffffff  00000000 S    -          0:00 -
+    0      19  00000000         -         -         - -    ?          0:00 [cpuhp/1]
+    0       -  00000000  00000000 <ffffffff  00000000 S    -          0:00 -
+    0      20  00000000         -         -         - -    ?          0:00 [idle_inject/1]
+    0       -  00000000  00000000 <ffffffff  00000000 S    -          0:00 -
+    0      21  00000000         -         -         - -    ?          0:00 [migration/1]
+    0       -  00000000  00000000 <ffffffff  00000000 S    -          0:00 -
+    0      22  00000000         -         -         - -    ?          0:00 [ksoftirqd/1]
+    0       -  00000000  00000000 <ffffffff  00000000 S    -          0:00 -
+    0      24  00000000         -         -         - -    ?          0:00 [kworker/1:0H-events
+    0       -  00000000  00000000 <ffffffff  00000000 I<   -          0:00 -
+    0      25  00000000         -         -         - -    ?          0:00 [kdevtmpfs]
+    0       -  00000000  00000000 <ffffffff  00000000 S    -          0:00 -
+    0      26  00000000         -         -         - -    ?          0:00 [inet_frag_wq]
+    0       -  00000000  00000000 <ffffffff  00000000 I<   -          0:00 -
+    0      27  00000000         -         -         - -    ?          0:00 [kauditd]
+    0       -  00000000  00000000 <ffffffff  00000000 S    -          0:00 -
+    0      28  00000000         -         -         - -    ?          0:00 [khungtaskd]
+    0       -  00000000  00000000 <ffffffff  00000000 S    -          0:00 -
+    0      29  00000000         -         -         - -    ?          0:00 [oom_reaper]
+    0       -  00000000  00000000 <ffffffff  00000000 S    -          0:00 -
+    0      30  00000000         -         -         - -    ?          0:00 [writeback]
+    0       -  00000000  00000000 <ffffffff  00000000 I<   -          0:00 -
+    0      31  00000000         -         -         - -    ?          0:00 [kcompactd0]
+    0       -  00000000  00000000 <ffffffff  00000000 S    -          0:00 -
+    0      32  00000000         -         -         - -    ?          0:00 [ksmd]
+    0       -  00000000  00000000 <ffffffff  00000000 SN   -          0:00 -
+    0      33  00000000         -         -         - -    ?          0:00 [khugepaged]
+    0       -  00000000  00000000 <ffffffff  00000000 SN   -          0:00 -
+    0      38  00000000         -         -         - -    ?          0:00 [kworker/1:1-cgroup_
+    0       -  00000000  00000000 <ffffffff  00000000 I    -          0:00 -
+    0      80  00000000         -         -         - -    ?          0:00 [kintegrityd]
+    0       -  00000000  00000000 <ffffffff  00000000 I<   -          0:00 -
+    0      81  00000000         -         -         - -    ?          0:00 [kblockd]
+    0       -  00000000  00000000 <ffffffff  00000000 I<   -          0:00 -
+    0      82  00000000         -         -         - -    ?          0:00 [blkcg_punt_bio]
+    0       -  00000000  00000000 <ffffffff  00000000 I<   -          0:00 -
+    0      83  00000000         -         -         - -    ?          0:00 [tpm_dev_wq]
+    0       -  00000000  00000000 <ffffffff  00000000 I<   -          0:00 -
+    0      84  00000000         -         -         - -    ?          0:00 [ata_sff]
+    0       -  00000000  00000000 <ffffffff  00000000 I<   -          0:00 -
+    0      85  00000000         -         -         - -    ?          0:00 [md]
+    0       -  00000000  00000000 <ffffffff  00000000 I<   -          0:00 -
+    0      86  00000000         -         -         - -    ?          0:00 [edac-poller]
+    0       -  00000000  00000000 <ffffffff  00000000 I<   -          0:00 -
+    0      87  00000000         -         -         - -    ?          0:00 [devfreq_wq]
+    0       -  00000000  00000000 <ffffffff  00000000 I<   -          0:00 -
+    0      88  00000000         -         -         - -    ?          0:00 [watchdogd]
+    0       -  00000000  00000000 <ffffffff  00000000 S    -          0:00 -
+    0      90  00000000         -         -         - -    ?          0:00 [kworker/1:1H-kblock
+    0       -  00000000  00000000 <ffffffff  00000000 I<   -          0:00 -
+    0      92  00000000         -         -         - -    ?          0:00 [kswapd0]
+    0       -  00000000  00000000 <ffffffff  00000000 S    -          0:00 -
+    0      93  00000000         -         -         - -    ?          0:00 [ecryptfs-kthrea]
+    0       -  00000000  00000000 <ffffffff  00000000 S    -          0:00 -
+    0      95  00000000         -         -         - -    ?          0:00 [kthrotld]
+    0       -  00000000  00000000 <ffffffff  00000000 I<   -          0:00 -
+    0      96  00000000         -         -         - -    ?          0:00 [acpi_thermal_pm]
+    0       -  00000000  00000000 <ffffffff  00000000 I<   -          0:00 -
+    0      97  00000000         -         -         - -    ?          0:00 [kworker/u4:2-events
+    0       -  00000000  00000000 <ffffffff  00000000 I    -          0:00 -
+    0      98  00000000         -         -         - -    ?          0:00 [scsi_eh_0]
+    0       -  00000000  00000000 <ffffffff  00000000 S    -          0:00 -
+    0      99  00000000         -         -         - -    ?          0:00 [scsi_tmf_0]
+    0       -  00000000  00000000 <ffffffff  00000000 I<   -          0:00 -
+    0     100  00000000         -         -         - -    ?          0:00 [scsi_eh_1]
+    0       -  00000000  00000000 <ffffffff  00000000 S    -          0:00 -
+    0     101  00000000         -         -         - -    ?          0:00 [scsi_tmf_1]
+    0       -  00000000  00000000 <ffffffff  00000000 I<   -          0:00 -
+    0     103  00000000         -         -         - -    ?          0:00 [vfio-irqfd-clea]
+    0       -  00000000  00000000 <ffffffff  00000000 I<   -          0:00 -
+    0     104  00000000         -         -         - -    ?          0:00 [mld]
+    0       -  00000000  00000000 <ffffffff  00000000 I<   -          0:00 -
+    0     105  00000000         -         -         - -    ?          0:00 [ipv6_addrconf]
+    0       -  00000000  00000000 <ffffffff  00000000 I<   -          0:00 -
+    0     115  00000000         -         -         - -    ?          0:00 [kstrp]
+    0       -  00000000  00000000 <ffffffff  00000000 I<   -          0:00 -
+    0     118  00000000         -         -         - -    ?          0:00 [zswap-shrink]
+    0       -  00000000  00000000 <ffffffff  00000000 I<   -          0:00 -
+    0     119  00000000         -         -         - -    ?          0:00 [kworker/u5:0]
+    0       -  00000000  00000000 <ffffffff  00000000 I<   -          0:00 -
+    0     124  00000000         -         -         - -    ?          0:00 [charger_manager]
+    0       -  00000000  00000000 <ffffffff  00000000 I<   -          0:00 -
+    0     147  00000000         -         -         - -    ?          0:00 [kworker/0:1H-kblock
+    0       -  00000000  00000000 <ffffffff  00000000 I<   -          0:00 -
+    0     181  00000000         -         -         - -    ?          0:00 [mpt_poll_0]
+    0       -  00000000  00000000 <ffffffff  00000000 I<   -          0:00 -
+    0     182  00000000         -         -         - -    ?          0:00 [cryptd]
+    0       -  00000000  00000000 <ffffffff  00000000 I<   -          0:00 -
+    0     184  00000000         -         -         - -    ?          0:00 [mpt/0]
+    0       -  00000000  00000000 <ffffffff  00000000 I<   -          0:00 -
+    0     218  00000000         -         -         - -    ?          0:00 [scsi_eh_2]
+    0       -  00000000  00000000 <ffffffff  00000000 S    -          0:00 -
+    0     219  00000000         -         -         - -    ?          0:00 [scsi_tmf_2]
+    0       -  00000000  00000000 <ffffffff  00000000 I<   -          0:00 -
+    0     251  00000000         -         -         - -    ?          0:00 [raid5wq]
+    0       -  00000000  00000000 <ffffffff  00000000 I<   -          0:00 -
+    0     298  00000000         -         -         - -    ?          0:00 [jbd2/sda1-8]
+    0       -  00000000  00000000 <ffffffff  00000000 S    -          0:00 -
+    0     299  00000000         -         -         - -    ?          0:00 [ext4-rsv-conver]
+    0       -  00000000  00000000 <ffffffff  00000000 I<   -          0:00 -
+    0     374  00000000         -         -         - -    ?          0:00 /lib/systemd/systemd
+    0       -  00000000 <00004a02  00001000 <00000040 S<s  -          0:00 -
+    0     399  00000000         -         -         - -    ?          0:00 [kaluad]
+    0       -  00000000  00000000 <ffffffff  00000000 I<   -          0:00 -
+    0     403  00000000         -         -         - -    ?          0:00 [kmpath_rdacd]
+    0       -  00000000  00000000 <ffffffff  00000000 I<   -          0:00 -
+    0     405  00000000         -         -         - -    ?          0:00 [kmpathd]
+    0       -  00000000  00000000 <ffffffff  00000000 I<   -          0:00 -
+    0     406  00000000         -         -         - -    ?          0:00 [kmpath_handlerd]
+    0       -  00000000  00000000 <ffffffff  00000000 I<   -          0:00 -
+    0     407  00000000         -         -         - -    ?          0:00 /sbin/multipathd -d 
+    0       -  00000000 <7ffbeeff  00000000 <80005a03 SLsl -          0:00 -
+    0       -  00000000 <7ffbeeff  00000000 <80005a03 SLsl -          0:00 -
+    0       -  00000000 <7ffbbcfc  00000000 <80005a03 SLsl -          0:00 -
+    0       -  00000000 <7ffbeeff  00000000 <80005a03 SLsl -          0:00 -
+    0       -  00000000 <7ffbeeff  00000000 <80005a03 SLsl -          0:00 -
+    0       -  00000000 <7ffbeeff  00000000 <80005a03 SLsl -          0:00 -
+    0       -  00000000 <7ffbeeff  00000000 <80005a03 SLsl -          0:00 -
+    0     408  00000000         -         -         - -    ?          0:00 /lib/systemd/systemd
+    0       -  00000000  00014003  00001000  00000000 Ss   -          0:00 -
+  103     442  00000000         -         -         - -    ?          0:00 /lib/systemd/systemd
+  103       -  00000000  00004002  00001000 <00000000 Ssl  -          0:00 -
+  103       -  00000000 <7ffbfeff  00001000 <00000000 Ssl  -          0:00 -
+    0     485  00000000         -         -         - -    ?          0:00 [kworker/u4:5-events
+    0       -  00000000  00000000 <ffffffff  00000000 I    -          0:00 -
+    0     489  00000000         -         -         - -    ?          0:00 [kworker/u4:6-events
+    0       -  00000000  00000000 <ffffffff  00000000 I    -          0:00 -
+  100     582  00000000         -         -         - -    ?          0:00 /lib/systemd/systemd
+  100       -  00000000  00004802  00001000  00000000 Ss   -          0:00 -
+  101     584  00000000         -         -         - -    ?          0:00 /lib/systemd/systemd
+  101       -  00000000 <00004a02  00001000  00000000 Ss   -          0:00 -
+  102     622  00000000         -         -         - -    ?          0:00 @dbus-daemon --syste
+  102       -  00000000  00000000  00001000  00004001 Ss   -          0:00 -
+    0     626  00000000         -         -         - -    ?          0:00 /usr/sbin/irqbalance
+    0       -  00000000  00000000  00001000 <00004a03 Ssl  -          0:00 -
+    0       -  00000000 <7ffbfeff  00001000 <00004a03 Ssl  -          0:00 -
+    0     627  00000000         -         -         - -    ?          0:00 /usr/bin/python3 /us
+    0       -  00000000  00000000  01001000  00000002 Ss   -          0:00 -
+  104     628  00000000         -         -         - -    ?          0:00 /usr/sbin/rsyslogd -
+  104       -  00000000  00000000  01001206 <00314001 Ssl  -          0:00 -
+  104       -  00000000 <7febfaff  01001206 <00314001 Ssl  -          0:00 -
+  104       -  00000000 <7febfaff  01001206 <00314001 Ssl  -          0:00 -
+  104       -  00000000 <7febfaff  01001206 <00314001 Ssl  -          0:00 -
+    0     631  00000000         -         -         - -    ?          0:01 /usr/lib/snapd/snapd
+    0       -  00000000 <3bba3a00  00000000 <7fc1feff Ssl  -          0:01 -
+    0       -  00000000  00000000  00000000 <7fc1feff Ssl  -          0:00 -
+    0       -  00000000  00000000  00000000 <7fc1feff Ssl  -          0:00 -
+    0       -  00000000  00000000  00000000 <7fc1feff Ssl  -          0:00 -
+    0       -  00000000  00000000  00000000 <7fc1feff Ssl  -          0:00 -
+    0       -  00000000  00000000  00000000 <7fc1feff Ssl  -          0:00 -
+    0       -  00000000  00000000  00000000 <7fc1feff Ssl  -          0:00 -
+    0       -  00000000  00000000  00000000 <7fc1feff Ssl  -          0:00 -
+    0       -  00000000  00000000  00000000 <7fc1feff Ssl  -          0:00 -
+    0     635  00000000         -         -         - -    ?          0:00 /lib/systemd/systemd
+    0       -  00000000 <00014003 <00001000 <00000000 Ss   -          0:00 -
+    0     647  00000000         -         -         - -    ?          0:00 /usr/sbin/cron -f -P
+    0       -  00000000  00000000  00000000  00010001 Ss   -          0:00 -
+    0     656  00000000         -         -         - -    ttyS0      0:00 /sbin/agetty -o -p -
+    0       -  00000000  00000000  00000006  00000000 Ss+  -          0:00 -
+    0     658  00000000         -         -         - -    tty1       0:00 /sbin/agetty -o -p -
+    0       -  00000000  00000000  00000006  00000000 Ss+  -          0:00 -
+    0     661  00000000         -         -         - -    ?          0:00 sshd: /usr/sbin/sshd
+    0       -  00000000  00000000  00001000  00014005 Ss   -          0:00 -
+    0     702  00000000         -         -         - -    ?          0:00 /usr/bin/python3 /us
+    0       -  00000000  00000000  01001000 <00004003 Ssl  -          0:00 -
+    0       -  00000000 <7ffbfeff  01001000 <00004003 Ssl  -          0:00 -
+    0     716  00000000         -         -         - -    ?          0:00 /usr/libexec/polkitd
+    0       -  00000000  00000002  00001000 <00000000 Ssl  -          0:00 -
+    0       -  00000000 <7ffbfeff  00001000 <00000000 Ssl  -          0:00 -
+    0       -  00000000  00000002  00001000 <00000000 Ssl  -          0:00 -
+    0     839  00000000         -         -         - -    ?          0:00 [kworker/1:3-events]
+    0       -  00000000  00000000 <ffffffff  00000000 I    -          0:00 -
+ 1000     888  00000000         -         -         - -    ?          0:00 /lib/systemd/systemd
+ 1000       -  00000000 <28014a03  00001000  00000000 Ss   -          0:00 -
+ 1000     889  00000000         -         -         - -    ?          0:00 (sd-pam)
+ 1000       -  00000000  00000000  00001000 <00000000 S    -          0:00 -
+    0    1199  00000000         -         -         - -    ?          0:00 sshd: vagrant [priv]
+    0       -  00000000  00000000  01001000  00004003 Ss   -          0:00 -
+ 1000    1249  00000000         -         -         - -    ?          0:00 sshd: vagrant@pts/0
+ 1000       -  00000000  00000000  00001000  00010000 R    -          0:00 -
+ 1000    1250  00000000         -         -         - -    pts/0      0:00 -bash
+ 1000       -  00000000  00010000  00384004  4b813efb Ss   -          0:00 -
+    0    1300  00000000         -         -         - -    ?          0:00 sshd: vagrant [priv]
+    0       -  00000000  00000000  01001000  00004003 Ss   -          0:00 -
+ 1000    1349  00000000         -         -         - -    ?          0:00 sshd: vagrant@pts/1
+ 1000       -  00000000  00000000  00001000  00010000 S    -          0:00 -
+ 1000    1350  00000000         -         -         - -    pts/1      0:00 -bash
+ 1000       -  00000000  00010000  00384004  4b813efb Ss   -          0:00 -
+ 1000    1360  00000000         -         -         - -    pts/0      0:00 script typescript1.t
+ 1000       -  00000000 <7ffbfeff  00000000  00000000 S+   -          0:00 -
+ 1000    1361  00000000         -         -         - -    pts/2      0:00 bash -i
+ 1000       -  00000000  00010000  00384004  4b813efb Ss   -          0:00 -
+ 1000    1368  00000000         -         -         - -    pts/1      0:00 script typescript2.t
+ 1000       -  00000000 <7ffbfeff  00000000  00000000 S+   -          0:00 -
+ 1000    1369  00000000         -         -         - -    pts/3      0:00 bash -i
+ 1000       -  00000000  00000000  00384004  4b813efb Ss+  -          0:00 -
+    0    1383  00000000         -         -         - -    ?          0:00 [kworker/0:2-events]
+    0       -  00000000  00000000 <ffffffff  00000000 I    -          0:00 -
+    0    1395  00000000         -         -         - -    ?          0:00 [kworker/1:0-events]
+    0       -  00000000  00000000 <ffffffff  00000000 I    -          0:00 -
+ 1000    1402  00000000         -         -         - -    pts/2      0:00 ps axms
+ 1000       -  00000000  00000000  00000000  73d1fef9 R+   -          0:00 -
+[?2004h[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ [H[J[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ ^V[K^[[200~ps -eo euser,ruser,suser,fuser,f,comm,label ~[K[K[2P[1P[1P[C[1P[1P[1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004lEUSER    RUSER    SUSER    FUSER    F COMMAND         LABEL
+root     root     root     root     4 systemd         unconfined
+root     root     root     root     1 kthreadd        unconfined
+root     root     root     root     1 rcu_gp          unconfined
+root     root     root     root     1 rcu_par_gp      unconfined
+root     root     root     root     1 slub_flushwq    unconfined
+root     root     root     root     1 netns           unconfined
+root     root     root     root     1 kworker/0:0H-ev unconfined
+root     root     root     root     1 mm_percpu_wq    unconfined
+root     root     root     root     1 rcu_tasks_rude_ unconfined
+root     root     root     root     1 rcu_tasks_trace unconfined
+root     root     root     root     1 ksoftirqd/0     unconfined
+root     root     root     root     1 rcu_sched       unconfined
+root     root     root     root     1 migration/0     unconfined
+root     root     root     root     1 idle_inject/0   unconfined
+root     root     root     root     1 kworker/0:1-eve unconfined
+root     root     root     root     1 cpuhp/0         unconfined
+root     root     root     root     1 cpuhp/1         unconfined
+root     root     root     root     1 idle_inject/1   unconfined
+root     root     root     root     1 migration/1     unconfined
+root     root     root     root     1 ksoftirqd/1     unconfined
+root     root     root     root     1 kworker/1:0H-ev unconfined
+root     root     root     root     5 kdevtmpfs       unconfined
+root     root     root     root     1 inet_frag_wq    unconfined
+root     root     root     root     1 kauditd         unconfined
+root     root     root     root     1 khungtaskd      unconfined
+root     root     root     root     1 oom_reaper      unconfined
+root     root     root     root     1 writeback       unconfined
+root     root     root     root     1 kcompactd0      unconfined
+root     root     root     root     1 ksmd            unconfined
+root     root     root     root     1 khugepaged      unconfined
+root     root     root     root     1 kintegrityd     unconfined
+root     root     root     root     1 kblockd         unconfined
+root     root     root     root     1 blkcg_punt_bio  unconfined
+root     root     root     root     1 tpm_dev_wq      unconfined
+root     root     root     root     1 ata_sff         unconfined
+root     root     root     root     1 md              unconfined
+root     root     root     root     1 edac-poller     unconfined
+root     root     root     root     1 devfreq_wq      unconfined
+root     root     root     root     1 watchdogd       unconfined
+root     root     root     root     1 kworker/1:1H-kb unconfined
+root     root     root     root     1 kswapd0         unconfined
+root     root     root     root     1 ecryptfs-kthrea unconfined
+root     root     root     root     1 kthrotld        unconfined
+root     root     root     root     1 acpi_thermal_pm unconfined
+root     root     root     root     1 kworker/u4:2-ev unconfined
+root     root     root     root     1 scsi_eh_0       unconfined
+root     root     root     root     1 scsi_tmf_0      unconfined
+root     root     root     root     1 scsi_eh_1       unconfined
+root     root     root     root     1 scsi_tmf_1      unconfined
+root     root     root     root     1 vfio-irqfd-clea unconfined
+root     root     root     root     1 mld             unconfined
+root     root     root     root     1 ipv6_addrconf   unconfined
+root     root     root     root     1 kstrp           unconfined
+root     root     root     root     1 zswap-shrink    unconfined
+root     root     root     root     1 kworker/u5:0    unconfined
+root     root     root     root     1 charger_manager unconfined
+root     root     root     root     1 kworker/0:1H-kb unconfined
+root     root     root     root     1 mpt_poll_0      unconfined
+root     root     root     root     1 cryptd          unconfined
+root     root     root     root     1 mpt/0           unconfined
+root     root     root     root     1 scsi_eh_2       unconfined
+root     root     root     root     1 scsi_tmf_2      unconfined
+root     root     root     root     1 raid5wq         unconfined
+root     root     root     root     1 jbd2/sda1-8     unconfined
+root     root     root     root     1 ext4-rsv-conver unconfined
+root     root     root     root     4 systemd-journal unconfined
+root     root     root     root     1 kaluad          unconfined
+root     root     root     root     1 kmpath_rdacd    unconfined
+root     root     root     root     1 kmpathd         unconfined
+root     root     root     root     1 kmpath_handlerd unconfined
+root     root     root     root     4 multipathd      unconfined
+root     root     root     root     4 systemd-udevd   unconfined
+systemd+ systemd+ systemd+ systemd+ 4 systemd-timesyn unconfined
+root     root     root     root     1 kworker/u4:6-ev unconfined
+systemd+ systemd+ systemd+ systemd+ 4 systemd-network unconfined
+systemd+ systemd+ systemd+ systemd+ 4 systemd-resolve unconfined
+message+ message+ message+ message+ 4 dbus-daemon     unconfined
+root     root     root     root     4 irqbalance      unconfined
+root     root     root     root     4 networkd-dispat unconfined
+syslog   syslog   syslog   syslog   4 rsyslogd        unconfined
+root     root     root     root     4 snapd           unconfined
+root     root     root     root     4 systemd-logind  unconfined
+root     root     root     root     4 cron            unconfined
+root     root     root     root     4 agetty          unconfined
+root     root     root     root     4 agetty          unconfined
+root     root     root     root     4 sshd            unconfined
+root     root     root     root     4 unattended-upgr unconfined
+root     root     root     root     4 polkitd         unconfined
+root     root     root     root     1 kworker/1:3-eve unconfined
+vagrant  vagrant  vagrant  vagrant  4 systemd         unconfined
+vagrant  vagrant  vagrant  vagrant  5 (sd-pam)        unconfined
+root     root     root     root     4 sshd            unconfined
+vagrant  vagrant  vagrant  vagrant  5 sshd            unconfined
+vagrant  vagrant  vagrant  vagrant  0 bash            unconfined
+root     root     root     root     4 sshd            unconfined
+vagrant  vagrant  vagrant  vagrant  5 sshd            unconfined
+vagrant  vagrant  vagrant  vagrant  0 bash            unconfined
+vagrant  vagrant  vagrant  vagrant  0 script          unconfined
+vagrant  vagrant  vagrant  vagrant  0 bash            unconfined
+vagrant  vagrant  vagrant  vagrant  0 script          unconfined
+vagrant  vagrant  vagrant  vagrant  0 bash            unconfined
+root     root     root     root     1 kworker/0:2-eve unconfined
+root     root     root     root     1 kworker/1:0-eve unconfined
+root     root     root     root     1 kworker/u4:0+ev unconfined
+vagrant  vagrant  vagrant  vagrant  0 ps              unconfined
+[?2004h[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ [H[J[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ [7mps axZ[27mps axZ
+[?2004lLABEL                               PID TTY      STAT   TIME COMMAND
+unconfined                            1 ?        Ss     0:00 /sbin/init
+unconfined                            2 ?        S      0:00 [kthreadd]
+unconfined                            3 ?        I<     0:00 [rcu_gp]
+unconfined                            4 ?        I<     0:00 [rcu_par_gp]
+unconfined                            5 ?        I<     0:00 [slub_flushwq]
+unconfined                            6 ?        I<     0:00 [netns]
+unconfined                            8 ?        I<     0:00 [kworker/0:0H-events_highpri]
+unconfined                           10 ?        I<     0:00 [mm_percpu_wq]
+unconfined                           11 ?        S      0:00 [rcu_tasks_rude_]
+unconfined                           12 ?        S      0:00 [rcu_tasks_trace]
+unconfined                           13 ?        S      0:00 [ksoftirqd/0]
+unconfined                           14 ?        I      0:00 [rcu_sched]
+unconfined                           15 ?        S      0:00 [migration/0]
+unconfined                           16 ?        S      0:00 [idle_inject/0]
+unconfined                           17 ?        I      0:00 [kworker/0:1-events]
+unconfined                           18 ?        S      0:00 [cpuhp/0]
+unconfined                           19 ?        S      0:00 [cpuhp/1]
+unconfined                           20 ?        S      0:00 [idle_inject/1]
+unconfined                           21 ?        S      0:00 [migration/1]
+unconfined                           22 ?        S      0:00 [ksoftirqd/1]
+unconfined                           24 ?        I<     0:00 [kworker/1:0H-events_highpri]
+unconfined                           25 ?        S      0:00 [kdevtmpfs]
+unconfined                           26 ?        I<     0:00 [inet_frag_wq]
+unconfined                           27 ?        S      0:00 [kauditd]
+unconfined                           28 ?        S      0:00 [khungtaskd]
+unconfined                           29 ?        S      0:00 [oom_reaper]
+unconfined                           30 ?        I<     0:00 [writeback]
+unconfined                           31 ?        S      0:00 [kcompactd0]
+unconfined                           32 ?        SN     0:00 [ksmd]
+unconfined                           33 ?        SN     0:00 [khugepaged]
+unconfined                           80 ?        I<     0:00 [kintegrityd]
+unconfined                           81 ?        I<     0:00 [kblockd]
+unconfined                           82 ?        I<     0:00 [blkcg_punt_bio]
+unconfined                           83 ?        I<     0:00 [tpm_dev_wq]
+unconfined                           84 ?        I<     0:00 [ata_sff]
+unconfined                           85 ?        I<     0:00 [md]
+unconfined                           86 ?        I<     0:00 [edac-poller]
+unconfined                           87 ?        I<     0:00 [devfreq_wq]
+unconfined                           88 ?        S      0:00 [watchdogd]
+unconfined                           90 ?        I<     0:00 [kworker/1:1H-kblockd]
+unconfined                           92 ?        S      0:00 [kswapd0]
+unconfined                           93 ?        S      0:00 [ecryptfs-kthrea]
+unconfined                           95 ?        I<     0:00 [kthrotld]
+unconfined                           96 ?        I<     0:00 [acpi_thermal_pm]
+unconfined                           97 ?        R      0:00 [kworker/u4:2-events_unbound]
+unconfined                           98 ?        S      0:00 [scsi_eh_0]
+unconfined                           99 ?        I<     0:00 [scsi_tmf_0]
+unconfined                          100 ?        S      0:00 [scsi_eh_1]
+unconfined                          101 ?        I<     0:00 [scsi_tmf_1]
+unconfined                          103 ?        I<     0:00 [vfio-irqfd-clea]
+unconfined                          104 ?        I<     0:00 [mld]
+unconfined                          105 ?        I<     0:00 [ipv6_addrconf]
+unconfined                          115 ?        I<     0:00 [kstrp]
+unconfined                          118 ?        I<     0:00 [zswap-shrink]
+unconfined                          119 ?        I<     0:00 [kworker/u5:0]
+unconfined                          124 ?        I<     0:00 [charger_manager]
+unconfined                          147 ?        I<     0:00 [kworker/0:1H-kblockd]
+unconfined                          181 ?        I<     0:00 [mpt_poll_0]
+unconfined                          182 ?        I<     0:00 [cryptd]
+unconfined                          184 ?        I<     0:00 [mpt/0]
+unconfined                          218 ?        S      0:00 [scsi_eh_2]
+unconfined                          219 ?        I<     0:00 [scsi_tmf_2]
+unconfined                          251 ?        I<     0:00 [raid5wq]
+unconfined                          298 ?        S      0:00 [jbd2/sda1-8]
+unconfined                          299 ?        I<     0:00 [ext4-rsv-conver]
+unconfined                          374 ?        S<s    0:00 /lib/systemd/systemd-journald
+unconfined                          399 ?        I<     0:00 [kaluad]
+unconfined                          403 ?        I<     0:00 [kmpath_rdacd]
+unconfined                          405 ?        I<     0:00 [kmpathd]
+unconfined                          406 ?        I<     0:00 [kmpath_handlerd]
+unconfined                          407 ?        SLsl   0:00 /sbin/multipathd -d -s
+unconfined                          408 ?        Ss     0:00 /lib/systemd/systemd-udevd
+unconfined                          442 ?        Ssl    0:00 /lib/systemd/systemd-timesyncd
+unconfined                          489 ?        I      0:00 [kworker/u4:6-events_unbound]
+unconfined                          582 ?        Ss     0:00 /lib/systemd/systemd-networkd
+unconfined                          584 ?        Ss     0:00 /lib/systemd/systemd-resolved
+unconfined                          622 ?        Ss     0:00 @dbus-daemon --system --address=sy
+unconfined                          626 ?        Ssl    0:00 /usr/sbin/irqbalance --foreground
+unconfined                          627 ?        Ss     0:00 /usr/bin/python3 /usr/bin/networkd
+unconfined                          628 ?        Ssl    0:00 /usr/sbin/rsyslogd -n -iNONE
+unconfined                          631 ?        Ssl    0:01 /usr/lib/snapd/snapd
+unconfined                          635 ?        Ss     0:00 /lib/systemd/systemd-logind
+unconfined                          647 ?        Ss     0:00 /usr/sbin/cron -f -P
+unconfined                          656 ttyS0    Ss+    0:00 /sbin/agetty -o -p -- \u --keep-ba
+unconfined                          658 tty1     Ss+    0:00 /sbin/agetty -o -p -- \u --noclear
+unconfined                          661 ?        Ss     0:00 sshd: /usr/sbin/sshd -D [listener]
+unconfined                          702 ?        Ssl    0:00 /usr/bin/python3 /usr/share/unatte
+unconfined                          716 ?        Ssl    0:00 /usr/libexec/polkitd --no-debug
+unconfined                          839 ?        I      0:00 [kworker/1:3-mpt_poll_0]
+unconfined                          888 ?        Ss     0:00 /lib/systemd/systemd --user
+unconfined                          889 ?        S      0:00 (sd-pam)
+unconfined                         1199 ?        Ss     0:00 sshd: vagrant [priv]
+unconfined                         1249 ?        R      0:00 sshd: vagrant@pts/0
+unconfined                         1250 pts/0    Ss     0:00 -bash
+unconfined                         1300 ?        Ss     0:00 sshd: vagrant [priv]
+unconfined                         1349 ?        S      0:00 sshd: vagrant@pts/1
+unconfined                         1350 pts/1    Ss     0:00 -bash
+unconfined                         1360 pts/0    S+     0:00 script typescript1.txt
+unconfined                         1361 pts/2    Ss     0:00 bash -i
+unconfined                         1368 pts/1    S+     0:00 script typescript2.txt
+unconfined                         1369 pts/3    Ss+    0:00 bash -i
+unconfined                         1383 ?        I      0:00 [kworker/0:2-events]
+unconfined                         1395 ?        I      0:00 [kworker/1:0-events]
+unconfined                         1404 ?        I      0:00 [kworker/u4:0-events_unbound]
+unconfined                         1406 pts/2    R+     0:00 ps axZ
+[?2004h[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ [H[J[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ [7mps -eM[27mps -eM
+[?2004lLABEL                               PID TTY          TIME CMD
+unconfined                            1 ?        00:00:00 systemd
+unconfined                            2 ?        00:00:00 kthreadd
+unconfined                            3 ?        00:00:00 rcu_gp
+unconfined                            4 ?        00:00:00 rcu_par_gp
+unconfined                            5 ?        00:00:00 slub_flushwq
+unconfined                            6 ?        00:00:00 netns
+unconfined                            8 ?        00:00:00 kworker/0:0H-events_highpri
+unconfined                           10 ?        00:00:00 mm_percpu_wq
+unconfined                           11 ?        00:00:00 rcu_tasks_rude_
+unconfined                           12 ?        00:00:00 rcu_tasks_trace
+unconfined                           13 ?        00:00:00 ksoftirqd/0
+unconfined                           14 ?        00:00:00 rcu_sched
+unconfined                           15 ?        00:00:00 migration/0
+unconfined                           16 ?        00:00:00 idle_inject/0
+unconfined                           17 ?        00:00:00 kworker/0:1-events
+unconfined                           18 ?        00:00:00 cpuhp/0
+unconfined                           19 ?        00:00:00 cpuhp/1
+unconfined                           20 ?        00:00:00 idle_inject/1
+unconfined                           21 ?        00:00:00 migration/1
+unconfined                           22 ?        00:00:00 ksoftirqd/1
+unconfined                           24 ?        00:00:00 kworker/1:0H-events_highpri
+unconfined                           25 ?        00:00:00 kdevtmpfs
+unconfined                           26 ?        00:00:00 inet_frag_wq
+unconfined                           27 ?        00:00:00 kauditd
+unconfined                           28 ?        00:00:00 khungtaskd
+unconfined                           29 ?        00:00:00 oom_reaper
+unconfined                           30 ?        00:00:00 writeback
+unconfined                           31 ?        00:00:00 kcompactd0
+unconfined                           32 ?        00:00:00 ksmd
+unconfined                           33 ?        00:00:00 khugepaged
+unconfined                           80 ?        00:00:00 kintegrityd
+unconfined                           81 ?        00:00:00 kblockd
+unconfined                           82 ?        00:00:00 blkcg_punt_bio
+unconfined                           83 ?        00:00:00 tpm_dev_wq
+unconfined                           84 ?        00:00:00 ata_sff
+unconfined                           85 ?        00:00:00 md
+unconfined                           86 ?        00:00:00 edac-poller
+unconfined                           87 ?        00:00:00 devfreq_wq
+unconfined                           88 ?        00:00:00 watchdogd
+unconfined                           90 ?        00:00:00 kworker/1:1H-kblockd
+unconfined                           92 ?        00:00:00 kswapd0
+unconfined                           93 ?        00:00:00 ecryptfs-kthrea
+unconfined                           95 ?        00:00:00 kthrotld
+unconfined                           96 ?        00:00:00 acpi_thermal_pm
+unconfined                           97 ?        00:00:00 kworker/u4:2-events_unbound
+unconfined                           98 ?        00:00:00 scsi_eh_0
+unconfined                           99 ?        00:00:00 scsi_tmf_0
+unconfined                          100 ?        00:00:00 scsi_eh_1
+unconfined                          101 ?        00:00:00 scsi_tmf_1
+unconfined                          103 ?        00:00:00 vfio-irqfd-clea
+unconfined                          104 ?        00:00:00 mld
+unconfined                          105 ?        00:00:00 ipv6_addrconf
+unconfined                          115 ?        00:00:00 kstrp
+unconfined                          118 ?        00:00:00 zswap-shrink
+unconfined                          119 ?        00:00:00 kworker/u5:0
+unconfined                          124 ?        00:00:00 charger_manager
+unconfined                          147 ?        00:00:00 kworker/0:1H-kblockd
+unconfined                          181 ?        00:00:00 mpt_poll_0
+unconfined                          182 ?        00:00:00 cryptd
+unconfined                          184 ?        00:00:00 mpt/0
+unconfined                          218 ?        00:00:00 scsi_eh_2
+unconfined                          219 ?        00:00:00 scsi_tmf_2
+unconfined                          251 ?        00:00:00 raid5wq
+unconfined                          298 ?        00:00:00 jbd2/sda1-8
+unconfined                          299 ?        00:00:00 ext4-rsv-conver
+unconfined                          374 ?        00:00:00 systemd-journal
+unconfined                          399 ?        00:00:00 kaluad
+unconfined                          403 ?        00:00:00 kmpath_rdacd
+unconfined                          405 ?        00:00:00 kmpathd
+unconfined                          406 ?        00:00:00 kmpath_handlerd
+unconfined                          407 ?        00:00:00 multipathd
+unconfined                          408 ?        00:00:00 systemd-udevd
+unconfined                          442 ?        00:00:00 systemd-timesyn
+unconfined                          489 ?        00:00:00 kworker/u4:6-events_unbound
+unconfined                          582 ?        00:00:00 systemd-network
+unconfined                          584 ?        00:00:00 systemd-resolve
+unconfined                          622 ?        00:00:00 dbus-daemon
+unconfined                          626 ?        00:00:00 irqbalance
+unconfined                          627 ?        00:00:00 networkd-dispat
+unconfined                          628 ?        00:00:00 rsyslogd
+unconfined                          631 ?        00:00:01 snapd
+unconfined                          635 ?        00:00:00 systemd-logind
+unconfined                          647 ?        00:00:00 cron
+unconfined                          656 ttyS0    00:00:00 agetty
+unconfined                          658 tty1     00:00:00 agetty
+unconfined                          661 ?        00:00:00 sshd
+unconfined                          702 ?        00:00:00 unattended-upgr
+unconfined                          716 ?        00:00:00 polkitd
+unconfined                          839 ?        00:00:00 kworker/1:3-mpt_poll_0
+unconfined                          888 ?        00:00:00 systemd
+unconfined                          889 ?        00:00:00 (sd-pam)
+unconfined                         1199 ?        00:00:00 sshd
+unconfined                         1249 ?        00:00:00 sshd
+unconfined                         1250 pts/0    00:00:00 bash
+unconfined                         1300 ?        00:00:00 sshd
+unconfined                         1349 ?        00:00:00 sshd
+unconfined                         1350 pts/1    00:00:00 bash
+unconfined                         1360 pts/0    00:00:00 script
+unconfined                         1361 pts/2    00:00:00 bash
+unconfined                         1368 pts/1    00:00:00 script
+unconfined                         1369 pts/3    00:00:00 bash
+unconfined                         1383 ?        00:00:00 kworker/0:2-events
+unconfined                         1395 ?        00:00:00 kworker/1:0-events
+unconfined                         1404 ?        00:00:00 kworker/u4:0-events_unbound
+unconfined                         1407 pts/2    00:00:00 ps
+[?2004h[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ [H[J[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ [7mps -U root -u root u[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cps -U root -u root u
+[?2004lUSER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.5 100696 11452 ?        Ss   17:31   0:00 /sbin/init
+root           2  0.0  0.0      0     0 ?        S    17:31   0:00 [kthreadd]
+root           3  0.0  0.0      0     0 ?        I<   17:31   0:00 [rcu_gp]
+root           4  0.0  0.0      0     0 ?        I<   17:31   0:00 [rcu_par_gp]
+root           5  0.0  0.0      0     0 ?        I<   17:31   0:00 [slub_flushwq]
+root           6  0.0  0.0      0     0 ?        I<   17:31   0:00 [netns]
+root           8  0.0  0.0      0     0 ?        I<   17:31   0:00 [kworker/0:0H-events_highpri
+root          10  0.0  0.0      0     0 ?        I<   17:31   0:00 [mm_percpu_wq]
+root          11  0.0  0.0      0     0 ?        S    17:31   0:00 [rcu_tasks_rude_]
+root          12  0.0  0.0      0     0 ?        S    17:31   0:00 [rcu_tasks_trace]
+root          13  0.0  0.0      0     0 ?        S    17:31   0:00 [ksoftirqd/0]
+root          14  0.0  0.0      0     0 ?        I    17:31   0:00 [rcu_sched]
+root          15  0.0  0.0      0     0 ?        S    17:31   0:00 [migration/0]
+root          16  0.0  0.0      0     0 ?        S    17:31   0:00 [idle_inject/0]
+root          17  0.0  0.0      0     0 ?        I    17:31   0:00 [kworker/0:1-events]
+root          18  0.0  0.0      0     0 ?        S    17:31   0:00 [cpuhp/0]
+root          19  0.0  0.0      0     0 ?        S    17:31   0:00 [cpuhp/1]
+root          20  0.0  0.0      0     0 ?        S    17:31   0:00 [idle_inject/1]
+root          21  0.0  0.0      0     0 ?        S    17:31   0:00 [migration/1]
+root          22  0.0  0.0      0     0 ?        S    17:31   0:00 [ksoftirqd/1]
+root          24  0.0  0.0      0     0 ?        I<   17:31   0:00 [kworker/1:0H-events_highpri
+root          25  0.0  0.0      0     0 ?        S    17:31   0:00 [kdevtmpfs]
+root          26  0.0  0.0      0     0 ?        I<   17:31   0:00 [inet_frag_wq]
+root          27  0.0  0.0      0     0 ?        S    17:31   0:00 [kauditd]
+root          28  0.0  0.0      0     0 ?        S    17:31   0:00 [khungtaskd]
+root          29  0.0  0.0      0     0 ?        S    17:31   0:00 [oom_reaper]
+root          30  0.0  0.0      0     0 ?        I<   17:31   0:00 [writeback]
+root          31  0.0  0.0      0     0 ?        S    17:31   0:00 [kcompactd0]
+root          32  0.0  0.0      0     0 ?        SN   17:31   0:00 [ksmd]
+root          33  0.0  0.0      0     0 ?        SN   17:31   0:00 [khugepaged]
+root          80  0.0  0.0      0     0 ?        I<   17:31   0:00 [kintegrityd]
+root          81  0.0  0.0      0     0 ?        I<   17:31   0:00 [kblockd]
+root          82  0.0  0.0      0     0 ?        I<   17:31   0:00 [blkcg_punt_bio]
+root          83  0.0  0.0      0     0 ?        I<   17:31   0:00 [tpm_dev_wq]
+root          84  0.0  0.0      0     0 ?        I<   17:31   0:00 [ata_sff]
+root          85  0.0  0.0      0     0 ?        I<   17:31   0:00 [md]
+root          86  0.0  0.0      0     0 ?        I<   17:31   0:00 [edac-poller]
+root          87  0.0  0.0      0     0 ?        I<   17:31   0:00 [devfreq_wq]
+root          88  0.0  0.0      0     0 ?        S    17:31   0:00 [watchdogd]
+root          90  0.0  0.0      0     0 ?        I<   17:31   0:00 [kworker/1:1H-kblockd]
+root          92  0.0  0.0      0     0 ?        S    17:31   0:00 [kswapd0]
+root          93  0.0  0.0      0     0 ?        S    17:31   0:00 [ecryptfs-kthrea]
+root          95  0.0  0.0      0     0 ?        I<   17:31   0:00 [kthrotld]
+root          96  0.0  0.0      0     0 ?        I<   17:31   0:00 [acpi_thermal_pm]
+root          97  0.0  0.0      0     0 ?        R    17:31   0:00 [kworker/u4:2-events_unbound
+root          98  0.0  0.0      0     0 ?        S    17:31   0:00 [scsi_eh_0]
+root          99  0.0  0.0      0     0 ?        I<   17:31   0:00 [scsi_tmf_0]
+root         100  0.0  0.0      0     0 ?        S    17:31   0:00 [scsi_eh_1]
+root         101  0.0  0.0      0     0 ?        I<   17:31   0:00 [scsi_tmf_1]
+root         103  0.0  0.0      0     0 ?        I<   17:31   0:00 [vfio-irqfd-clea]
+root         104  0.0  0.0      0     0 ?        I<   17:31   0:00 [mld]
+root         105  0.0  0.0      0     0 ?        I<   17:31   0:00 [ipv6_addrconf]
+root         115  0.0  0.0      0     0 ?        I<   17:31   0:00 [kstrp]
+root         118  0.0  0.0      0     0 ?        I<   17:31   0:00 [zswap-shrink]
+root         119  0.0  0.0      0     0 ?        I<   17:31   0:00 [kworker/u5:0]
+root         124  0.0  0.0      0     0 ?        I<   17:31   0:00 [charger_manager]
+root         147  0.0  0.0      0     0 ?        I<   17:31   0:00 [kworker/0:1H-kblockd]
+root         181  0.0  0.0      0     0 ?        I<   17:31   0:00 [mpt_poll_0]
+root         182  0.0  0.0      0     0 ?        I<   17:31   0:00 [cryptd]
+root         184  0.0  0.0      0     0 ?        I<   17:31   0:00 [mpt/0]
+root         218  0.0  0.0      0     0 ?        S    17:31   0:00 [scsi_eh_2]
+root         219  0.0  0.0      0     0 ?        I<   17:31   0:00 [scsi_tmf_2]
+root         251  0.0  0.0      0     0 ?        I<   17:31   0:00 [raid5wq]
+root         298  0.0  0.0      0     0 ?        S    17:31   0:00 [jbd2/sda1-8]
+root         299  0.0  0.0      0     0 ?        I<   17:31   0:00 [ext4-rsv-conver]
+root         374  0.0  0.7  47992 14372 ?        S<s  17:31   0:00 /lib/systemd/systemd-journal
+root         399  0.0  0.0      0     0 ?        I<   17:31   0:00 [kaluad]
+root         403  0.0  0.0      0     0 ?        I<   17:31   0:00 [kmpath_rdacd]
+root         405  0.0  0.0      0     0 ?        I<   17:31   0:00 [kmpathd]
+root         406  0.0  0.0      0     0 ?        I<   17:31   0:00 [kmpath_handlerd]
+root         407  0.0  1.3 354888 27100 ?        SLsl 17:31   0:00 /sbin/multipathd -d -s
+root         408  0.0  0.3  23308  6604 ?        Ss   17:31   0:00 /lib/systemd/systemd-udevd
+root         489  0.0  0.0      0     0 ?        I    17:31   0:00 [kworker/u4:6-events_unbound
+root         626  0.0  0.2  82700  4100 ?        Ssl  17:31   0:00 /usr/sbin/irqbalance --foreg
+root         627  0.0  0.9  33068 19036 ?        Ss   17:31   0:00 /usr/bin/python3 /usr/bin/ne
+root         631  0.1  1.7 1848388 35724 ?       Ssl  17:31   0:01 /usr/lib/snapd/snapd
+root         635  0.0  0.3  23560  7784 ?        Ss   17:31   0:00 /lib/systemd/systemd-logind
+root         647  0.0  0.1   7288  2764 ?        Ss   17:31   0:00 /usr/sbin/cron -f -P
+root         656  0.0  0.0   6220  1128 ttyS0    Ss+  17:31   0:00 /sbin/agetty -o -p -- \u --k
+root         658  0.0  0.0   6176  1096 tty1     Ss+  17:31   0:00 /sbin/agetty -o -p -- \u --n
+root         661  0.0  0.4  15440  9200 ?        Ss   17:31   0:00 sshd: /usr/sbin/sshd -D [lis
+root         702  0.0  1.0 110136 21280 ?        Ssl  17:31   0:00 /usr/bin/python3 /usr/share/
+root         716  0.0  0.4 235476  8216 ?        Ssl  17:31   0:00 /usr/libexec/polkitd --no-de
+root         839  0.0  0.0      0     0 ?        I    17:31   0:00 [kworker/1:3-events]
+root        1199  0.0  0.5  16924 10800 ?        Ss   17:31   0:00 sshd: vagrant [priv]
+root        1300  0.0  0.5  16924 10692 ?        Ss   17:32   0:00 sshd: vagrant [priv]
+root        1383  0.0  0.0      0     0 ?        I    17:37   0:00 [kworker/0:2-events]
+root        1395  0.0  0.0      0     0 ?        I    17:46   0:00 [kworker/1:0-events]
+root        1404  0.0  0.0      0     0 ?        I    17:51   0:00 [kworker/u4:0-events_unbound
+[?2004h[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ ;[K[H[J[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ [7mps -eo pid,tid,class,rtprio,ni,pri,psr,pcpu,stat,wchan:14,comm[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cps -eo pid,tid,class,rtprio,ni,pri,psr,pcpu,stat,wchan:14,comm
+[?2004l    PID     TID CLS RTPRIO  NI PRI PSR %CPU STAT WCHAN          COMMAND
+      1       1 TS       -   0  19   0  0.0 Ss   -              systemd
+      2       2 TS       -   0  19   1  0.0 S    -              kthreadd
+      3       3 TS       - -20  39   0  0.0 I<   -              rcu_gp
+      4       4 TS       - -20  39   0  0.0 I<   -              rcu_par_gp
+      5       5 TS       - -20  39   0  0.0 I<   -              slub_flushwq
+      6       6 TS       - -20  39   0  0.0 I<   -              netns
+      8       8 TS       - -20  39   0  0.0 I<   -              kworker/0:0H-events_highpri
+     10      10 TS       - -20  39   0  0.0 I<   -              mm_percpu_wq
+     11      11 TS       -   0  19   0  0.0 S    -              rcu_tasks_rude_
+     12      12 TS       -   0  19   0  0.0 S    -              rcu_tasks_trace
+     13      13 TS       -   0  19   0  0.0 S    -              ksoftirqd/0
+     14      14 TS       -   0  19   0  0.0 I    -              rcu_sched
+     15      15 FF      99   - 139   0  0.0 S    -              migration/0
+     16      16 FF      50   -  90   0  0.0 S    -              idle_inject/0
+     17      17 TS       -   0  19   0  0.0 I    -              kworker/0:1-events
+     18      18 TS       -   0  19   0  0.0 S    -              cpuhp/0
+     19      19 TS       -   0  19   1  0.0 S    -              cpuhp/1
+     20      20 FF      50   -  90   1  0.0 S    -              idle_inject/1
+     21      21 FF      99   - 139   1  0.0 S    -              migration/1
+     22      22 TS       -   0  19   1  0.0 S    -              ksoftirqd/1
+     24      24 TS       - -20  39   1  0.0 I<   -              kworker/1:0H-events_highpri
+     25      25 TS       -   0  19   1  0.0 S    -              kdevtmpfs
+     26      26 TS       - -20  39   1  0.0 I<   -              inet_frag_wq
+     27      27 TS       -   0  19   0  0.0 S    -              kauditd
+     28      28 TS       -   0  19   0  0.0 S    -              khungtaskd
+     29      29 TS       -   0  19   1  0.0 S    -              oom_reaper
+     30      30 TS       - -20  39   1  0.0 I<   -              writeback
+     31      31 TS       -   0  19   1  0.0 S    -              kcompactd0
+     32      32 TS       -   5  14   1  0.0 SN   -              ksmd
+     33      33 TS       -  19   0   1  0.0 SN   -              khugepaged
+     80      80 TS       - -20  39   0  0.0 I<   -              kintegrityd
+     81      81 TS       - -20  39   0  0.0 I<   -              kblockd
+     82      82 TS       - -20  39   0  0.0 I<   -              blkcg_punt_bio
+     83      83 TS       - -20  39   0  0.0 I<   -              tpm_dev_wq
+     84      84 TS       - -20  39   0  0.0 I<   -              ata_sff
+     85      85 TS       - -20  39   0  0.0 I<   -              md
+     86      86 TS       - -20  39   0  0.0 I<   -              edac-poller
+     87      87 TS       - -20  39   0  0.0 I<   -              devfreq_wq
+     88      88 FF      50   -  90   0  0.0 S    -              watchdogd
+     90      90 TS       - -20  39   1  0.0 I<   -              kworker/1:1H-kblockd
+     92      92 TS       -   0  19   1  0.0 S    -              kswapd0
+     93      93 TS       -   0  19   1  0.0 S    -              ecryptfs-kthrea
+     95      95 TS       - -20  39   1  0.0 I<   -              kthrotld
+     96      96 TS       - -20  39   1  0.0 I<   -              acpi_thermal_pm
+     97      97 TS       -   0  19   0  0.0 R    -              kworker/u4:2-events_unbound
+     98      98 TS       -   0  19   0  0.0 S    -              scsi_eh_0
+     99      99 TS       - -20  39   1  0.0 I<   -              scsi_tmf_0
+    100     100 TS       -   0  19   1  0.0 S    -              scsi_eh_1
+    101     101 TS       - -20  39   1  0.0 I<   -              scsi_tmf_1
+    103     103 TS       - -20  39   1  0.0 I<   -              vfio-irqfd-clea
+    104     104 TS       - -20  39   1  0.0 I<   -              mld
+    105     105 TS       - -20  39   1  0.0 I<   -              ipv6_addrconf
+    115     115 TS       - -20  39   1  0.0 I<   -              kstrp
+    118     118 TS       - -20  39   0  0.0 I<   -              zswap-shrink
+    119     119 TS       - -20  39   0  0.0 I<   -              kworker/u5:0
+    124     124 TS       - -20  39   1  0.0 I<   -              charger_manager
+    147     147 TS       - -20  39   0  0.0 I<   -              kworker/0:1H-kblockd
+    181     181 TS       - -20  39   0  0.0 I<   -              mpt_poll_0
+    182     182 TS       - -20  39   0  0.0 I<   -              cryptd
+    184     184 TS       - -20  39   1  0.0 I<   -              mpt/0
+    218     218 TS       -   0  19   1  0.0 S    -              scsi_eh_2
+    219     219 TS       - -20  39   1  0.0 I<   -              scsi_tmf_2
+    251     251 TS       - -20  39   0  0.0 I<   -              raid5wq
+    298     298 TS       -   0  19   0  0.0 S    -              jbd2/sda1-8
+    299     299 TS       - -20  39   1  0.0 I<   -              ext4-rsv-conver
+    374     374 TS       -  -1  20   1  0.0 S<s  -              systemd-journal
+    399     399 TS       - -20  39   0  0.0 I<   -              kaluad
+    403     403 TS       - -20  39   1  0.0 I<   -              kmpath_rdacd
+    405     405 TS       - -20  39   1  0.0 I<   -              kmpathd
+    406     406 TS       - -20  39   1  0.0 I<   -              kmpath_handlerd
+    407     407 RR      99   - 139   1  0.0 SLsl -              multipathd
+    408     408 TS       -   0  19   0  0.0 Ss   -              systemd-udevd
+    442     442 TS       -   0  19   0  0.0 Ssl  -              systemd-timesyn
+    489     489 TS       -   0  19   1  0.0 I    -              kworker/u4:6-events_unbound
+    582     582 TS       -   0  19   0  0.0 Ss   -              systemd-network
+    584     584 TS       -   0  19   1  0.0 Ss   -              systemd-resolve
+    622     622 TS       -   0  19   0  0.0 Ss   -              dbus-daemon
+    626     626 TS       -   0  19   0  0.0 Ssl  -              irqbalance
+    627     627 TS       -   0  19   0  0.0 Ss   -              networkd-dispat
+    628     628 TS       -   0  19   0  0.0 Ssl  -              rsyslogd
+    631     631 TS       -   0  19   1  0.1 Ssl  -              snapd
+    635     635 TS       -   0  19   0  0.0 Ss   -              systemd-logind
+    647     647 TS       -   0  19   0  0.0 Ss   -              cron
+    656     656 TS       -   0  19   0  0.0 Ss+  -              agetty
+    658     658 TS       -   0  19   1  0.0 Ss+  -              agetty
+    661     661 TS       -   0  19   0  0.0 Ss   -              sshd
+    702     702 TS       -   0  19   1  0.0 Ssl  -              unattended-upgr
+    716     716 TS       -   0  19   0  0.0 Ssl  -              polkitd
+    839     839 TS       -   0  19   1  0.0 I    -              kworker/1:3-mpt_poll_0
+    888     888 TS       -   0  19   1  0.0 Ss   ep_poll        systemd
+    889     889 TS       -   0  19   1  0.0 S    -              (sd-pam)
+   1199    1199 TS       -   0  19   1  0.0 Ss   -              sshd
+   1249    1249 TS       -   0  19   1  0.0 R    -              sshd
+   1250    1250 TS       -   0  19   1  0.0 Ss   do_wait        bash
+   1300    1300 TS       -   0  19   0  0.0 Ss   -              sshd
+   1349    1349 TS       -   0  19   1  0.0 S    -              sshd
+   1350    1350 TS       -   0  19   0  0.0 Ss   do_wait        bash
+   1360    1360 TS       -   0  19   1  0.0 R+   do_poll.constp script
+   1361    1361 TS       -   0  19   1  0.0 Ss   do_wait        bash
+   1368    1368 TS       -   0  19   1  0.0 S+   do_poll.constp script
+   1369    1369 TS       -   0  19   1  0.0 Ss+  do_select      bash
+   1383    1383 TS       -   0  19   0  0.0 I    -              kworker/0:2-events
+   1395    1395 TS       -   0  19   1  0.0 I    -              kworker/1:0-events
+   1404    1404 TS       -   0  19   1  0.0 R    -              kworker/u4:0-events_unbound
+   1409    1409 TS       -   0  19   0  0.0 R+   -              ps
+[?2004h[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ [H[J[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ [7mps axo stat,euid,ruid,tty,tpgid,sess,pgrp,ppid,pid,pcpu,comm [27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cps axo stat,euid,ruid,tty,tpgid,sess,pgrp,ppid,pid,pcpu,comm 
+[?2004lSTAT  EUID  RUID TT         TPGID    SESS    PGRP    PPID     PID %CPU COMMAND
+Ss       0     0 ?             -1       1       1       0       1  0.0 systemd
+S        0     0 ?             -1       0       0       0       2  0.0 kthreadd
+I<       0     0 ?             -1       0       0       2       3  0.0 rcu_gp
+I<       0     0 ?             -1       0       0       2       4  0.0 rcu_par_gp
+I<       0     0 ?             -1       0       0       2       5  0.0 slub_flushwq
+I<       0     0 ?             -1       0       0       2       6  0.0 netns
+I<       0     0 ?             -1       0       0       2       8  0.0 kworker/0:0H-events_high
+I<       0     0 ?             -1       0       0       2      10  0.0 mm_percpu_wq
+S        0     0 ?             -1       0       0       2      11  0.0 rcu_tasks_rude_
+S        0     0 ?             -1       0       0       2      12  0.0 rcu_tasks_trace
+S        0     0 ?             -1       0       0       2      13  0.0 ksoftirqd/0
+I        0     0 ?             -1       0       0       2      14  0.0 rcu_sched
+S        0     0 ?             -1       0       0       2      15  0.0 migration/0
+S        0     0 ?             -1       0       0       2      16  0.0 idle_inject/0
+I        0     0 ?             -1       0       0       2      17  0.0 kworker/0:1-events
+S        0     0 ?             -1       0       0       2      18  0.0 cpuhp/0
+S        0     0 ?             -1       0       0       2      19  0.0 cpuhp/1
+S        0     0 ?             -1       0       0       2      20  0.0 idle_inject/1
+S        0     0 ?             -1       0       0       2      21  0.0 migration/1
+S        0     0 ?             -1       0       0       2      22  0.0 ksoftirqd/1
+I<       0     0 ?             -1       0       0       2      24  0.0 kworker/1:0H-events_high
+S        0     0 ?             -1       0       0       2      25  0.0 kdevtmpfs
+I<       0     0 ?             -1       0       0       2      26  0.0 inet_frag_wq
+S        0     0 ?             -1       0       0       2      27  0.0 kauditd
+S        0     0 ?             -1       0       0       2      28  0.0 khungtaskd
+S        0     0 ?             -1       0       0       2      29  0.0 oom_reaper
+I<       0     0 ?             -1       0       0       2      30  0.0 writeback
+S        0     0 ?             -1       0       0       2      31  0.0 kcompactd0
+SN       0     0 ?             -1       0       0       2      32  0.0 ksmd
+SN       0     0 ?             -1       0       0       2      33  0.0 khugepaged
+I<       0     0 ?             -1       0       0       2      80  0.0 kintegrityd
+I<       0     0 ?             -1       0       0       2      81  0.0 kblockd
+I<       0     0 ?             -1       0       0       2      82  0.0 blkcg_punt_bio
+I<       0     0 ?             -1       0       0       2      83  0.0 tpm_dev_wq
+I<       0     0 ?             -1       0       0       2      84  0.0 ata_sff
+I<       0     0 ?             -1       0       0       2      85  0.0 md
+I<       0     0 ?             -1       0       0       2      86  0.0 edac-poller
+I<       0     0 ?             -1       0       0       2      87  0.0 devfreq_wq
+S        0     0 ?             -1       0       0       2      88  0.0 watchdogd
+I<       0     0 ?             -1       0       0       2      90  0.0 kworker/1:1H-kblockd
+S        0     0 ?             -1       0       0       2      92  0.0 kswapd0
+S        0     0 ?             -1       0       0       2      93  0.0 ecryptfs-kthrea
+I<       0     0 ?             -1       0       0       2      95  0.0 kthrotld
+I<       0     0 ?             -1       0       0       2      96  0.0 acpi_thermal_pm
+I        0     0 ?             -1       0       0       2      97  0.0 kworker/u4:2-events_unbo
+S        0     0 ?             -1       0       0       2      98  0.0 scsi_eh_0
+I<       0     0 ?             -1       0       0       2      99  0.0 scsi_tmf_0
+S        0     0 ?             -1       0       0       2     100  0.0 scsi_eh_1
+I<       0     0 ?             -1       0       0       2     101  0.0 scsi_tmf_1
+I<       0     0 ?             -1       0       0       2     103  0.0 vfio-irqfd-clea
+I<       0     0 ?             -1       0       0       2     104  0.0 mld
+I<       0     0 ?             -1       0       0       2     105  0.0 ipv6_addrconf
+I<       0     0 ?             -1       0       0       2     115  0.0 kstrp
+I<       0     0 ?             -1       0       0       2     118  0.0 zswap-shrink
+I<       0     0 ?             -1       0       0       2     119  0.0 kworker/u5:0
+I<       0     0 ?             -1       0       0       2     124  0.0 charger_manager
+I<       0     0 ?             -1       0       0       2     147  0.0 kworker/0:1H-kblockd
+I<       0     0 ?             -1       0       0       2     181  0.0 mpt_poll_0
+I<       0     0 ?             -1       0       0       2     182  0.0 cryptd
+I<       0     0 ?             -1       0       0       2     184  0.0 mpt/0
+S        0     0 ?             -1       0       0       2     218  0.0 scsi_eh_2
+I<       0     0 ?             -1       0       0       2     219  0.0 scsi_tmf_2
+I<       0     0 ?             -1       0       0       2     251  0.0 raid5wq
+S        0     0 ?             -1       0       0       2     298  0.0 jbd2/sda1-8
+I<       0     0 ?             -1       0       0       2     299  0.0 ext4-rsv-conver
+S<s      0     0 ?             -1     374     374       1     374  0.0 systemd-journal
+I<       0     0 ?             -1       0       0       2     399  0.0 kaluad
+I<       0     0 ?             -1       0       0       2     403  0.0 kmpath_rdacd
+I<       0     0 ?             -1       0       0       2     405  0.0 kmpathd
+I<       0     0 ?             -1       0       0       2     406  0.0 kmpath_handlerd
+SLsl     0     0 ?             -1     407     407       1     407  0.0 multipathd
+Ss       0     0 ?             -1     408     408       1     408  0.0 systemd-udevd
+Ssl    103   103 ?             -1     442     442       1     442  0.0 systemd-timesyn
+I        0     0 ?             -1       0       0       2     489  0.0 kworker/u4:6-events_unbo
+Ss     100   100 ?             -1     582     582       1     582  0.0 systemd-network
+Ss     101   101 ?             -1     584     584       1     584  0.0 systemd-resolve
+Ss     102   102 ?             -1     622     622       1     622  0.0 dbus-daemon
+Ssl      0     0 ?             -1     626     626       1     626  0.0 irqbalance
+Ss       0     0 ?             -1     627     627       1     627  0.0 networkd-dispat
+Ssl    104   104 ?             -1     628     628       1     628  0.0 rsyslogd
+Ssl      0     0 ?             -1     631     631       1     631  0.1 snapd
+Ss       0     0 ?             -1     635     635       1     635  0.0 systemd-logind
+Ss       0     0 ?             -1     647     647       1     647  0.0 cron
+Ss+      0     0 ttyS0        656     656     656       1     656  0.0 agetty
+Ss+      0     0 tty1         658     658     658       1     658  0.0 agetty
+Ss       0     0 ?             -1     661     661       1     661  0.0 sshd
+Ssl      0     0 ?             -1     702     702       1     702  0.0 unattended-upgr
+Ssl      0     0 ?             -1     716     716       1     716  0.0 polkitd
+I        0     0 ?             -1       0       0       2     839  0.0 kworker/1:3-events
+Ss    1000  1000 ?             -1     888     888       1     888  0.0 systemd
+S     1000  1000 ?             -1     888     888     888     889  0.0 (sd-pam)
+Ss       0     0 ?             -1    1199    1199     661    1199  0.0 sshd
+R     1000  1000 ?             -1    1199    1199    1199    1249  0.0 sshd
+Ss    1000  1000 pts/0       1360    1250    1250    1249    1250  0.0 bash
+Ss       0     0 ?             -1    1300    1300     661    1300  0.0 sshd
+S     1000  1000 ?             -1    1300    1300    1300    1349  0.0 sshd
+Ss    1000  1000 pts/1       1368    1350    1350    1349    1350  0.0 bash
+R+    1000  1000 pts/0       1360    1250    1360    1250    1360  0.0 script
+Ss    1000  1000 pts/2       1410    1361    1361    1360    1361  0.0 bash
+S+    1000  1000 pts/1       1368    1350    1368    1350    1368  0.0 script
+Ss+   1000  1000 pts/3       1369    1369    1369    1368    1369  0.0 bash
+I        0     0 ?             -1       0       0       2    1383  0.0 kworker/0:2-events
+I        0     0 ?             -1       0       0       2    1395  0.0 kworker/1:0-events
+I        0     0 ?             -1       0       0       2    1404  0.0 kworker/u4:0-events_unbo
+R+    1000  1000 pts/2       1410    1361    1410    1361    1410  0.0 ps
+[?2004h[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ ;[K[H[J[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ [7mps -Ao pid,tt,user,fname,tmout,f,wchan [27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cps -Ao pid,tt,user,fname,tmout,f,wchan 
+[?2004l    PID TT       USER     COMMAND  TMOUT F WCHAN
+      1 ?        root     systemd      - 4 -
+      2 ?        root     kthreadd     - 1 -
+      3 ?        root     rcu_gp       - 1 -
+      4 ?        root     rcu_par_     - 1 -
+      5 ?        root     slub_flu     - 1 -
+      6 ?        root     netns        - 1 -
+      8 ?        root     kworker/     - 1 -
+     10 ?        root     mm_percp     - 1 -
+     11 ?        root     rcu_task     - 1 -
+     12 ?        root     rcu_task     - 1 -
+     13 ?        root     ksoftirq     - 1 -
+     14 ?        root     rcu_sche     - 1 -
+     15 ?        root     migratio     - 1 -
+     16 ?        root     idle_inj     - 1 -
+     17 ?        root     kworker/     - 1 -
+     18 ?        root     cpuhp/0      - 1 -
+     19 ?        root     cpuhp/1      - 1 -
+     20 ?        root     idle_inj     - 1 -
+     21 ?        root     migratio     - 1 -
+     22 ?        root     ksoftirq     - 1 -
+     24 ?        root     kworker/     - 1 -
+     25 ?        root     kdevtmpf     - 5 -
+     26 ?        root     inet_fra     - 1 -
+     27 ?        root     kauditd      - 1 -
+     28 ?        root     khungtas     - 1 -
+     29 ?        root     oom_reap     - 1 -
+     30 ?        root     writebac     - 1 -
+     31 ?        root     kcompact     - 1 -
+     32 ?        root     ksmd         - 1 -
+     33 ?        root     khugepag     - 1 -
+     80 ?        root     kintegri     - 1 -
+     81 ?        root     kblockd      - 1 -
+     82 ?        root     blkcg_pu     - 1 -
+     83 ?        root     tpm_dev_     - 1 -
+     84 ?        root     ata_sff      - 1 -
+     85 ?        root     md           - 1 -
+     86 ?        root     edac-pol     - 1 -
+     87 ?        root     devfreq_     - 1 -
+     88 ?        root     watchdog     - 1 -
+     90 ?        root     kworker/     - 1 -
+     92 ?        root     kswapd0      - 1 -
+     93 ?        root     ecryptfs     - 1 -
+     95 ?        root     kthrotld     - 1 -
+     96 ?        root     acpi_the     - 1 -
+     97 ?        root     kworker/     - 1 -
+     98 ?        root     scsi_eh_     - 1 -
+     99 ?        root     scsi_tmf     - 1 -
+    100 ?        root     scsi_eh_     - 1 -
+    101 ?        root     scsi_tmf     - 1 -
+    103 ?        root     vfio-irq     - 1 -
+    104 ?        root     mld          - 1 -
+    105 ?        root     ipv6_add     - 1 -
+    115 ?        root     kstrp        - 1 -
+    118 ?        root     zswap-sh     - 1 -
+    119 ?        root     kworker/     - 1 -
+    124 ?        root     charger_     - 1 -
+    147 ?        root     kworker/     - 1 -
+    181 ?        root     mpt_poll     - 1 -
+    182 ?        root     cryptd       - 1 -
+    184 ?        root     mpt/0        - 1 -
+    218 ?        root     scsi_eh_     - 1 -
+    219 ?        root     scsi_tmf     - 1 -
+    251 ?        root     raid5wq      - 1 -
+    298 ?        root     jbd2/sda     - 1 -
+    299 ?        root     ext4-rsv     - 1 -
+    374 ?        root     systemd-     - 4 -
+    399 ?        root     kaluad       - 1 -
+    403 ?        root     kmpath_r     - 1 -
+    405 ?        root     kmpathd      - 1 -
+    406 ?        root     kmpath_h     - 1 -
+    407 ?        root     multipat     - 4 -
+    408 ?        root     systemd-     - 4 -
+    442 ?        systemd+ systemd-     - 4 -
+    489 ?        root     kworker/     - 1 -
+    582 ?        systemd+ systemd-     - 4 -
+    584 ?        systemd+ systemd-     - 4 -
+    622 ?        message+ dbus-dae     - 4 -
+    626 ?        root     irqbalan     - 4 -
+    627 ?        root     networkd     - 4 -
+    628 ?        syslog   rsyslogd     - 4 -
+    631 ?        root     snapd        - 4 -
+    635 ?        root     systemd-     - 4 -
+    647 ?        root     cron         - 4 -
+    656 ttyS0    root     agetty       - 4 -
+    658 tty1     root     agetty       - 4 -
+    661 ?        root     sshd         - 4 -
+    702 ?        root     unattend     - 4 -
+    716 ?        root     polkitd      - 4 -
+    839 ?        root     kworker/     - 1 -
+    888 ?        vagrant  systemd      - 4 ep_poll
+    889 ?        vagrant  (sd-pam)     - 5 -
+   1199 ?        root     sshd         - 4 -
+   1249 ?        vagrant  sshd         - 5 -
+   1250 pts/0    vagrant  bash         - 0 do_wait
+   1300 ?        root     sshd         - 4 -
+   1349 ?        vagrant  sshd         - 5 -
+   1350 pts/1    vagrant  bash         - 0 do_wait
+   1360 pts/0    vagrant  script       - 0 do_poll.constprop.0
+   1361 pts/2    vagrant  bash         - 0 do_wait
+   1368 pts/1    vagrant  script       - 0 do_poll.constprop.0
+   1369 pts/3    vagrant  bash         - 0 do_select
+   1383 ?        root     kworker/     - 1 -
+   1395 ?        root     kworker/     - 1 -
+   1404 ?        root     kworker/     - 1 -
+   1411 pts/2    vagrant  ps           - 0 -
+[?2004h[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ ;[K[H[J[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ [7mps -C systemd -o pid=[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cps -C systemd -o pid=
+[?2004l      1
+    888
+[?2004h[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ ;[K[H[J[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ [7m$ ( while true; do printf "AAA %d " $$ >> ~/test.out; sleep 1; done )[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C$ ( while true; do printf "AAA %d " $$ >> ~/test.out; sleep 1; done )
+[?2004lbash: syntax error near unexpected token `while'
+[?2004h[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ $ ( while true; do printf "AAA %d " $$ >> ~/test.out; sleep 1; done )[1@0[1P[1P[1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004l^Z
+[1]+  Stopped                 ( while true; do
+    printf "AAA %d " $$ >> ~/test.out; sleep 1;
+done )
+[?2004h[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ [7mjobs[27mjobs
+[?2004l[1]+  Stopped                 ( while true; do
+    printf "AAA %d " $$ >> ~/test.out; sleep 1;
+done )
+[?2004h[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ kf[K[Kpd[Ks k[Kk
+[?2004lerror: long sort specification must follow 'k'
+
+Usage:
+ ps [options]
+
+ Try 'ps --help <simple|list|output|threads|misc|all>'
+  or 'ps --help <s|l|o|t|m|a>'
+ for additional help text.
+
+For more details see ps(1).
+[?2004h[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ ps k[Kj
+[?2004l   PPID     PID    PGID     SID TTY        TPGID STAT   UID   TIME COMMAND
+   1249    1250    1250    1250 pts/0       1360 Ss    1000   0:00 -bash
+   1349    1350    1350    1350 pts/1       1368 Ss    1000   0:00 -bash
+   1250    1360    1360    1250 pts/0       1360 R+    1000   0:00 script typescript1.txt
+   1360    1361    1361    1361 pts/2       1479 Ss    1000   0:00 bash -i
+   1350    1368    1368    1350 pts/1       1368 S+    1000   0:00 script typescript2.txt
+   1368    1369    1369    1369 pts/3       1427 Ss    1000   0:00 bash -i
+   1361    1415    1415    1361 pts/2       1479 T     1000   0:00 bash -i
+   1369    1427    1427    1369 pts/3       1427 S+    1000   0:00 tail -f /home/vagrant/test.o
+   1415    1477    1415    1361 pts/2       1479 T     1000   0:00 sleep 1
+   1361    1479    1479    1361 pts/2       1479 R+    1000   0:00 ps j
+[?2004h[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ [H[J[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ ps jkjobs
+[?2004l[1]+  Stopped                 ( while true; do
+    printf "AAA %d " $$ >> ~/test.out; sleep 1;
+done )
+[?2004h[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ jobsps j
+[?2004l   PPID     PID    PGID     SID TTY        TPGID STAT   UID   TIME COMMAND
+   1249    1250    1250    1250 pts/0       1360 Ss    1000   0:00 -bash
+   1349    1350    1350    1350 pts/1       1368 Ss    1000   0:00 -bash
+   1250    1360    1360    1250 pts/0       1360 R+    1000   0:00 script typescript1.txt
+   1360    1361    1361    1361 pts/2       1480 Ss    1000   0:00 bash -i
+   1350    1368    1368    1350 pts/1       1368 S+    1000   0:00 script typescript2.txt
+   1368    1369    1369    1369 pts/3       1427 Ss    1000   0:00 bash -i
+   1361    1415    1415    1361 pts/2       1480 T     1000   0:00 bash -i
+   1369    1427    1427    1369 pts/3       1427 S+    1000   0:00 tail -f /home/vagrant/test.o
+   1415    1477    1415    1361 pts/2       1480 T     1000   0:00 sleep 1
+   1361    1480    1480    1361 pts/2       1480 R+    1000   0:00 ps j
+[?2004h[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ [7mbg[27mbg
+[?2004l[1]+ ( while true; do
+    printf "AAA %d " $$ >> ~/test.out; sleep 1;
+done ) &
+[?2004h[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ bgps jjobs
+[?2004l[1]+  Running                 ( while true; do
+    printf "AAA %d " $$ >> ~/test.out; sleep 1;
+done ) &
+[?2004h[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ jobs[2Pbgps j
+[?2004l   PPID     PID    PGID     SID TTY        TPGID STAT   UID   TIME COMMAND
+   1249    1250    1250    1250 pts/0       1360 Ss    1000   0:00 -bash
+   1349    1350    1350    1350 pts/1       1368 Ss    1000   0:00 -bash
+   1250    1360    1360    1250 pts/0       1360 S+    1000   0:00 script typescript1.txt
+   1360    1361    1361    1361 pts/2       1518 Ss    1000   0:00 bash -i
+   1350    1368    1368    1350 pts/1       1368 S+    1000   0:00 script typescript2.txt
+   1368    1369    1369    1369 pts/3       1427 Ss    1000   0:00 bash -i
+   1361    1415    1415    1361 pts/2       1518 S     1000   0:00 bash -i
+   1369    1427    1427    1369 pts/3       1427 S+    1000   0:00 tail -f /home/vagrant/test.o
+   1415    1517    1415    1361 pts/2       1518 S     1000   0:00 sleep 1
+   1361    1518    1518    1361 pts/2       1518 R+    1000   0:00 ps j
+[?2004h[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ ;[K[H[J[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ [7m( while true; do printf "UUU %d " $$ >> ~/test.out; sleep 1; done )[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C( while true; do printf "UUU %d " $$ >> ~/test.out; sleep 1; done )
+[?2004l^C
+[?2004h[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ [H[J[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ [7m( while true; do printf "UUU %d " $$ >> ~/test.out; sleep 1; done ) &[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C( while true; do printf "UUU %d " $$ >> ~/test.out; sleep 1; done ) &
+[?2004l[2] 1622
+[?2004h[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ ( while true; do printf "UUU %d " $$ >> ~/test.out; sleep 1; done ) &[K[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cps j[Kjobs
+[?2004l[1]-  Running                 ( while true; do
+    printf "AAA %d " $$ >> ~/test.out; sleep 1;
+done ) &
+[2]+  Running                 ( while true; do
+    printf "UUU %d " $$ >> ~/test.out; sleep 1;
+done ) &
+[?2004h[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ [7mfg %1 [27mfg %1 
+[?2004l( while true; do
+    printf "AAA %d " $$ >> ~/test.out; sleep 1;
+done )
+^C
+[?2004h[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ fg %1 [K[K2
+[?2004l( while true; do
+    printf "UUU %d " $$ >> ~/test.out; sleep 1;
+done )
+^^?^C
+[?2004h[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ fg %21 [2Pjobs
+[?2004l[?2004h[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ [H[J[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ [7m( while true; do printf "AAA %d " $$ >> ~/test.out; sleep 1; done ) &[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C( while true; do printf "AAA %d " $$ >> ~/test.out; sleep 1; done ) &
+[?2004l[1] 1879
+[?2004h[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ [7m( while true; do printf "UUU %d " $$ >> ~/test.out; sleep 1; done ) &[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C( while true; do printf "UUU %d " $$ >> ~/test.out; sleep 1; done ) &
+[?2004l[2] 1890
+[?2004h[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ ( while true; do printf "UUU %d " $$ >> ~/test.out; sleep 1; done ) &AAA[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cjobs[K
+[?2004l[1]-  Running                 ( while true; do
+    printf "AAA %d " $$ >> ~/test.out; sleep 1;
+done ) &
+[2]+  Running                 ( while true; do
+    printf "UUU %d " $$ >> ~/test.out; sleep 1;
+done ) &
+[?2004h[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ jobs( while true; do printf "UUU %d " $$ >> ~/test.out; sleep 1; done ) &AAA[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cjobs[Kfg %21 [2Pjobs( while true; do printf "UUU %d " $$ >> ~/test.out; sleep 1; done ) &[K[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cps j[K
+[?2004l   PPID     PID    PGID     SID TTY        TPGID STAT   UID   TIME COMMAND
+   1249    1250    1250    1250 pts/0       1360 Ss    1000   0:00 -bash
+   1349    1350    1350    1350 pts/1       1368 Ss    1000   0:00 -bash
+   1250    1360    1360    1250 pts/0       1360 S+    1000   0:00 script typescript1.txt
+   1360    1361    1361    1361 pts/2       2039 Ss    1000   0:00 bash -i
+   1350    1368    1368    1350 pts/1       1368 S+    1000   0:00 script typescript2.txt
+   1368    1369    1369    1369 pts/3       1904 Ss    1000   0:00 bash -i
+   1361    1879    1879    1361 pts/2       2039 S     1000   0:00 bash -i
+   1361    1890    1890    1361 pts/2       2039 S     1000   0:00 bash -i
+   1369    1904    1904    1369 pts/3       1904 S+    1000   0:00 tail -f /home/vagrant/test.o
+   1879    2037    1879    1361 pts/2       2039 S     1000   0:00 sleep 1
+   1890    2038    1890    1361 pts/2       2039 S     1000   0:00 sleep 1
+   1361    2039    2039    1361 pts/2       2039 R+    1000   0:00 ps j
+[?2004h[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ [H[J[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ [7mkill -SIGSTOP %1 [27mkill -SIGSTOP %1 
+[?2004l[?2004h[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ kill -SIGSTOP %1 ps j[Kjobs
+[?2004l[1]+  Stopped                 ( while true; do
+    printf "AAA %d " $$ >> ~/test.out; sleep 1;
+done )
+[2]-  Running                 ( while true; do
+    printf "UUU %d " $$ >> ~/test.out; sleep 1;
+done ) &
+[?2004h[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ jobs
+[?2004l[1]+  Stopped                 ( while true; do
+    printf "AAA %d " $$ >> ~/test.out; sleep 1;
+done )
+[2]-  Running                 ( while true; do
+    printf "UUU %d " $$ >> ~/test.out; sleep 1;
+done ) &
+[?2004h[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ [H[J[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ jobskill -SIGSTOP %1 [K[Ke[Kw[K2
+[?2004l
+[2]+  Stopped                 ( while true; do
+    printf "UUU %d " $$ >> ~/test.out; sleep 1;
+done )
+[?2004h[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ kill -SIGSTOP %2jobs[K
+[?2004l[1]-  Stopped                 ( while true; do
+    printf "AAA %d " $$ >> ~/test.out; sleep 1;
+done )
+[2]+  Stopped                 ( while true; do
+    printf "UUU %d " $$ >> ~/test.out; sleep 1;
+done )
+[?2004h[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ fg
+[?2004l( while true; do
+    printf "UUU %d " $$ >> ~/test.out; sleep 1;
+done )
+^C
+[?2004h[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ [H[J[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ [7mcat /proc/version[27mcat /proc/version
+[?2004lLinux version 5.15.0-141-generic (buildd@lcy02-amd64-027) (gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0, GNU ld (GNU Binutils for Ubuntu) 2.38) #151-Ubuntu SMP Sun May 18 21:35:19 UTC 2025
+[?2004h[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ [H[J[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ [7mcat /sys/devices/system/node/node0/meminfo[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccat /sys/devices/system/node/node0/meminfo
+[?2004lNode 0 MemTotal:        2010876 kB
+Node 0 MemFree:         1465884 kB
+Node 0 MemUsed:          544992 kB
+Node 0 SwapCached:            0 kB
+Node 0 Active:           163492 kB
+Node 0 Inactive:         223580 kB
+Node 0 Active(anon):        928 kB
+Node 0 Inactive(anon):    67692 kB
+Node 0 Active(file):     162564 kB
+Node 0 Inactive(file):   155888 kB
+Node 0 Unevictable:       27784 kB
+Node 0 Mlocked:           27784 kB
+Node 0 Dirty:                 0 kB
+Node 0 Writeback:             0 kB
+Node 0 FilePages:        328484 kB
+Node 0 Mapped:            70612 kB
+Node 0 AnonPages:         86512 kB
+Node 0 Shmem:               968 kB
+Node 0 KernelStack:        2064 kB
+Node 0 PageTables:         2236 kB
+Node 0 NFS_Unstable:          0 kB
+Node 0 Bounce:                0 kB
+Node 0 WritebackTmp:          0 kB
+Node 0 KReclaimable:      28576 kB
+Node 0 Slab:              61456 kB
+Node 0 SReclaimable:      28576 kB
+Node 0 SUnreclaim:        32880 kB
+Node 0 AnonHugePages:         0 kB
+Node 0 ShmemHugePages:        0 kB
+Node 0 ShmemPmdMapped:        0 kB
+Node 0 FileHugePages:        0 kB
+Node 0 FilePmdMapped:        0 kB
+Node 0 HugePages_Total:     0
+Node 0 HugePages_Free:      0
+Node 0 HugePages_Surp:      0
+[?2004h[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ [H[J[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ [7mfree[27mfree
+[?2004l               total        used        free      shared  buff/cache   available
+Mem:         2010876      187912     1465884         968      357080     1667120
+Swap:              0           0           0
+[?2004h[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ [H[J[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ [7mcat /proc/cpuinfo[27mcat /proc/cpuinfo
+[?2004lprocessor	: 0
+vendor_id	: AuthenticAMD
+cpu family	: 26
+model		: 68
+model name	: AMD Ryzen 9 9950X 16-Core Processor
+stepping	: 0
+microcode	: 0xb40400c
+cpu MHz		: 4291.948
+cache size	: 1024 KB
+physical id	: 0
+siblings	: 2
+core id		: 0
+cpu cores	: 2
+apicid		: 0
+initial apicid	: 0
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 16
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt rdtscp lm constant_tsc rep_good nopl nonstop_tsc cpuid extd_apicid tsc_known_freq pni pclmulqdq ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm cmp_legacy cr8_legacy abm sse4a misalignsse 3dnowprefetch ibpb vmmcall fsgsbase bmi1 avx2 bmi2 invpcid rdseed adx clflushopt sha_ni arat flush_l1d sme
+bugs		: fxsave_leak sysret_ss_attrs null_seg spectre_v1 spectre_v2 ibpb_no_ret
+bogomips	: 8583.89
+TLB size	: 192 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 1
+vendor_id	: AuthenticAMD
+cpu family	: 26
+model		: 68
+model name	: AMD Ryzen 9 9950X 16-Core Processor
+stepping	: 0
+microcode	: 0xb40400c
+cpu MHz		: 4291.948
+cache size	: 1024 KB
+physical id	: 0
+siblings	: 2
+core id		: 1
+cpu cores	: 2
+apicid		: 1
+initial apicid	: 1
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 16
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt rdtscp lm constant_tsc rep_good nopl nonstop_tsc cpuid extd_apicid tsc_known_freq pni pclmulqdq ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm cmp_legacy cr8_legacy abm sse4a misalignsse 3dnowprefetch ibpb vmmcall fsgsbase bmi1 avx2 bmi2 invpcid rdseed adx clflushopt sha_ni arat flush_l1d sme
+bugs		: fxsave_leak sysret_ss_attrs null_seg spectre_v1 spectre_v2 ibpb_no_ret
+bogomips	: 8583.89
+TLB size	: 192 4K pages
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+[?2004h[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ ^[[C[K[K[K[H[J[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ [7mcat /proc/uptime[27mcat /proc/uptime
+[?2004l3087.04 6159.29
+[?2004h[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ [H[J[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ [7mecho $$ [27mecho $$ 
+[?2004l1361
+[?2004h[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ [7mls -l /proc/self[27mls -l /proc/self
+[?2004llrwxrwxrwx 1 root root 0 Jul  2 17:31 [0m[01;36m/proc/self[0m -> [01;34m2139[0m
+[?2004h[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ [7mls -ld /proc/$$ [27mls -ld /proc/$$ 
+[?2004ldr-xr-xr-x 9 vagrant vagrant 0 Jul  2 17:37 [0m[01;34m/proc/1361[0m
+[?2004h[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ [H[J[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ [7mread pid tcomm state other < /proc/$$/stat[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cread pid tcomm state other < /proc/$$/stat
+[?2004l[?2004h[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ [H[J[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ read pid tcomm state other < /proc/$$/stat[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[26Pls -ld /proc/$$  /proc/self[8Pecho $$ 
+[?2004l1361
+[?2004h[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ echo $$ read pid tcomm state other < /proc/$$/stat[1P[1P[1P[1@1[1@3[1@7[1P[1@6[1@1
+[?2004lbash: read: `1361': not a valid identifier
+[?2004h[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ [H[J[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ read 1361 tcomm state other < /proc/$$/stat[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cecho $$ [K
+[?2004l1361
+[?2004h[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ echo $$ read 1361 tcomm state other < /proc/$$/stat[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cecho $$ [Kread pid tcomm state other < /proc/$$/stat
+[?2004l[?2004h[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ [7mecho "Процесс $pid $tcomm находится в состоянии $state"[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cecho "Процесс $pid $tcomm находится в состоянии $state"
+[?2004lПроцесс 1361 (bash) находится в состоянии R
+[?2004h[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ exiy[Ku[Ke[Kr[Kt
+[?2004lexit
+There are stopped jobs.
+[?2004h[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ exitcho "Процесс $pid $tcomm находится в состоянии $state"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[13Pread pid tcomm state other < /proc/$$/stat[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cecho $$ [Kread 1361 tcomm state other < /proc/$$/stat[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cecho $$ [Kread pid tcomm state other < /proc/$$/stat[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[26Pls -ld /proc/$$  /proc/self[8Pecho $$ cat /proc/uptimecpuinfofree[Kcat /sys/devices/system/node/node0/meminfo[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cproc/version[Kfg[Kjobs
+[?2004l[1]+  Stopped                 ( while true; do
+    printf "AAA %d " $$ >> ~/test.out; sleep 1;
+done )
+[?2004h[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ fg
+[?2004l( while true; do
+    printf "AAA %d " $$ >> ~/test.out; sleep 1;
+done )
+^C
+[?2004h[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ [H[J[01;32mvagrant@ubuntu[00m:[01;34m~[00m$ fgjobsexit
+[?2004lexit
+
+Script done on 2025-07-02 18:26:52+00:00 [COMMAND_EXIT_CODE="130"]

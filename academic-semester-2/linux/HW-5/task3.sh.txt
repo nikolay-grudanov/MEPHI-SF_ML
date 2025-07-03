@@ -1,0 +1,62 @@
+#!/bin/bash
+
+# Функция для просмотра информации о пользователе
+view_user() {
+  read -p "Введите имя пользователя для просмотра: " username
+  if grep "^$username:" /etc/passwd > /dev/null; then
+    echo "--- Информация о пользователе $username ---"
+    grep "^$username:" /etc/passwd
+    echo "-----------------------------------------"
+  else
+    echo "Пользователь $username не найден."
+  fi
+}
+
+# Функция для создания нового пользователя 
+create_user() {
+  read -p "Введите имя нового пользователя: " new_user
+  if id "$new_user" &>/dev/null; then
+    echo "Пользователь $new_user уже существует."
+  else
+    sudo useradd -m "$new_user"
+    echo "Пользователь $new_user успешно создан."
+  fi
+}
+
+# Функция для удаления пользователя 
+delete_user() {
+  read -p "Введите имя пользователя для удаления: " del_user
+  if ! id "$del_user" &>/dev/null; then
+    echo "Пользователь $del_user не существует."
+  else
+    sudo userdel -r "$del_user"
+    echo "Пользователь $del_user успешно удален."
+  fi
+}
+
+# Настраиваем приглашение для меню select
+PS3="Выберите действие: "
+
+# Создаем меню с помощью select 
+select choice in "Просмотреть пользователя" "Создать пользователя" "Удалить пользователя" "Выход"; do
+  # Используем case для обработки выбора 
+  case $choice in
+    "Просмотреть пользователя")
+      view_user
+      ;;
+    "Создать пользователя")
+      create_user
+      ;;
+    "Удалить пользователя")
+      delete_user
+      ;;
+    "Выход")
+      echo "Выход из программы."
+      break
+      ;;
+    *)
+      echo "Неверный выбор. Попробуйте снова."
+      ;;
+  esac
+done
+

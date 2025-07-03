@@ -1,0 +1,8 @@
+#!/bin/bash
+
+echo "Список пользователей системы:"
+
+for user in $(cut -d: -f1 /etc/passwd); do
+  echo "User: $user"
+done
+

@@ -1,0 +1,16 @@
+#!/bin/bash
+
+read -p "Введите имя: " first_name
+
+read -p "Введите фамилию: " last_name
+
+# Объединяем имя и фамилию в одну переменную
+full_name="$first_name $last_name"
+
+# Проверяем, совпадает ли введенное полное имя с "Adam Bond"
+if [ "$full_name" = "Adam Bond" ]; then
+  echo "Access Granted"
+else
+  echo "Access Denied"
+fi
+
