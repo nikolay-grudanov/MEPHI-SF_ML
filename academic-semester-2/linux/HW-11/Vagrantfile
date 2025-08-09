@@ -1,0 +1,288 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+Vagrant.configure("2") do |config|
+  # Общие настройки для всех виртуальных машин
+  config.vm.box = "ubuntu/jammy64"
+  config.vm.synced_folder ".", "/vagrant", disabled: true
+  
+  # VM1 - Desktop машина с GUI и Xrdp
+  config.vm.define "vm1" do |vm1|
+    vm1.vm.hostname = "vm1"
+    vm1.vm.network "private_network", ip: "192.168.56.10"
+    vm1.vm.network "forwarded_port", guest: 3389, host: 3389, id: "rdp"
+    
+    vm1.vm.provider "virtualbox" do |vb|
+      vb.memory = "2048"
+      vb.cpus = 2
+      vb.name = "VM1-Desktop"
+    end
+    
+    vm1.vm.provision "shell", inline: <<-SHELL
+      # Обновление пакетов
+      apt-get update
+      apt-get upgrade -y
+      
+      # Установка GUI и необходимых пакетов
+      DEBIAN_FRONTEND=noninteractive apt-get install -y ubuntu-desktop-minimal
+      snap install snap-store
+      apt-get install -y chromium-browser
+      
+      # Установка и настройка Xrdp
+      apt-get install -y xrdp xorgxrdp
+      systemctl enable xrdp
+      
+      # Создание пользователя ubuntu и установка пароля
+      echo "ubuntu:123456ubuntu" | chpasswd
+      
+      # Настройка SSH сервера согласно требованиям
+      cp /etc/ssh/sshd_config /etc/ssh/sshd_config.backup
+      
+      cat > /etc/ssh/sshd_config << 'EOF'
+Protocol 2
+LoginGraceTime 10s
+MaxAuthTries 2
+MaxSessions 2
+PermitEmptyPasswords no
+HostbasedAuthentication no
+PasswordAuthentication no
+PubkeyAuthentication yes
+PermitRootLogin no
+UsePAM yes
+X11Forwarding yes
+PrintMotd no
+AcceptEnv LANG LC_*
+Subsystem sftp /usr/lib/openssh/sftp-server
+EOF
+      
+      # Создание SSH ключей для пользователя ubuntu
+      sudo -u ubuntu mkdir -p /home/ubuntu/.ssh
+      sudo -u ubuntu ssh-keygen -t rsa -b 2048 -f /home/ubuntu/.ssh/id_rsa -N ""
+      sudo -u ubuntu chmod 700 /home/ubuntu/.ssh
+      sudo -u ubuntu chmod 600 /home/ubuntu/.ssh/id_rsa
+      sudo -u ubuntu chmod 644 /home/ubuntu/.ssh/id_rsa.pub
+      
+      # Настройка hosts файла для доступа к другим машинам по именам
+      echo "192.168.56.11 vm2" >> /etc/hosts
+      echo "192.168.56.12 vm3" >> /etc/hosts
+      
+      # Добавление публичного ключа в authorized_keys для самого пользователя
+      sudo -u ubuntu cat /home/ubuntu/.ssh/id_rsa.pub >> /home/ubuntu/.ssh/authorized_keys
+      sudo -u ubuntu chmod 600 /home/ubuntu/.ssh/authorized_keys
+      
+      # Настройка SSH клиента для автоматического принятия ключей хостов
+      sudo -u ubuntu cat > /home/ubuntu/.ssh/config << 'EOF'
+Host vm2
+    HostName 192.168.56.11
+    User ubuntu
+    StrictHostKeyChecking no
+    
+Host vm3
+    HostName 192.168.56.12
+    User ubuntu
+    StrictHostKeyChecking no
+EOF
+      sudo -u ubuntu chmod 600 /home/ubuntu/.ssh/config
+      
+      systemctl restart sshd
+      systemctl start xrdp
+    SHELL
+  end
+  
+  # VM2 - Docker и WireGuard
+  config.vm.define "vm2" do |vm2|
+    vm2.vm.hostname = "vm2"
+    vm2.vm.network "private_network", ip: "192.168.56.11"
+    vm2.vm.network "forwarded_port", guest: 5000, host: 5000, id: "wireguard-ui"
+    
+    vm2.vm.provider "virtualbox" do |vb|
+      vb.memory = "1024"
+      vb.cpus = 1
+      vb.name = "VM2-Docker"
+    end
+    
+    vm2.vm.provision "shell", inline: <<-SHELL
+      # Обновление пакетов
+      apt-get update
+      apt-get upgrade -y
+      
+      # Установка зависимостей для Docker
+      apt-get install -y ca-certificates curl gnupg lsb-release
+      
+      # Добавление официального GPG ключа Docker
+      mkdir -p /etc/apt/keyrings
+      curl -fsSL https://download.docker.com/linux/ubuntu/gpg | gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+      
+      # Добавление репозитория Docker
+      echo "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | tee /etc/apt/sources.list.d/docker.list > /dev/null
+      
+      # Установка Docker
+      apt-get update
+      apt-get install -y docker-ce docker-ce-cli containerd.io docker-compose-plugin
+      
+      # Добавление пользователя ubuntu в группу docker
+      usermod -aG docker ubuntu
+      
+      # Включение и запуск Docker
+      systemctl enable docker
+      systemctl start docker
+      
+      # Установка WireGuard tools
+      apt-get install -y wireguard-tools
+      
+      # Создание пользователя ubuntu и установка пароля
+      echo "ubuntu:123456ubuntu" | chpasswd
+      
+      # Настройка SSH сервера согласно требованиям
+      cp /etc/ssh/sshd_config /etc/ssh/sshd_config.backup
+      
+      cat > /etc/ssh/sshd_config << 'EOF'
+Protocol 2
+LoginGraceTime 10s
+MaxAuthTries 2
+MaxSessions 2
+PermitEmptyPasswords no
+HostbasedAuthentication no
+PasswordAuthentication no
+PubkeyAuthentication yes
+PermitRootLogin no
+UsePAM yes
+X11Forwarding yes
+PrintMotd no
+AcceptEnv LANG LC_*
+Subsystem sftp /usr/lib/openssh/sftp-server
+EOF
+      
+      # Создание директории .ssh для пользователя ubuntu
+      sudo -u ubuntu mkdir -p /home/ubuntu/.ssh
+      sudo -u ubuntu chmod 700 /home/ubuntu/.ssh
+      
+      # Настройка hosts файла
+      echo "192.168.56.10 vm1" >> /etc/hosts
+      echo "192.168.56.12 vm3" >> /etc/hosts
+      
+      # Настройка WireGuard UI через Docker
+      mkdir -p /opt/wireguard-ui
+      cd /opt/wireguard-ui
+      
+      cat > docker-compose.yml << 'EOF'
+version: '3.8'
+services:
+  wireguard-ui:
+    image: ngoduykhanh/wireguard-ui:latest
+    container_name: wg-ui
+    ports:
+      - "5000:5000"
+    environment:
+      - WGUI_USERNAME=admin
+      - WGUI_PASSWORD=admin123
+      - WG_CONF_TEMPLATE=/app/templates/wg.conf
+      - WGUI_MANAGE_START=true
+      - WGUI_MANAGE_RESTART=true
+    volumes:
+      - ./db:/app/db
+      - ./config:/etc/wireguard
+    cap_add:
+      - NET_ADMIN
+    network_mode: "host"
+    restart: unless-stopped
+EOF
+      
+      # Создание необходимых директорий
+      mkdir -p db config
+      chmod -R 755 db config
+      
+      # Запуск WireGuard UI
+      docker compose up -d
+      
+      systemctl restart sshd
+    SHELL
+  end
+  
+  # VM3 - Пользователь adam
+  config.vm.define "vm3" do |vm3|
+    vm3.vm.hostname = "vm3"
+    vm3.vm.network "private_network", ip: "192.168.56.12"
+    
+    vm3.vm.provider "virtualbox" do |vb|
+      vb.memory = "1024"
+      vb.cpus = 1
+      vb.name = "VM3-Adam"
+    end
+    
+    vm3.vm.provision "shell", inline: <<-SHELL
+      # Обновление пакетов
+      apt-get update
+      apt-get upgrade -y
+      
+      # Создание группы adam
+      groupadd adam
+      
+      # Создание пользователя adam с требуемыми параметрами
+      useradd -m -d /home/adam -s /bin/bash -g adam adam
+      
+      # Добавление adam в группу sudo
+      usermod -aG sudo adam
+      
+      # Настройка sudo без пароля для adam
+      echo "adam ALL=(ALL) NOPASSWD: ALL" > /etc/sudoers.d/adam
+      chmod 0440 /etc/sudoers.d/adam
+      
+      # Создание пользователя ubuntu и установка пароля
+      echo "ubuntu:123456ubuntu" | chpasswd
+      
+      # Настройка SSH сервера согласно требованиям
+      cp /etc/ssh/sshd_config /etc/ssh/sshd_config.backup
+      
+      cat > /etc/ssh/sshd_config << 'EOF'
+Protocol 2
+LoginGraceTime 10s
+MaxAuthTries 2
+MaxSessions 2
+PermitEmptyPasswords no
+HostbasedAuthentication no
+PasswordAuthentication no
+PubkeyAuthentication yes
+PermitRootLogin no
+UsePAM yes
+X11Forwarding yes
+PrintMotd no
+AcceptEnv LANG LC_*
+Subsystem sftp /usr/lib/openssh/sftp-server
+EOF
+      
+      # Создание директории .ssh для пользователя ubuntu
+      sudo -u ubuntu mkdir -p /home/ubuntu/.ssh
+      sudo -u ubuntu chmod 700 /home/ubuntu/.ssh
+      
+      # Настройка hosts файла
+      echo "192.168.56.10 vm1" >> /etc/hosts
+      echo "192.168.56.11 vm2" >> /etc/hosts
+      
+      systemctl restart sshd
+    SHELL
+  end
+  
+  # Финальный провизионинг для настройки SSH ключей между машинами
+  config.vm.define "vm1" do |vm1|
+    vm1.vm.provision "shell", run: "always", inline: <<-SHELL
+      # Ожидание загрузки всех машин
+      sleep 10
+      
+      # Получение публичного ключа от vm1
+      PUBLIC_KEY=$(sudo -u ubuntu cat /home/ubuntu/.ssh/id_rsa.pub)
+      
+      # Копирование публичного ключа на vm2
+      echo "Настройка SSH доступа к vm2..."
+      echo "$PUBLIC_KEY" | sudo -u ubuntu ssh -o StrictHostKeyChecking=no ubuntu@192.168.56.11 'mkdir -p ~/.ssh && cat >> ~/.ssh/authorized_keys && chmod 600 ~/.ssh/authorized_keys'
+      
+      # Копирование публичного ключа на vm3
+      echo "Настройка SSH доступа к vm3..."
+      echo "$PUBLIC_KEY" | sudo -u ubuntu ssh -o StrictHostKeyChecking=no ubuntu@192.168.56.12 'mkdir -p ~/.ssh && cat >> ~/.ssh/authorized_keys && chmod 600 ~/.ssh/authorized_keys'
+      
+      echo "SSH ключи настроены. Теперь можно подключаться:"
+      echo "- ssh ubuntu@vm2"
+      echo "- ssh ubuntu@vm3"
+    SHELL
+  end
+end
