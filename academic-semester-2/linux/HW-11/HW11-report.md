@@ -125,10 +125,12 @@ grep adam /etc/passwd
 ![alt text](image-20.png)
 
 #### 4.3 Проверка первичной группы adam
+
 ```bash
 groups adam
 getent group adam
 ```
+
 ![alt text](image-21.png)
 
 ---
