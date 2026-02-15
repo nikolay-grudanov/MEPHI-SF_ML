@@ -362,3 +362,6 @@ academic-semester-3/recommendation systems/**
 # Но не игнорировать поддиректории, чтобы можно было отслеживать конкретные файлы
 !academic-semester-3/rl/
 !academic-semester-3/recommendation systems/
+# Игнорировать все файлы в директории, кроме ноутбуков
+academic-semester-3/generative_learning/HW-1/**/*
+!academic-semester-3/generative_learning/HW-1/**/*.ipynb
