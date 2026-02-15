@@ -324,3 +324,8 @@ academic-semester-2/classical_machine_learning/session/Description.pdf
 .sesskey
 academic-semester-3/generative_learning/HW-3/datasets/**
 node_modules/**
+node_modules
+academic-semester-3/generative_learning/HW-1/mnist_vae_real/**
+academic-semester-3/generative_learning/HW-1/fake_per_class/**
+academic-semester-3/generative_learning/HW-1/data/MNIST/**
+academic-semester-3/rl/HW-3/dataset/expert_cheetah_dataset.h5
