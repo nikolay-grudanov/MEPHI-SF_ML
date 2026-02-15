@@ -369,3 +369,5 @@ academic-semester-3/recommendation systems/**/[^/][^/]*  # игнорирова�
 # Игнорировать все файлы в директории, кроме ноутбуков
 !academic-semester-3/generative_learning/HW-1/**/*.ipynb
 academic-semester-3/generative_learning/HW-1/**/*
+academic-semester-3/rl/HW-3/models/**.pt
+academic-semester-3/rl/HW-3/logs/**.pt
