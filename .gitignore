@@ -354,6 +354,7 @@ academic-semester-3/generative_learning/HW-1/**/figures/**
 # Разрешить отслеживание только конкретных ноутбуков в этих директориях
 !academic-semester-3/rl/HW-3/HW3_BC_nikolaigrudanov.ipynb
 !academic-semester-3/recommendation systems/HW-1/GrudanovNA_RecomendSystem.ipynb
+!academic-semester-3/recommendation systems/session/*.ipynb
 
 # Игнорировать все остальные файлы в этих директориях
 academic-semester-3/rl/**
