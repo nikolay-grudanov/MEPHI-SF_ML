@@ -329,15 +329,7 @@ academic-semester-3/generative_learning/HW-1/mnist_vae_real/**
 academic-semester-3/generative_learning/HW-1/fake_per_class/**
 academic-semester-3/generative_learning/HW-1/data/MNIST/**
 academic-semester-3/rl/HW-3/dataset/expert_cheetah_dataset.h5
-# Игнорировать все файлы в этих директориях, кроме Jupyter-ноутбуков
-academic-semester-3/generative_learning/HW-1/**
-!academic-semester-3/generative_learning/HW-1/**/*.ipynb
-academic-semester-3/recommendation systems/**
-!academic-semester-3/recommendation systems/**/*.ipynb
-academic-semester-3/rl/**
-!academic-semester-3/rl/**/*.ipynb
-
-# Также игнорировать конкретные типы файлов, которые обычно большие
+# Игнорировать конкретные типы файлов, которые обычно большие, но не игнорировать директории целиком
 academic-semester-3/generative_learning/HW-1/**/*.png
 academic-semester-3/generative_learning/HW-1/**/*.jpg
 academic-semester-3/generative_learning/HW-1/**/*.jpeg
@@ -350,16 +342,23 @@ academic-semester-3/generative_learning/HW-1/**/*.pt
 academic-semester-3/generative_learning/HW-1/**/*.ckpt
 academic-semester-3/generative_learning/HW-1/**/*.h5
 academic-semester-3/generative_learning/HW-1/**/*.csv
-academic-semester-3/generative_learning/HW-1/**/data/
-academic-semester-3/generative_learning/HW-1/**/models/
-academic-semester-3/generative_learning/HW-1/**/results/
-academic-semester-3/generative_learning/HW-1/**/output/
-academic-semester-3/generative_learning/HW-1/**/logs/
-academic-semester-3/generative_learning/HW-1/**/plots/
-academic-semester-3/generative_learning/HW-1/**/images/
-academic-semester-3/generative_learning/HW-1/**/figures/
+academic-semester-3/generative_learning/HW-1/**/data/**
+academic-semester-3/generative_learning/HW-1/**/models/**
+academic-semester-3/generative_learning/HW-1/**/results/**
+academic-semester-3/generative_learning/HW-1/**/output/**
+academic-semester-3/generative_learning/HW-1/**/logs/**
+academic-semester-3/generative_learning/HW-1/**/plots/**
+academic-semester-3/generative_learning/HW-1/**/images/**
+academic-semester-3/generative_learning/HW-1/**/figures/**
 
-# Исключения для ноутбуков в других поддиректориях
-!academic-semester-3/generative_learning/HW-1/**/*.ipynb
-!academic-semester-3/recommendation systems/**/*.ipynb
-!academic-semester-3/rl/**/*.ipynb
+# Разрешить отслеживание только конкретных ноутбуков в этих директориях
+!academic-semester-3/rl/HW-3/HW3_BC_nikolaigrudanov.ipynb
+!academic-semester-3/recommendation systems/HW-1/GrudanovNA_RecomendSystem.ipynb
+
+# Игнорировать все остальные файлы в этих директориях
+academic-semester-3/rl/**
+academic-semester-3/recommendation systems/**
+
+# Но не игнорировать поддиректории, чтобы можно было отслеживать конкретные файлы
+!academic-semester-3/rl/
+!academic-semester-3/recommendation systems/
