@@ -1,12 +1,12 @@
 {
   "files.watcherExclude": {
-    "**/academic-semester-3/generative_learning/HW-1/**": true,
-    "**/academic-semester-3/recommendation systems/**": true,
-    "**/academic-semester-3/rl/**": true
+    "**/academic-semester-3/generative_learning/HW-1/**": {"when": "$(basename)", "notEquals": "*.ipynb"},
+    "**/academic-semester-3/recommendation systems/**": {"when": "$(basename)", "notEquals": "*.ipynb"},
+    "**/academic-semester-3/rl/**": {"when": "$(basename)", "notEquals": "*.ipynb"}
   },
   "files.exclude": {
-    "**/academic-semester-3/generative_learning/HW-1/**": true,
-    "**/academic-semester-3/recommendation systems/**": true,
-    "**/academic-semester-3/rl/**": true
+    "**/academic-semester-3/generative_learning/HW-1/**": {"when": "$(basename)", "notEquals": "*.ipynb"},
+    "**/academic-semester-3/recommendation systems/**": {"when": "$(basename)", "notEquals": "*.ipynb"},
+    "**/academic-semester-3/rl/**": {"when": "$(basename)", "notEquals": "*.ipynb"}
   }
 }
