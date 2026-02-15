@@ -1,0 +1,12 @@
+{
+  "files.watcherExclude": {
+    "**/academic-semester-3/generative_learning/HW-1/**": true,
+    "**/academic-semester-3/recommendation systems/**": true,
+    "**/academic-semester-3/rl/**": true
+  },
+  "files.exclude": {
+    "**/academic-semester-3/generative_learning/HW-1/**": true,
+    "**/academic-semester-3/recommendation systems/**": true,
+    "**/academic-semester-3/rl/**": true
+  }
+}
