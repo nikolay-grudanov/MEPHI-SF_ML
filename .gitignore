@@ -367,5 +367,5 @@ academic-semester-3/recommendation systems/**
 !academic-semester-3/rl/
 !academic-semester-3/recommendation systems/
 # Игнорировать все файлы в директории, кроме ноутбуков
-academic-semester-3/generative_learning/HW-1/**/*
 !academic-semester-3/generative_learning/HW-1/**/*.ipynb
+academic-semester-3/generative_learning/HW-1/**/*
